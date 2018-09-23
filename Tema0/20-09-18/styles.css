@@ -1,58 +1,207 @@
-html, body{
-    height: 100%;
+html, body {
     margin: 0;
+    width: 100%;
 }
 
-nav, header, ul {
-    margin: 0;
-}
-
-.wrapper{
+.wrapper {
     width: 955px;
     height: 100%;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: tan;
+}
+
+div {
+    /*Propiedad para evitar que se sumen los márgenes y los padding a nuestos contenedores, por lo que si le definimos una 
+    medida esta no va a cambiar al insertar estas propiedades*/
+    box-sizing: border-box; 
 }
 
 header {
-    width: 100%;
-    height: 120px;
-    background-color: bisque;
     position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: teal;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: steelblue;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    background-color: darkcyan;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
+    width: 110px;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    background-color: darkgray;
+    border-radius: 15%;
 }
 
 nav {
-    box-sizing: border-box;
-    width: 700px;
-    height: 50px;
-    background-color: tan;
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    height: 30%;
+    bottom: 20px;
+    right: 3px;
+    width: 80%;
+    background-color: thistle;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 ul {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 1%;
     list-style-type: none;
 }
 
 li {
-    width: 140px;
-    height: 40px;
-    display: inline-block;
-    background-color: slategray;
-    padding-right: 20px;
     position: relative;
-    top: 5px;
-    right: 15px;
+    display: inline-block; /*Propiedad para poner la lista que se disponga horizontalmente*/
+    width: 24%;
+    height: 30px;
+    background-color: cadetblue;
+    text-align: center;
+    line-height: 30px; /*Propiedad con la que conseguimos que las letras estén centradas verticalmente*/
+    border-radius: 10px;
+}
+
+.mainpic {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: darkgray;
+    z-index: 0;
+}
+
+.legend {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    left: 20%;
+    background-color: steelblue;
+    z-index: 1;
+}
+
+.caja1, .caja2, .caja3, .caja4 {
+    position: absolute;
+    width: 49%;
+    height: 49%;
+}
+
+.caja1 {
+    top: 1%;
+    left: 1%;
+    background-color: aquamarine;
+    border-top-left-radius: 15px;
+}
+
+.caja2 {
+    top: 1%;
+    right: 1%;
+    background-color: cornflowerblue;
+    border-top-right-radius: 15px;
+}
+
+.caja3 {
+    bottom: 1%;
+    left: 1%;
+    background-color: darkgray;
+    border-bottom-left-radius: 15px;
+}
+
+.caja4 {
+    bottom: 1%;
+    right: 1%;
+    background-color: darkolivegreen;
+    border-bottom-right-radius: 15px;
+}
+
+.caja5 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: honeydew;
+    left: 327px;
+    top: 150px;
+}
+
+.sectionText {
+    background-color: lightblue;
+}
+
+.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: mediumaquamarine;
+}
+
+.text1, .text2 {
+    position: absolute;
+    width: 70%;
+    height: 45%;
+    right: 0;
+    border-radius: 15px;
+}
+
+.text1 {
+    top: 5%;
+    background-color: sandybrown;
+}
+
+.text2 {
+    bottom: 5%;
+    background-color: midnightblue;
+}
+
+.trip {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
+.box1, .box2, .box3 {
+    position: absolute;
+    height: 75%;
+    width: 25%;
+    top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;     
+}
+
+.box1 {
+    left: 12.5%;
+    background-color: darkkhaki;
+}
+
+.box2 {
+    left: 37.5%;
+    background-color: darkolivegreen;
+}
+
+.box3 {
+    right: 12.5%;
+    background-color: darksalmon;
 }
