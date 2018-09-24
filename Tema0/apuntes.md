@@ -74,3 +74,28 @@ Entregamos al cliente el producto resultante de las diferentes fases de creació
 [colourlovers](http://www.colourlovers.com/) Paletas y herramientas para el manejo de colores.<br>
 [freepik](https://www.freepik.com/) Recursos imágenes.<br>
 [flaticon](https://www.flaticon.com/) Recursos iconos.
+
+
+# Illustrator
+
+- Se puede ajustar manualmente el x e y de la regla para así afinar su ubicación.
+
+- **Nota:** Si no tenemos la fuente que utiliza un vector, nos aparecerá la letra bajo fondo rosa, esto nos indica que la fuente sólamente puede verse, no se puede editar, para poder editar dicho texto, tendríamos que hacernos con la fuente.
+
+- **Consejo:** Evitar hacer degradados si no se sabe.
+
+- **Utilidades:** 
+
+    - Para seleccionar las reglas ```ctrl + R```.
+
+    - Pulsando ```Ctl + G``` conseguimos agrupar un conjunto de objetos en una sola pieza, para desanclar dicho componente e individualizarlo nuevamente, tenemos que pulsar ```Ctl + Shift + G```
+
+    - Para redimensionar un objeto y mantener las proporciones, pulsamos ```Shift``` y agrandamos.
+
+    - Para crear una sombra, seleccionamos la capa u objeto, nos vamos al menú efecto/estilizar/sombra paralela, tenemos que tener en cuenta que en illustrator no podemos cambiar el ángulo de la sombra, puesto que si lo que queremos realizar es una sombra de una capa, podemos agrandar esta capa para que nos pille el espacio que nosotros deseamos, esto lo hemos necesitado para aplicar sombra a nuestro menú secundario.
+
+- **Estado de nuestro trabajo**
+
+    ![ejemplo](https://i.imgur.com/5feUm9H.png)
+
+    
