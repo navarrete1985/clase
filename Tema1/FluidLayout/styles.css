@@ -1,0 +1,36 @@
+body{
+    background-color: lightgray;
+    color: #2C2C2C;
+    font: normal 100% Cambria, Georgina, serif; 
+    /*
+    shortHand --> Font-weight fornt-size (font-family, ...);
+    */
+}
+
+h1{
+    /*font-size: 24px;*/
+    font-size: 1.5em; /*24px / 16px (siempre tenemos que poner de donde se ha obtenido el tamaño de fuente)*/
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*
+poner siempre heigth en etiqueta html y body para evitar errores (100%)
+Si en la etiqueta html se modifica el valor de font-size el de por defecto del navegador no es 16px.
+*/
+
+/*
+formula fluid 
+target(tam fuente que queremos) % context(tam fuente contenedor) = result --> fórmula para calcular el tamaño de la fuente
+h1 --> 24px (target) % 16(tamaño funete contenedor por defecto) = 1.5em
+*/
+
+h1 a{
+    color: #747474;
+    /*font: bold 11px Calibri, Optima, Arial, sans-serif;*/
+    font: bold 0.458333333333em Calibri, Optima, Arial, sans-serif;/*11 / 24(padre contenedor que es h1) =0.458333333333*
+    /*No todos los navegadores renderizan de la misma forma los decimales de las unidades de tamaño*/
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
