@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700|Monoton');
+
+body {
+    margin: 0;
+    width: 100%;
+    /* font-size: 62.5%;Para que 1em sea igual a 10px */
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 2.604166vw; /* 50/1920= 0.02604166*/
+    background-color: white;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    left: 3vw;
+    top: 20%;
+    bottom: 20%;
+    width: 1.5625%; /*18.531px/1920 = 0.015625*/
+    height: 60%; /* 30px/50px = 0.6*/
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    height: 100%;
+    margin: 0.2vw auto;
+    padding-right: 2%;
+    list-style-type: none;
+}
+
+li {
+    position: relative;
+    padding-right: 3vh;
+    /* padding-left: 1vh; */
+    display: inline-block; /*Propiedad para poner la lista que se disponga horizontalmente*/
+    text-align: center;
+    line-height: 2.2vw; /*Propiedad con la que conseguimos que las letras estén centradas verticalmente*/
+}
+
+a {
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 0.833333333vw;/*16/1980 = 0.0083333333*/
+}
+
+section.main {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 47.61904761904762vw/*600/1260 = 4761904761904762 */;
+}
+
+section.main div {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* width: 100%;
+    height: 53.64583333333vw;1030/1920 = 0.536458333333 */
+    background-image: url(../images/Recurso\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
