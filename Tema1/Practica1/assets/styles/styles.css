@@ -1,7 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700|Monoton'); */
+@import url('https://fonts.googleapis.com/css?family=KoHo:200,300,400,500,600,700|Monoton');
 
+/* Quitamos lo márgenes que establece el navegador */
 body {
     margin: 0;
+    padding: 0;
     width: 100%;
     /* font-size: 62.5%;Para que 1em sea igual a 10px */
 }
@@ -11,6 +13,13 @@ body {
     height: 100%;
 }
 
+div {
+    /*Propiedad para evitar que se sumen los márgenes y los padding a nuestos contenedores, por lo que si le definimos una 
+    medida esta no va a cambiar al insertar estas propiedades*/
+    box-sizing: border-box; 
+}
+
+/* -------------------------------Cabecera (nav)----------------------------------- */
 header {
     position: fixed;
     width: 100%;
@@ -65,15 +74,17 @@ a {
     font-size: 20px;
 }
 
+/* --------------------------------------Main-------------------------------------- */
 section.main {
     position: relative;
     margin: 0;
     width: 100%;
     /*height: 47.61904761904762vw/*600/1260 = 4761904761904762 */;
-    height: 53.645833333vw /*1030/1920=*0.53645833333/*/;
+    height: 46.31578947368421vw /*880/1900=*0.4631578947368421/*/;
+    /* height: 100vh; */
 }
 
-section.main div {
+#image {
     position: absolute;
     top: 50px;
     left: 0;
@@ -84,5 +95,146 @@ section.main div {
     background-image: url(../images/main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0 bottom;
+    background-position: center bottom;
 }
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 23.15789473684211vw;
+}
+
+#figura {
+    position: absolute;
+    top: 0;
+    left: 29.80880952380952vw;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23.15789473684211vw 20.24742063492063vw 0 20.24742063492063vw;
+    /*
+    confección de triángulo
+    left --> posición x --> 375,591 /1260 --> 0.2980880952380952
+    ancho --> 510.235 / 2 --> 255.1175 / 1260 = 0.2024742063492063
+    alto --> mitad de alto --> 46.31578947368421vw / 2 --> 23.15789473684211vw
+    */
+    border-color: #0000005d transparent transparent transparent;
+}
+
+#nombreEmpresa {
+    position: absolute;
+    /* left: -20.24742063492063vw; */
+    top: 2.38095238095238vw;/*30px/1260 --> 0.0238095238095238*/
+    left: 37.34126984126984vw;/*470.5/1260 --> 0.3734126984126984*/
+    font-family: 'Monoton', serif;
+    font-size: 5.3968253968254vw;/*68px/1260 --> 0.053968253968254*/
+    color: white;
+    /* z-index: 1; */
+}
+
+#citaEmpresa {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48.98vw;
+    border-right: 0 solid transparent;
+    border-left: 20.24742063492063vw solid transparent;
+    border-top: 23.15789473684211vw solid #0000005d;
+  }
+
+#cita {
+    position: absolute;
+    top: 6vw;
+    right: 1vw;
+    padding-right: 1.5vw;
+    width: 34.73257936507937vw;
+    font-family: 'KoHo', sans-serif;
+    color: white;
+    font-size: 1.42857142857143vw;/*22/1260 -> 0.0174603174903175*//*20/1260 -> 0.0158730158730159*/
+    /*18/1260 -> 0.0142857142857143*/
+}
+
+#cita span {
+    font-size: 1.11111111111vw;/*16/1260 --> 0.0126984126984127*//*14/1260 -> 0.0111111111111*/
+    float: right;
+}
+
+/*------------------------------------EL RESTAURANTE--------------------------------*/
+
+
+#elRestaurante {
+    position: relative;
+    width: 100%;
+    height: 11.98412698412698vw;/*151/1260 --> 0.1198412698412698*/
+    margin-top: 8.6vw;/*100/1260 --> 0.0476190476190476*/
+    background-image: url(../images/elRestaurante2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-bottom: 2.38095238095238vw;/*30/1260 --> 0.0238095238095238*/
+}
+
+#elRestaurante .figura {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.98412698412698vw 100vw 0 0;
+    /*
+    alto --> 151/1260 --> 0.1198412698412698
+    ancho --> 100vw
+    */
+    border-color: #0000005d transparent transparent transparent;
+}
+
+#elRestaurante p {
+    position: absolute;
+    left: 11.9047619047619vw;/*150/1260 -> 0.119047619047619*/
+    bottom: 1.6031746031746vw;
+    font-family: 'KoHo', sans-serif;
+    font-size: 2.77777777777778vw;/*35/1260 -> 0.0277777777777778*/
+    font-weight: bold;
+    color: white;
+}
+
+.contenido {
+    position: relative;
+    width: 90.47619047619048vw;/*1140/1260 --> 0.9047619047619048*/
+    height: 23.80952380952381vw;/*300/1260 --> 0.2380952380952381*/
+    margin-left: 3.17460317460317vw;/*60/1260 --> 0.0317460317460317*/
+    margin-right: 3.17460317460317vw;/*60/1260 --> 0.0317460317460317*/
+}
+
+.contenido div {
+    position: absolute;
+    width: 46.82539682539683vw;/*590/1260 --> 0.4682539682539683*/
+    height: 23.80952380952381vw;/*300/1260 --> 0.2380952380952381*/
+}
+
+.imagen1 {
+    top: 0;
+    left: 0;
+    background-image: url(../images/enigma-cocina2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.imagen2 {
+    top: -2.38095238095238vw;/*30/1260 -> 0.0238095238095238*/
+    right: 0;
+    background-image: url(../images/enigma-mesa.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.imagen3 {
+    top: -4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+    left: 0;
+    background-image: url(../images/enigma-vista-cocina-salon.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+
