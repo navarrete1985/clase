@@ -1,0 +1,45 @@
+/* Práctica Pseudoelementos */
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
+section {
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+
+section div {
+    position: relative;
+    left: 200px;
+    top: 50px;
+    font-family: 'MedievalSharp';
+}
+
+p {
+    font-family: 'MedievalSharp';
+    font-size: 2em;
+}
+
+section div::after {
+    content: ' \" ';
+    font-weight: 500;
+    font-size: 8em;
+    color: darkgray;
+    top: 50px;
+    position: absolute;
+    right: -30px;
+    top: 40%;
+}
+
+section div::before{
+    content: ' \" ';
+    font-weight: 500;
+    font-size: 8em;
+    color: darkgray;
+    position: absolute;
+    left: -30px;
+    top: 40%;
+}
+
+p::first-letter {
+    font-size: 2.5em;
+}
