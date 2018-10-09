@@ -162,7 +162,7 @@ section.main {
 
 /*------------------------------------EL RESTAURANTE--------------------------------*/
 
-
+/*Cabecera Restaurante*/
 #elRestaurante {
     position: relative;
     width: 100%;
@@ -200,12 +200,13 @@ section.main {
     color: white;
 }
 
+/*Contenido Restaurante*/
 .contenido {
     position: relative;
     width: 90.47619047619048vw;/*1140/1260 --> 0.9047619047619048*/
     height: 23.80952380952381vw;/*300/1260 --> 0.2380952380952381*/
-    margin-left: 3.17460317460317vw;/*60/1260 --> 0.0317460317460317*/
-    margin-right: 3.17460317460317vw;/*60/1260 --> 0.0317460317460317*/
+    margin-left: 4.20634920634921vw;/*53/1260 --> 0.0420634920634921*/
+    margin-right: 4.20634920634921vw;/*53/1260 --> 0.0420634920634921*/
 }
 
 .contenido div {
@@ -238,4 +239,59 @@ section.main {
     background-position: center bottom;
 }
 
+.contenido p {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 40.47619047619048vw;/*510/1260 -> 0.4047619047619048*/
+    top: 1.58730158730159vw;/*20/1260 -> 0.0158730158730159*/
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    height: 18.25396825396825vw;/*230/1260 -> 0.1825396825396825*/
+    font-weight: 300;
+    text-align: left;
+}
 
+#restaurante1 {
+    right: 1.58730158730159vw;
+}
+
+#restaurante2 {
+    left: 1.58730158730159vw;
+    height: 15.87301587301587vw;/*200/1260 -> 0.1587301587301587*/
+    text-align: right;
+}
+#restaurante3 {
+    right: 1.58730158730159vw;
+    margin-top: -2.85714285714286vw;/*36px/1260 -> 0.0158730158730159*/
+}
+
+.contenido p span {
+    color: #A59C88;
+    font-weight: 500;
+    font-size: 1.42857142857143vw;/*18/1260 -> 0.0142857142857143*/
+}
+
+/*--------------------------------CHEFS-----------------------------------------*/
+
+.chefs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+}
+
+#imagenChefs {
+    position: relative;
+    background-image: url(../images/chefs.png);
+    width: 47.71825396825397vw;/*601.25/1260 -> 0.4771825396825397*/
+    height: 14.99603174603175vw;/*176.35/1260 -> 0.1399603174603175*/
+    left: 26.14087301587302vw;/*329.375/1260 -> 0.2614087301587302*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#wrapperChefs {
+    margin-top: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+}
