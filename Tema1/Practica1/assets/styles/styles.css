@@ -96,6 +96,7 @@ section.main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-attachment: fixed;/*Propiedad para hacer el efecto paralax*/
 }
 
 .container {
@@ -230,7 +231,7 @@ section.main {
 }
 
 .imagen3 {
-    top: -4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+    top: -4.76190476190476vw;/*60/1260 -> 0.0476190476190476 El doble puesto que tenemos que contar con el margin de la imagen anterior*/
     left: 0;
     background-image: url(../images/enigma-vista-cocina-salon.jpg);
     background-size: cover;
