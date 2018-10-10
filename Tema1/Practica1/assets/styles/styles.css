@@ -19,6 +19,14 @@ div {
     box-sizing: border-box; 
 }
 
+/*Clase comun imagen*/
+.imgCenterTop {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin: auto;
+}
+
 /* -------------------------------Cabecera (nav)----------------------------------- */
 header {
     position: fixed;
@@ -282,14 +290,9 @@ section.main {
 }
 
 #imagenChefs {
-    position: relative;
     background-image: url(../images/chefs2.png);
     width: 47.71825396825397vw;/*601.25/1260 -> 0.4771825396825397*/
     height: 14.99603174603175vw;/*176.35/1260 -> 0.1399603174603175*/
-    left: 26.14087301587302vw;/*329.375/1260 -> 0.2614087301587302*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
 }
 
 .fila {
@@ -443,6 +446,199 @@ section.main {
 }
 
 /*-------------------------------MENÚ---------------------------------------*/
+/*Cabecera*/
+.carta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+}
+
+#imagenCarta {
+    background-image: url(../images/Carta.png);
+    width: 45.71426571428571vw;/*576/1260 -> 0.4571426571428571*/
+    height: 17.93650793650794vw;/*226/1260 -> 0.1793650793650794*/
+    margin-bottom: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/  
+}
+
+/*Contenido*/
+
+/*Titulos*/
+.carta p.titulo {
+    color: #A59C88;
+    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    text-align: center;
+}
+
+/*Descripción*/
+#section1 p.desc {
+    font-weight: 300;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.11111111111111vw;/*14/1260 -> 0.0111111111111111*/
+    width: 27.14285714285714vw;/*342/1260 -> 0.2714285714285714*/
+    margin-left: 1.58730158730159vw;/*20/1260 -> 0.0158730158730159*/
+}
+
+/*Envoltorio de los platos*/
+.carta .wrapper {
+    position: relative;
+    width: 90.47619047619048vw;/*1140/1260 -> 0.9047619047619048*/
+    height: 51.58730158730159vw;/*650/1260 -> 0.5158730158730159*/
+    margin: auto;
+}
+
+#section1 {
+    height: 31.74603174603175vw;/*400/1260 -> 0.3174603174603175*/
+    width: 100%;
+}
+
+/*Definición de tamaño de columnas*/
+#section1 .col1, #section1 .col2, #section1 .col3 {
+    position: absolute;
+    width: 30.15873015873016vw;/*380/1260 -> 0.3015873015873016*/
+    height: 31.74603174603175vw;
+}
+
+/*Primer plato*/
+#section1 .col1 {
+    top: 0;
+    left: 0;
+}
+
+#section1 .col1 .img {
+    position: absolute;
+    width: 30.15873015873016vw;
+    height: 19.84126984126984vw;/*250/1260 -> 0.1984126984126984*/
+    top: 0;
+    left: 0;
+    background-image: url(../images/plato1.png);
+}
+
+#section1 .col1 .contenido{
+    position: absolute;
+    margin: auto;
+    top: 20.63492063492069vw;
+    left: 0;
+    width: 27.14285714287514vw;/*342/1260 -> 0.2714285714287514*/
+    height: 7.93650793650794vw; /*100/1260 -> 0.0793650793650794*/
+}
+
+#section1 .col1 .titulo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 27.14285714287514vw;/*342/1260 -> 0.2714285714287514*/
+    height: 1.26984126984127vw;/*0.0126984126984127*/
+}
+
+#section1 .col1 .desc {
+    position: relative;
+    height: 100%;
+    top: 0;
+}
 
 
+/*Segundo Plato*/
+#section1 .col2 {
+    top: 0;
+    left: 30.15873015873016vw;
+}
+
+#section1 .col2 .img {
+    position: absolute;
+    width: 30.15873015873016vw;
+    height: 11.9047619047619vw;/*150/1260 -> 0.119047619047619*/
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/plato2.png);
+}
+
+#section1 .col2 .contenido{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 27.14285714287514vw;/*342/1260 -> 0.2714285714287514*/
+    height: 15.87301587301587vw; /*200/1260 -> 0.1587301587301587*/
+}
+
+#section1 .col2 .titulo{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 27.14285714287514vw;/*342/1260 -> 0.2714285714287514*/
+    height: 1.26984126984127vw;/*0.0126984126984127*/
+}
+
+#section1 .col2 .desc {
+    position: relative;
+    height: 100%;
+    top: 0;
+}
+
+
+/*Tercer Plato*/
+#section1 .col3 {
+    top: 0;
+    right: 0;
+}
+
+#section1 .col3 .img {
+    position: absolute;
+    width: 30.15873015873016vw;
+    height: 25vw; /*315/1260 -> 0.25*/
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/plato3.png);
+}
+
+/*Cuarto Plato*/
+#section2 {
+    position: relative;
+    height: 19.84126984126984vw;/*250/1260 -> 0.1984126984126984*/
+    width: 100%;
+    margin-bottom: 4.76190476190476vw/*60/1260 -> 0.0476190476190476*/
+}
+
+#section2 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45.23809523809524vw;/*570/1260 -> 0.4523809523809524*/
+    height: 19.84126984126984vw;/*250/1260 -> 0.1984126984126984*/
+    background-image: url(../images/plato4.png);
+}
+
+#section2 .contenido{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    width: 44.44444444444vw;/*560/1260 -> 0.3968253968253968*/
+    height: 19.84126984126984vw;/*200/1260 -> 0.1984126984126984*/
+}
+
+#section2 .titulo{
+    position: relative;
+    width: 90%;/*342/1260 -> 0.2714285714287514*/
+    height: 1.26984126984127vw;/*0.0126984126984127*/
+}
+
+#section2 .desc {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+}
+
+/*CARTA*/
+.carta .menu{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 51.58730158730159vw;/*650/1260 -> 0.5158730158730159*/
+    background-image: url(../images/Menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
 
