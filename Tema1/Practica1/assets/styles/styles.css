@@ -292,6 +292,77 @@ section.main {
     background-position: center top;
 }
 
-#wrapperChefs {
-    margin-top: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+.fila {
+    position: relative;
+    margin: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+    width: 90.47619047619048vw;/*1140/1260 -> 0.9047619047619048*/
+    height: 15.87301587301587vw;/*200/1260 -> 0.1587301587301587*/
+}
+
+.col1, .col2 {
+    position: absolute;
+    height: 100%;
+    top:0;
+    width: 50%;
+}
+
+.col1 {
+    left: 0;
+}
+
+.col2 {
+    right: 0;
+}
+
+#imagen1 {
+    position: relative;
+    width: 68%;
+    border-right: 17.3968253968254vw solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 0 solid transparent;
+    border-top: 15.87301587301587vw solid #0000005d;
+    background-image: url(../images/elRestaurante.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+#imagen2 {
+    position: absolute;
+    left: 0;
+    width: 68%;
+    border-right: 17.3968253968254vw solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 0 solid transparent;
+    border-bottom: 15.87301587301587vw solid #0000005d;
+}
+
+#imagen3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 68%;
+    border-right: 0 solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 17.3968253968254vw solid transparent;
+    border-top: 15.87301587301587vw solid #0000005d;
+}
+
+#imagen4 {
+    position: absolute;
+    right: 0;
+    width: 68%;
+    border-right: 0 solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 17.3968253968254vw solid transparent;
+    border-bottom: 15.87301587301587vw solid #0000005d;
 }
