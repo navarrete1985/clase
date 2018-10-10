@@ -283,7 +283,7 @@ section.main {
 
 #imagenChefs {
     position: relative;
-    background-image: url(../images/chefs.png);
+    background-image: url(../images/chefs2.png);
     width: 47.71825396825397vw;/*601.25/1260 -> 0.4771825396825397*/
     height: 14.99603174603175vw;/*176.35/1260 -> 0.1399603174603175*/
     left: 26.14087301587302vw;/*329.375/1260 -> 0.2614087301587302*/
@@ -315,21 +315,115 @@ section.main {
 }
 
 .parrafo {
-    width: 100%;
+    width: 19.04761904761905vw;/*240/1260 -> 0.1904761904761905*/
     height: 100%;
     font-weight: 300;
     font-family: 'KoHo', sans-serif;
-    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    font-size: 1.11111111111111vw;/*14/1260 -> 0.0111111111111111*/
+    
 }
 
 .parrafo span {
     color: #A59C88;
+    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+}
+
+#imagen1, #imagen2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17.46031746031746vw;/*220/1260 --> 0.1746031746031746*/
+    width: 30.55555555556vw;/*385/1260 --> 0.3055555555556*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #contenido1 {
     position: absolute;
-    width: 68%;
-    border-right: 17.3968253968254vw solid transparent;
+    right: 0;
+    width: 65%;
+    border-right: 0 solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 15.8968253968254vw solid transparent;
+    border-bottom: 15.87301587301587vw solid transparent;
+}
+
+#contenido1 p {
+    position: absolute;
+    text-align: right;
+    padding-right: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    right: 0;
+    top: 0;
+}
+
+#imagen1 {
+    background-image: url(../images/AlbertAdria.png);
+}
+
+#contenido2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    border-right: 0 solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 16.1968253968254vw solid transparent;
+    border-top: 15.87301587301587vw solid transparent;
+}
+
+#contenido2 p {
+    position: absolute;
+    text-align: right;
+    padding-right: 16px;
+    right: 0;
+    top: -15.87301587301587vw;
+}
+
+#imagen2 {
+    background-image: url(../images/OliverPena.png);
+}
+
+#imagen3, #imagen4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 17.46031746031746vw;/*220/1260 --> 0.1746031746031746*/
+    width: 30.55555555556vw;/*385/1260 --> 0.3055555555556*/
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#contenido3 {
+    position: absolute;
+    width: 65%;
+    border-right: 15.8968253968254vw solid transparent;
+    /*
+    mitad 285px/1260 --> 0.2261904761904762
+    */
+    border-left: 0 solid transparent;
+    border-bottom: 15.87301587301587vw solid transparent;
+}
+
+#contenido3 p {
+    position: absolute;
+    text-align: left;
+    padding-right: 16px;
+    left: 0;
+    top: 0;
+}
+
+#imagen3 {
+    background-image: url(../images/DiegoGriberg2.png);
+}
+
+#contenido4 {
+    position: absolute;
+    width: 65%;
+    border-right: 15.9968253968254vw solid transparent;
     /*
     mitad 285px/1260 --> 0.2261904761904762
     */
@@ -337,67 +431,18 @@ section.main {
     border-top: 15.87301587301587vw solid transparent;    
 }
 
-#contenido1 p {
-    position: absolute;
-    top: -15.87301587301587vw;
-    left: 0;
-}
-
-
-#contenido2 {
-    position: absolute;
-    width: 68%;
-    border-right: 17.3968253968254vw solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 0 solid transparent;
-    border-bottom: 15.87301587301587vw solid transparent;
-}
-
-#contenido2 p {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-#contenido3 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 68%;
-    border-right: 0 solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 17.3968253968254vw solid transparent;
-    border-top: 15.87301587301587vw solid transparent;
-}
-
-#contenido3 p {
-    position: absolute;
-    top: -15.87301587301587vw;
-    left: 0;
-}
-
-#contenido4 {
-    position: absolute;
-    right: 0;
-    width: 68%;
-    border-right: 0 solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 17.3968253968254vw solid transparent;
-    border-bottom: 15.87301587301587vw solid transparent;
-}
-
 #contenido4 p {
     position: absolute;
-    right: 0;
-    top: 0;
+    top: -15.87301587301587vw;
+    left: 0;
+    padding-left: 1.26984126984127vw;
 }
 
+#imagen4 {
+    background-image: url(../images/PacoMendez.png);
+}
 
 /*-------------------------------MENÚ---------------------------------------*/
+
+
 
