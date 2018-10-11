@@ -369,12 +369,9 @@ section.main {
 #imagen1 {
     position: absolute;
     width: 70%;
-    border-right: 15.9968253968254vw solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 0 solid transparent;
-    border-top: 15.87301587301587vw solid transparent;
+    height: 15.87301587301587vw;
+    shape-outside: polygon(0% 100%, 100% 0, 0 0);
+    
 }
 
 #imagen2 {
