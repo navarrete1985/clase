@@ -358,13 +358,7 @@ section.main {
     font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
 }
 
-#contenido1 {
-    position: absolute;
-    right: 0;
-    width: 65%;
-}
-
-#contenido1 p {
+.imagen p {
     position: absolute;
     text-align: right;
     padding-right: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
@@ -380,28 +374,7 @@ section.main {
     mitad 285px/1260 --> 0.2261904761904762
     */
     border-left: 0 solid transparent;
-    border-top: 15.87301587301587vw solid lightgray;
-}
-
-#contenido2 {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 65%;
-    border-right: 0 solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 16.1968253968254vw solid transparent;
-    border-top: 15.87301587301587vw solid lightgray;
-}
-
-#contenido2 p {
-    position: absolute;
-    text-align: right;
-    padding-right: 16px;
-    right: 0;
-    top: -15.87301587301587vw;
+    border-top: 15.87301587301587vw solid transparent;
 }
 
 #imagen2 {
@@ -412,7 +385,7 @@ section.main {
     mitad 285px/1260 --> 0.2261904761904762
     */
     border-left: 0 solid transparent;
-    border-bottom: 15.87301587301587vw solid lightgray;
+    border-bottom: 15.87301587301587vw solid transparent;
 }
 
 #imagen3, #imagen4 {
@@ -425,18 +398,7 @@ section.main {
     background-repeat: no-repeat;
 }
 
-#contenido3 {
-    position: absolute;
-    width: 65%;
-    border-right: 15.8968253968254vw solid transparent;
-    /*
-    mitad 285px/1260 --> 0.2261904761904762
-    */
-    border-left: 0 solid transparent;
-    border-bottom: 15.87301587301587vw solid lightgray;
-}
-
-#contenido3 p {
+.imagen2 p {
     position: absolute;
     text-align: left;
     padding-right: 16px;
@@ -454,27 +416,21 @@ section.main {
     mitad 285px/1260 --> 0.2261904761904762
     */
     border-left: 16.1968253968254vw solid transparent;
-    border-top: 15.87301587301587vw solid lightgray;
+    border-top: 15.87301587301587vw solid transparent;
 }
 
-#contenido4 p {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 1.26984126984127vw;
-}
 
 #imagen4 {
     position: absolute;
     top: -1.53968253968254vw;/*32/1260 -> 0.0253968253968254*/
     right: 0;
-    width: 65%;
+    width: 70%;
     border-right: 0 solid transparent;
     /*
     mitad 285px/1260 --> 0.2261904761904762
     */
     border-left: 15.8968253968254vw solid transparent;
-    border-bottom: 15.87301587301587vw solid lightgray;
+    border-bottom: 15.87301587301587vw solid transparent;
 }
 
 /*-------------------------------MENÚ---------------------------------------*/
