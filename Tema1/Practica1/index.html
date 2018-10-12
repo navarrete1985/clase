@@ -6,6 +6,8 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Restaurante Enigma</title>
         <link rel="stylesheet" href="./assets/styles/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script src="./assets/script/smoothScroll.js" defer></script>
     </head>
     <body>
         <div class="wrapper">
@@ -13,15 +15,15 @@
                 <div class="logo"></div>
                 <nav>
                     <ul class="link">
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">El Restaurante</a></li>
-                        <li><a href="">Chefs</a></li>
-                        <li><a href="">Carta</a></li>
+                        <li><a href="#main">Inicio</a></li>
+                        <li><a href="#restaurante">El Restaurante</a></li>
+                        <li><a href="#chefs">Chefs</a></li>
+                        <li><a href="#carta">Carta</a></li>
                         <li><a href="">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
-            <section class="main">
+            <section class="main" id="main">
                 <div id="image">
                     <div class="container">
                         <div id="figura"></div>
@@ -38,7 +40,7 @@
                     </div>
                 </div>
             </section>
-            <section class="restaurante">
+            <section class="restaurante" id="restaurante">
                 <div id="elRestaurante">
                     <div class="figura"></div>
                     <p>EL RESTAURANTE</p>
@@ -56,32 +58,34 @@
                     <p id="restaurante3"><span>Un poco de nuestra historia</span><br><br>Octubre de 2016. Justo, acaba de llegar el primer pedido de palas de cristal, que, sin duda, serán un elemento característico del futuro Enigma, el sexto proyecto ideado por Albert Adrià en elBarri (sexto, si se cuenta el desaparecido 41º). Es 13 de octubre de 2016 y, hace justo dos años, visitábamos este mismo local con aspecto de parking (es un bajo con varios pilares, en un esquinazo de la calle Sepúlveda). Hoy, se ultiman las obras de un espacio que estará rodeado y ‘cruzado’ por 470 palas de cristal, que, de arriba abajo, se convierten en paredes del laberíntico espacio que ya se adivina como Enigma. “Ahí está también el Enigma, porque el cliente entreverá el espacio”, avanza Albert Adrià.</p>
                 </div>
             </section>
-            <section class="chefs">
-                <div id="imagenChefs" class="imgCenterTop"></div>
-                <div class="wrapperChefs">
-                    <div class="fila">
-                        <div class="col1 imagen">
-                            <div id="imagen1"></div>
-                            <p class="parrafo"><span>Albert Adriá</span><br><br>Albert Adrià ha formado parte de la evolución creativa de elBulli. Con sus inicios como repostero innovador, ha evolucionado a una oferta gastronómica diversa e intercultural que la ha llevado a ganar el Premio Nacional de Gastronomía.</p>
-                        </div>
-                        <div class="col2 imagen">
-                            <div id="imagen2"></div>
-                            <p class="parrafo"><span>Oliver Peña</span><br><br>Oliver Peña es el chef de Enigma, tras haber trabajado como jefe de pastelería en elBulliHotel y como jefe de cocina en 41º Experience. "El concepto de Enigma se está construyendo todavía.".</p>
-                        </div>
+            <section class="chefs" id="chefs">
+                <div class="cabecera imgCenterTop"></div>
+                <div class="fila">
+                    <div class="col1 imagen">
+                        <div class="shape"></div>
+                        <p class="subtitulo">Albert Adriá</p>
+                        <p class="parrafo">Albert Adrià ha formado parte de la evolución creativa de elBulli. Con sus inicios como repostero innovador, ha evolucionado a una oferta gastronómica diversa e intercultural que la ha llevado a ganar el Premio Nacional de Gastronomía.</p>
                     </div>
-                    <div class="fila">
-                        <div class="col1 imagen2">
-                            <div id="imagen3"></div>
-                            <p class="parrafo"><span>Diego Grimberg</span><br><br>El cocinero lentrerriano Diego Grimberg hoy fiscaliza los detalles en los platos de "Enigma", acompañando a los hermanos Albert y Ferran Adrià, chefs españoles a quienes se les reconoce haber revolucionado la escena gastronómica mundial con su restaurante en la hermosa ciudad catalana.</p>
-                        </div>
-                        <div class="col2 imagen2">
-                            <div id="imagen4"></div>
-                            <p class="parrafo"><span>Paco Méndez</span><br><br>Paco, es un chef muy joven con una carrera muy bien cimentada y con una gran proyección a futuro, por esto y más es que a tan corta edad ha sido premiado y distinguido en varias ocasiones.</p>
-                        </div>
+                    <div class="col2 imagen">
+                        <div class="shape"></div>
+                        <p class="subtitulo"><span></span>Oliver Peña</p>
+                        <p class="parrafo">Oliver Peña es el chef de Enigma, tras haber trabajado como jefe de pastelería en elBulliHotel y como jefe de cocina en 41º Experience. "El concepto de Enigma se está construyendo todavía.".</p>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col1 imagen2">
+                        <div class="shape"></div>
+                        <p class="subtitulo">Diego Grimberg</h3>
+                        <p class="parrafo">El cocinero lentrerriano Diego Grimberg hoy fiscaliza los detalles en los platos de "Enigma", acompañando a los hermanos Albert y Ferran Adrià, chefs españoles a quienes se les reconoce haber revolucionado la escena gastronómica mundial con su restaurante en la hermosa ciudad catalana.</p>
+                    </div>
+                    <div class="col2 imagen2">
+                        <div class="shape"></div>
+                        <p class="subtitulo">Paco Méndez</p>
+                        <p class="parrafo">Paco, es un chef muy joven con una carrera muy bien cimentada y con una gran proyección a futuro, por esto y más es que a tan corta edad ha sido premiado y distinguido en varias ocasiones.</p>
                     </div>
                 </div>
             </section>
-            <section class="carta">
+            <section class="carta" id="carta">
                 <div id="imagenCarta" class="imgCenterTop"></div>
                 <div class="wrapper">
                     <div id="section1">
@@ -112,10 +116,48 @@
                     </div>
                 </div>
                 <div class="menu">
-                        <div class="menu1"></div>
-                        <div class="menu2"></div>
+                        <div class="menu1">
+                            <div>
+                                <span class="titulo">Menú Degustación 1</span><hr>
+                                <span class="subtitulo">Entrantes</span><br>
+                                - Un plato de entrada.<br>
+                                - Otro plato de entrada.<br>
+                                <span class="subtitulo">Platos</span><br>
+                                - Un plato.<br>
+                                - Otro plato.<br>
+                                - Un plato.<br>
+                                - Otro plato.<br>
+                                <span class="subtitulo">Postre</span><br>
+                                - Un postre.<br>
+                                - Otro postre.<br>
+                                <span class="precio">Precio: 120€</span>
+                            </div>
+                        </div>
+                        <div class="menu2">
+                            <div>
+                                <span class="titulo">Menú Degustación 2</span><hr>
+                                <span class="subtitulo">Entrantes</span><br>
+                                - Un plato de entrada.<br>
+                                - Otro plato de entrada.<br>
+                                <span class="subtitulo">Platos</span><br>
+                                - Un plato.<br>
+                                - Otro plato.<br>
+                                - Un plato.<br>
+                                - Otro plato.<br>
+                                <span class="subtitulo">Postre</span><br>
+                                - Un postre.<br>
+                                - Otro postre.<br>
+                                <span class="precio">Precio: 120€</span>
+                            </div>
+                        </div>
                     </div>
             </section>
+            <section id="contacto">
+
+            </section>
+            <footer>
+
+            </footer>
         </div>
     </body>
 </html>
