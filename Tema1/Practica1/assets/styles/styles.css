@@ -584,6 +584,7 @@ section.main {
 
 #section2 .titulo{
     position: relative;
+    margin-top: 40px;
     width: 90%;/*342/1260 -> 0.2714285714287514*/
     height: 1.26984126984127vw;/*0.0126984126984127*/
 }
@@ -592,7 +593,8 @@ section.main {
     position: relative;
     margin: auto;
     width: 90%;
-    height: 100%;
+    height: 19.84126984126984vw;
+    font-size: 1.11111111111111vw;/*14/1260 -> 0.0111111111111111*/
 }
 
 /*CARTA*/
@@ -648,9 +650,203 @@ section.main {
     font-weight: bold;
     margin-top: 0.95238095238095vw;/*12/1260 -> 0.0095238095238095*/
     margin-bottom: 0.95238095238095vw;/*12/1260 -> 0.0095238095238095*/
-    margin-top: 40px;
+    margin-top: 3.17460317460317vw;/*40/1260 -> 0.0317460317460317*/
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.79365079365079vw;/*10/1260 -> 0.0079365079365079*/
+    padding-bottom: 0.79365079365079vw;
     background-color: rgba(59, 61, 63, 0.205);
 }
+
+/*------------------------------------CONTACTO---------------------------------*/
+#contacto {
+    position: relative;
+    margin-top: 4.76190476190476vw;/*60/1260 -> 0.0476190476190476*/
+    padding: 2.38095238095238vw;/*30/1260 -> 0.0238095238095238*/
+    height: 42.3015873015873vw;/*533/1260 -> 0.423015873015873*/
+    background-image: url(../images/enigma-vidriera.jpg);
+}
+
+/*Fuente titulo de seccion formulario*/
+#contacto .titulo {
+    font-family: 'Monoton', serif;
+    font-size: 1.74603174603175vw;/*22/1260 -> 0.0174603174603175*/
+    color: white;
+    margin: auto;
+}
+
+#contacto .wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 61, 63, 0.801);
+}
+
+.fuenteContenido {
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    color: white;
+    font-weight: 300;
+}
+
+/*Formulario*/
+#contacto .wrapper .contacto {
+    position: absolute;
+    width: 30vw;/*378/1260 -> 0.3*/
+    height: 34.28571428571429vw;/*432/1260 -> 0.3428571428571429*/
+    margin: 2.38095238095238vw;/*30/1260 -> 0.0238095238095238*/
+}
+
+.contacto form {
+    margin-top: 2.38095238095238vw;/*30/1260 -> 0.0238095238095238*/
+}
+
+form div span {
+    display: inline-block;
+    margin-bottom: 0.47619047619048vw;/*6/1260 -> 0.0047619047619048*/
+}
+
+form div input, form div textarea {
+    width: 100%;
+    margin-bottom: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.26984126984127vw;/*16/1260 -> 0.0126984126984127*/
+}
+
+textarea {
+    resize: none;
+}
+
+.contacto button {
+    padding: 0.2968253968254vw 1.58730158730159vw 0.2968253968254vw 1.58730158730159vw; 
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    background-color: white;
+    font-family: 'KoHo', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    border-style: none;
+}
+
+/*Información del establecimiento (dirección, horario, vacaciones)*/
+#contacto .info {
+    position: absolute;
+    margin-top: 2.38095238095238vw;/*60/1260 -> 0.0476190476190476*/
+    right: 0;
+    width: 57.14285714285714vw;/*720/1260 -> 0.5714285714285714*/
+    height: 12.2222222222vw;/*154/1260 -> 0.122222222222*/
+}
+
+.info div {
+    float: left;
+    width: 18.25396825396825vw;/*230/1260 -> 0.1904761904761905*/
+    height: 100%;
+    padding-left: 1.26984126984127vw; /*16/1260 -> 0.0126984126984127*/
+}
+
+.info hr {
+    border: none;
+    float: left;
+    border-left: 0.15873015873016vw solid hsla(200, 10%, 50%,100);/*2/1260 -> 0.0015873015873016*/
+    border-color: white;
+    height: 10.2222222222vw;/*154/1260 -> 0.122222222222*/
+}
+
+/*Mapa*/
+#map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 3.96825396825397vw;/*50/1260 -> 0.0396825396825397*/
+    margin-right: 1.98412698412698vw;/*25/1260 -> 0.0198412698412698*/
+    width: 57.61904761904762vw;/*726/1260 -> 0.5761904761904762*/
+    height: 23.3968253968254vw;/*257/1260 -> 0.203968253968254*/
+}
+
+.marker {
+    background-image: url('../images/marker.svg');
+    background-size: cover;
+    width: 2.38095238095238vw; /*30/1260 -> 0.0238095238095238*/
+    height: 2.38095238095238vw; /*30/1260 -> 0.0238095238095238*/
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .mapboxgl-popup {
+    max-width: 15.87301587301587vw;/*200/1260 -> 0.1587301587301587*/
+  }
+  
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1.11111111111vw;/*14/1260 -> 0.0142857142857143*/
+  }
+/*----------------------------------FOOTER-------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 7.14285714285714vw;/*90/1260 -> 0.0714285714285714*/
+    background-color: #3B3D3F;
+}
+
+footer .idioma {
+    float: left;
+    width: 11.9047619047619vw;/*150/1260 -> 0.119047619047619*/
+    height: 100%;
+    text-align: center;
+    line-height: 7.14285714285714vw;/*90/1260 -> 0.0714285714285714*/
+}
+
+footer .spanish {
+    color: #A59C88;
+}
+
+footer ul {
+    float: left;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer li {
+    line-height: 7.14285714285714vw;/*90/1260 -> 0.0714285714285714*/
+    display: inline-block;
+}
+
+footer .social {
+    float: right;
+    width: 15.87301587301587vw;/*200/1260 -> 0.1587301587301587*/
+    height: 100%;
+    text-align: center;
+    margin-right: 1.26984126984127vw;/*16/1260 -> 0.126984126984127*/
+}
+
+.social div {
+    background-color: white;
+    height: 3.49206349206349vw;/*44/1260 -> 0.0349206349206349*/
+    border-radius: 200px;
+}
+
+.social p {
+    margin-top: 0.79365079365079vw;/*10/1260 -> 0.0079365079365079*/
+    margin-bottom: 0.79365079365079vw;
+}
+
+.social img {
+    width: 3.17460317460317vw;/*40/1260 -> 0.0317460317460317*/
+    height: 3.17460317460317vw;
+    margin-top: 0.15873015873016vw;/*2/1260 -> 0.0015873015873016*/
+}
+
+
+
+
+
+
+
+
+
+a:hover {
+    color: #A59C88;
+}
+
