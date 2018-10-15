@@ -1,0 +1,21 @@
+
+.wrapper {
+    width: 71.7857142857143vw;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.contenedor {
+    float: left;
+    width: 33%;
+    border: solid 2px;
+    background-color: cadetblue;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.contenedor::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
