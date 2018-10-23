@@ -135,6 +135,7 @@ section.history, section.about, section.more {
     float: left;
     text-align: center;
     width: 44%;
+    margin-top: 40px;
 }
 
 .about .f1 .title::before,
@@ -165,11 +166,13 @@ section.history, section.about, section.more {
 }
 
 .about .f2 .img {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     float: right;
     width: 60%;
-    height: 100%;
-    background-image: url(../images/office2.jpg);
+    height: 120%;
+    background-image: url(../images/entrada.jpg);
 }
 
 .about .f2 .content {
