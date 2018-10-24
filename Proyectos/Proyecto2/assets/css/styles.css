@@ -49,7 +49,7 @@ a:hover {
     margin-top: 80px;
 }
 
-/*--------------------------HISTORIA----------------------------------------*/
+/*--------------------------Común Secciones-----------------------------------*/
 section.history, section.about, section.more {
     position: relative;
     width: 89.58333333333333%;/*1720/1920 -> 0.8958333333333333*/
@@ -57,6 +57,7 @@ section.history, section.about, section.more {
     overflow: hidden;
 }
 
+/*--------------------------HISTORIA----------------------------------------*/
 .history .wrapper {
     position: relative;
     float: right;
@@ -85,7 +86,6 @@ section.history, section.about, section.more {
     box-sizing: border-box;
     margin-top: 52px;
     width: 100%;
-    /* z-index: -1; */
     text-align: justify;
     padding: 60px;
 }
@@ -178,4 +178,137 @@ section.history, section.about, section.more {
 .about .f2 .content div {
     padding: 30px;
     text-align: left;
+}
+
+/*-------------------------------------Nuestro Enfoque----------------------------*/
+.more {
+    position: relative;
+}
+
+.wrapperMore {
+    position: relative;
+    float: right;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapperMore .header{
+    position: relative;
+    height: 102px;
+}
+
+.wrapperMore  .title{
+    position: relative;
+    float: right;
+    right: 80px;
+    width: 150px;
+}
+
+.wrapperMore .shape {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 75px;
+    height: 55px;
+}
+
+.more .textHeader .subtitle {
+    float: right;
+    width: 45%;
+    padding: 50px 10px 50px 30px;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.more .image {
+    float: right;
+    width: 100%;
+    z-index: -1;
+    height: 700px;
+    background-image: url(../images/ne.jpg);
+}
+
+.more .textContent {
+    width: 55%;
+    z-index: 10;
+    background-color: white;
+    position: absolute;
+    top: 102px;
+    left: 0;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.more .textContent div {
+    position: relative;
+    height: 100%;
+}
+
+.more .textContent p {
+    position: relative;
+    width: 40%;
+    float: left;
+    padding: 30px;
+    text-align: justify;
+}
+
+hr{ 
+    display: inline-block;
+    float: left;
+    border: none;
+    border-left: 2px solid hsla(200, 10%, 50%,100);
+    height: 500px;
+    margin-top: 40px;
+    width: 1px;       
+}
+
+/*-------------------------------------------Footer-------------------------------*/
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: #808795;
+    position: relative;
+}
+
+footer ul {
+    padding-top: calc(50% - (22px / 2));
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 50px;
+}
+
+footer li {
+    width: 12%;
+    color: #E0DBD2;
+}
+
+footer a {
+    color: #E0DBD2;
+}
+
+footer a:visited {
+    color: #E0DBD2;
+}
+
+footer p {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 30px;
+    left: 15px;
+    color: #E0DBD2;
+}
+
+footer div div {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(224, 219, 210, 0.24);
+    position: absolute;
+    right: 60px;
+    top: 40px;
 }
