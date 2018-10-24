@@ -54,13 +54,22 @@ section.history, section.about, section.more {
     position: relative;
     width: 89.58333333333333%;/*1720/1920 -> 0.8958333333333333*/
     margin: 8.1666666666667vw auto;
+    min-height: 300px;
+    overflow: auto;
+}
+
+.history .wrapper {
+    position: relative;
+    float: right;
+    width: 55%;
+    overflow: hidden;
 }
 
 .history .img {
+    position: absolute;
     background-image: url(../images/office.jpg);
     width: 45%;
-    box-sizing: border-box;
-    position: absolute;
+    height: 100%;
     left: 0;
     bottom: 0;
 }
@@ -74,32 +83,28 @@ section.history, section.about, section.more {
 }
 
 .history .content {
-    position: absolute;
     box-sizing: border-box;
-    top: 52px;
-    right: 0;
-    width: 55%;
-    z-index: -1;
-    height: calc(100% - 52px );
+    margin-top: 52px;
+    width: 100%;
+    /* z-index: -1; */
     text-align: justify;
-    padding: 30px;
-    vertical-align: middle;
+    padding: 40px;
 }
 
-.history::after {
+/* .history::after {
     content: '';
     display: block;
     padding-bottom: 29%;
 }
-
-.history .img::after {
+*/
+/* .history .img::after {
     content: '';
     display: block;
     padding-bottom: 65%;
-}
+} */
 
 /*---------------------------------Sobre Nosotros------------------------------*/
-.about::after {
+/* .about::after {
     content: '';
     display: block;
     padding-bottom: 40%;
@@ -188,4 +193,4 @@ section.history, section.about, section.more {
 .about .f2 .content div {
     padding: 30px;
     text-align: left;
-}
+} */
