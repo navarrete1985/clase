@@ -324,3 +324,10 @@ footer div div {
     right: 60px;
     top: 40px;
 }
+
+
+
+@media screen and (max-width: 1366px) {
+    .wrapper {
+    }
+}
