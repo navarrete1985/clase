@@ -85,7 +85,7 @@ section.history, section.about, section.more {
 
 .history .content {
     box-sizing: border-box;
-    margin-top: 52px;
+    margin-top: 45px;
     width: 100%;
     text-align: justify;
     padding: 60px;
@@ -127,18 +127,18 @@ section.history, section.about, section.more {
     float: right;
     text-align: center;
     width: 50%;
-    margin-top: 8%;
+    margin-top: 9%;
 }
 
 .about .f1 .title::before,
 .about .f1 .title::after {
-    background-color: #000;
+    background-color: #3C4C5D;
     content: "";
     display: inline-block;
     height: 2px;
     position: relative;
     vertical-align: middle;
-    width: 18%;
+    width: 3vw;
 }
 
 .about .f1 .title::before {
@@ -202,7 +202,7 @@ section.history, section.about, section.more {
     position: relative;
     float: right;
     right: 80px;
-    width: 150px;
+    width: 210px;
 }
 
 .wrapperMore .shape {
@@ -225,7 +225,7 @@ section.history, section.about, section.more {
     float: right;
     width: 100%;
     z-index: -1;
-    height: 700px;
+    height: 800px;
     background-image: url(../images/ne.jpg);
 }
 
@@ -245,22 +245,14 @@ section.history, section.about, section.more {
     height: 100%;
 }
 
-/* .more .textContent p {
-    position: relative;
-    width: 40%;
-    float: left;
-    padding: 30px;
-    text-align: justify;
-} */
-
 .more .textContent p {
     position: relative;
     width: 100%;
     column-count: 2;
     text-align: justify;
     column-rule-style: solid;
-    column-rule-width: 2px;
-    column-gap: 80px;
+    column-rule-width: 1px;
+    column-gap: 60px;
     column-rule-color: #3C4C5D;
 }
 
@@ -328,6 +320,135 @@ footer div div {
 
 
 @media screen and (max-width: 1366px) {
-    .wrapper {
+    /*-------------------------HISTORIA----------------------------------*/
+    .history .wrapper {
+        width: 100%;
     }
+
+    .history .content {
+        border-bottom: 0px;
+    }
+
+    .history .img {
+        position: relative;
+        width: 90%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .history .container {
+        float: left;
+        padding-bottom: 40px;
+        width: 99.9%;
+        border-right: 1px solid #121333;
+        border-bottom: 1px solid #121333;
+    }
+
+    .history .title {
+        width: 50%;
+    }
+
+    .history .img::before {
+        content: '';
+        display: block;
+        padding-bottom: 70%;
+    }
+
+    /*-------------------------------SOBRE NOSOTROS------------------------------*/
+    
+    /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
+    .more .textContent p {
+        column-count: 1;
+    }
+
+    .more .textContent {
+        width: 45%;
+    }
+
+    .more .textHeader .subtitle {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    /*---------------------------------HISTORIA----------------------------------*/
+    .history .wrapper {
+        width: 100%;
+    }
+
+    .history .wrapper .content {
+        border-right: none;
+    }
+
+    section.history {
+        margin: 0;
+        width: 100%;
+    }
+
+    .history .img {
+        width: 100%;
+    }
+
+    .history .container {
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .history .title {
+        width: 50%;
+    }
+
+    /*-------------------------------SOBRE NOSOTROS------------------------------*/
+    
+
+    /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
+    .more .textHeader .subtitle {
+        border-top: none;
+        border-left: none;
+    }
+
+    .wrapperMore .shape {
+        border-right: none;
+        border-top: none;
+        width: 0;
+    }
+
+    .wrapperMore .title {
+        text-align: center;
+        width: 50%;
+        right: 0;
+        border-bottom: 1px solid #121333;
+    }
+
+    section.more {
+        width: 100%;
+    }
+
+    .more .textHeader .subtitle {
+        width: 100%;
+    }
+
+    .more .textContent {
+        width: 100%;
+        position: relative;
+        float: left;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .more .image {
+        height: 100%;
+    }
+
+    .more .image::before {
+        content: '';
+        display: block;
+        padding-bottom: 50%;
+    }
+    
 }
