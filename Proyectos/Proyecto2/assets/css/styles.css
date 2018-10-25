@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     background-image: url(../images/main.jpg);
+    margin-bottom: 9vw;
 }
 
 nav ul{
@@ -53,7 +54,7 @@ a:hover {
 section.history, section.about, section.more {
     position: relative;
     width: 89.58333333333333%;/*1720/1920 -> 0.8958333333333333*/
-    margin: 8.1666666666667vw auto;
+    margin: 3.1666666666667vw auto;
     overflow: hidden;
 }
 
@@ -244,12 +245,23 @@ section.history, section.about, section.more {
     height: 100%;
 }
 
-.more .textContent p {
+/* .more .textContent p {
     position: relative;
     width: 40%;
     float: left;
     padding: 30px;
     text-align: justify;
+} */
+
+.more .textContent p {
+    position: relative;
+    width: 100%;
+    column-count: 2;
+    text-align: justify;
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    column-gap: 80px;
+    column-rule-color: #3C4C5D;
 }
 
 hr{ 
