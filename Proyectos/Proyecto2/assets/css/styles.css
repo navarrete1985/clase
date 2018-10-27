@@ -15,40 +15,33 @@ nav ul{
     position: absolute;
     display: inline-block;
     text-align: center;
-    top: 50px;
+    /* top: 50px; */
+}
+
+nav div {
+    width: 100%;
+    height: 74px;
+    background-color: #81869360;
 }
 
 li{
     text-decoration: none;
     display: inline-block;
-    width: 7%;
+    margin: 22px;
     color: #121333;
 }
 
-a:link {
-    text-decoration:none;
-    color:#121333;
-} 
-
-a:visited {
-    text-decoration:none;
-    color:#121333;
-} 
-
-a:hover {
-    text-decoration:none;
-    color:#818693;
-} 
-
 .mainpic{ /*logotipo del main*/
     position: absolute;
-    bottom: 15%;/*190/1920 -> 0.098958333333333*/
+    bottom: 9.8958333333333vw;/*190/1920 -> 0.098958333333333*/
     left: 3.645833333333vw;/*70/1920 -> 0.03645833333333*/
     width: 29.375vw;/*564/1920 -> 0.29375*/
     height: 11.9270833333333vw;/*229/1920 -> 0.119270833333333*/
-    min-width: 270px;
-    min-height: 110px;
-    background-image: url(../images/Logo.png);
+    min-width: 300px;
+    min-height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/Logo2.png);
     margin-top: 80px;
 }
 
@@ -356,6 +349,8 @@ footer div div {
         padding-bottom: 70%;
     }
 
+    /*-------------------------------SOBRE NOSOTROS------------------------------*/
+    
     /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
     .more .textContent p {
         column-count: 1;
@@ -370,55 +365,6 @@ footer div div {
     }
 }
 
-@media screen and (max-width: 1100px) {
-
-    /*-------------------------------SOBRE NOSOTROS------------------------------*/
-    .about .f1 .title {
-        text-align: center;
-        width: 100%;
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .about::after {
-        content: none;
-        display: none;
-        padding-bottom: 0%;
-    }
-
-    .about .f1, .about .f2 {
-        position: relative;
-    }
-
-    .about .f1 .img, .about .f2 .img {
-        position: relative;
-        margin-top: 24px;
-        margin-bottom: 24px;
-        width: 100%;
-    }
-
-    .about .f1 .img::before, .about .f2 .img::before {
-        content: '';
-        display: block;
-        padding-bottom: 50%;
-    }
-
-    .about .f2 .content {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        margin: 24px auto;
-        border-bottom: none;
-        border-left: none;
-    }
-    
-    .about .f2 .content div {
-        margin: 24px auto;
-        padding: 0px;
-    }
-
-}
-
 
 @media screen and (max-width: 750px) {
     
@@ -429,10 +375,6 @@ footer div div {
 
     .history .wrapper .content {
         border-right: none;
-    }
-
-    .history .content {
-        padding: 8px;
     }
 
     section.history {
@@ -453,6 +395,9 @@ footer div div {
     .history .title {
         width: 50%;
     }
+
+    /*-------------------------------SOBRE NOSOTROS------------------------------*/
+    
 
     /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
     .more .textHeader .subtitle {
@@ -499,10 +444,6 @@ footer div div {
         content: '';
         display: block;
         padding-bottom: 50%;
-    }
-    
-    @media screen and (max-width: 750px) {
-
     }
     
 }

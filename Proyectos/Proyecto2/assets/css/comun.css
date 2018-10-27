@@ -189,6 +189,27 @@ html,body{
     color: #314B5D;
 }
 
+.text-menu {
+    font-family: 'bankgothic_lt_btlight', sans-serif;
+    font-size: 1.8em;
+    color: #121333;
+}
+
+a:link {
+    text-decoration:none;
+    color:#121333;
+} 
+
+a:visited {
+    text-decoration:none;
+    color:#121333;
+} 
+
+a:hover {
+    text-decoration:none;
+    color:#818693;
+} 
+
 /*Propiedades para bordes*/
 .bt {
     border-top: 1px solid #121333;
