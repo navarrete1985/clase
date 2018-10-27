@@ -365,6 +365,53 @@ footer div div {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    /*-------------------------------SOBRE NOSOTROS------------------------------*/
+    .about .f1 .title {
+       text-align: center;
+       width: 100%;
+       margin-top: 24px;
+       margin-bottom: 24px;
+    }
+
+    .about::after {
+       content: none;
+       display: none;
+       padding-bottom: 0%;
+    }
+
+    .about .f1, .about .f2 {
+       position: relative;
+    }
+
+    .about .f1 .img, .about .f2 .img {
+       position: relative;
+       margin-top: 24px;
+       margin-bottom: 24px;
+       width: 100%;
+    }
+
+    .about .f1 .img::before, .about .f2 .img::before {
+       content: '';
+       display: block;
+       padding-bottom: 50%;
+    }
+
+    .about .f2 .content {
+       position: relative;
+       text-align: center;
+       width: 100%;
+       margin: 24px auto;
+       border-bottom: none;
+       border-left: none;
+    }
+   
+    .about .f2 .content div {
+       margin: 24px auto;
+       padding: 0px;
+    }
+}
+
 
 @media screen and (max-width: 750px) {
     
@@ -375,6 +422,10 @@ footer div div {
 
     .history .wrapper .content {
         border-right: none;
+    }
+
+    .history .content {
+        padding: 8px;
     }
 
     section.history {
