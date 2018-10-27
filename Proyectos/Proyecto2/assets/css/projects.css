@@ -1,0 +1,233 @@
+/*-----------------------------Main------------------------------------*/
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#main nav {
+    position: relative;
+    height: 8%;
+}
+
+#main nav ul{
+    padding-top: calc(50% - (22px / 2));
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    /* top: 50px; */
+}
+
+#main li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 22px;
+    color: #121333;
+}
+
+#main .mainpic{ /*logotipo del main*/
+    position: absolute;
+    top: 16px;
+    left: 4vw;
+    width: 150px;/*564/1920 -> 0.29375*/
+    height: 50px;/*229/1920 -> 0.119270833333333*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/Logo2.png);
+}
+
+#main .wrapper {
+    width: 90%;
+}
+
+#main .img {
+    position: relative;
+    float: left;
+    background-image: url(../images/mainTrabajos.jpg);
+    width: 60%;
+    height: 92%;
+    z-index: -1;
+}
+
+#main .section {
+    float: right;
+    width: 40%;
+    height: 92%;
+    position: relative;
+}
+
+#main .section .header {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+#main .section .title {
+    position: absolute;
+    left: calc(50% - 118.695px);
+    bottom: 0;
+    margin: 0 auto;
+}
+
+#main .section .line {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+/*-----------------------------------Proyectos-----------------------*/
+
+section.projects {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.prada {
+    display: inline-block;
+    padding-top: 26px;
+}
+
+.prada .content {
+    float: left;
+    width: 38%;
+}
+
+.prada .content .title {
+    width: max-content;
+    padding: 16px 0px 0px 24px;
+}
+
+.prada .content .description {
+    text-align: justify;
+    padding: 24px 0px 16px 24px;
+}
+
+.prada .imgWrapper {
+    width: 67%;
+    float: left;
+}
+
+.prada .img1 {
+    width: 62%;
+    float: left;
+    box-sizing: border-box;
+    background-image: url(../images/fp1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.prada .img1::after {
+    content: '';
+    display: block;
+    padding-bottom: 40%;
+}
+
+
+.prada .img2, .prada .img3, .prada .img4 {
+    width: 31%;
+    float: left;
+    margin: 30px 1%;
+    box-sizing: border-box;
+}
+
+.prada .img2::after, .prada .img3::after, .prada .img4::after {
+    content: '';
+    display: block;
+    padding-bottom: 90%;
+}
+
+.prada .img2 {
+    background-image: url(../images/fp2.jpg);
+}
+
+.prada .img3 {
+    background-image: url(../images/fp3.jpg);
+}
+
+.prada .img4 {
+    background-image: url(../images/fp4.jpg);
+}
+
+.interlace {
+    position: relative;
+    width: 100%;
+    margin-top: -5px;
+    padding-top: 26px;
+    padding-bottom: 60px;
+    display: inline-block;
+}
+
+.interlace .content {
+    float: right;
+    width: 38%;
+}
+
+.interlace .content .title {
+    float: right;
+    width: max-content;
+    padding: 16px 24px 0px 0px;
+}
+
+.interlace .content .description {
+    display: inline-block;
+    padding: 24px 24px 16px 0px;
+    text-align: justify;
+}
+
+.interlace .imgWrapper {
+    width: 67%;
+    float: right;
+}
+
+.interlace .img1 {
+    width: 62%;
+    float: right;
+    box-sizing: border-box;
+    background-image: url(../images/in1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.interlace .img1::after {
+    content: '';
+    display: block;
+    padding-bottom: 40%;
+}
+
+
+.interlace .img2, .interlace .img3, .interlace .img4 {
+    width: 31%;
+    float: left;
+    margin: 30px 1%;
+    box-sizing: border-box;
+}
+
+.interlace .img2::after, .interlace .img3::after, .interlace .img4::after {
+    content: '';
+    display: block;
+    padding-bottom: 90%;
+}
+
+.interlace .img2 {
+    background-image: url(../images/in2.jpg);
+}
+
+.interlace .img3 {
+    background-image: url(../images/in3.jpg);
+}
+
+.interlace .img4 {
+    background-image: url(../images/in4.jpg);
+}
+
+
+/*--------------------------------Galeria----------------------------*/
+
+

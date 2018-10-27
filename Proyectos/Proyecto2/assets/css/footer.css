@@ -1,0 +1,52 @@
+/*-------------------------------------------Footer-------------------------------*/
+footer {
+    height: 120px;
+    width: 100%;
+    background-color: #808795;
+    position: relative;
+}
+
+footer ul {
+    padding-top: calc(50% - (22px / 2));
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 50px;
+}
+
+footer li {
+    width: 12%;
+    color: #E0DBD2;
+}
+
+footer a {
+    color: #E0DBD2;
+}
+
+footer a:visited {
+    color: #E0DBD2;
+}
+
+footer p {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 30px;
+    left: 15px;
+    color: #E0DBD2;
+}
+
+footer div div {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(224, 219, 210, 0.24);
+    position: absolute;
+    right: 60px;
+    top: 40px;
+}
+
+
