@@ -326,3 +326,53 @@ section.gallery .images {
     align-items: center;
     justify-content: center;
 }
+
+/*-------------------------------MEDIA QUERIES-------------------------*/
+@media screen and (max-width: 1366px) {
+    /*----------------------Proyectos-----------------*/
+    .prada .content, .interlace .content {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .prada .img1, .prada .img2, .prada .img3, .prada .img4, .interlace .img1, .interlace .img2, .interlace .img3, .interlace .img4 {
+        width: 45%;
+        margin: 30px 2.5%;
+    }
+
+    .prada .img1::after, .prada .img2::after, .prada .img3::after, .prada .img4::after {
+        padding-bottom: 60%;
+    }
+    
+    .interlace .img1 {
+        background-size: cover;
+    }
+
+    .interlace .img1::after, .interlace .img2::after, .interlace .img3::after, .interlace .img4::after {
+        padding-bottom: 60%;
+    }
+
+    /*----------------------------Galeria-----------------------------*/
+    section.gallery .images {
+        margin-top: 42px;
+    }
+
+    .images .img {
+        width: 45%;
+        margin: 32px 2.5%;
+    }
+
+    .images .img9 {
+        margin-left: 30%;
+    }
+
+    .images .img::after {
+        padding-bottom: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+
+
+}
