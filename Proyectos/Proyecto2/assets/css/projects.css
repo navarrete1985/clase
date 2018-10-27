@@ -232,6 +232,7 @@ section.projects {
 section.gallery {
     position: relative;
     margin: 0 auto;
+    margin-bottom: 60px;
     width: 90%;
 }
 
@@ -259,13 +260,9 @@ section.gallery .images {
     width: 31%;
     margin: 30px 1%;
     box-sizing: border-box;
+    text-align: center;
     float: left;
-}
-
-.images .img .text-subtitle {
     position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .images .img::after {
@@ -313,7 +310,19 @@ section.gallery .images {
     background-image: url(../images/img9.jpg);
 }
 
-.images .img1 div {
+.images .img div {
+    position: absolute;
     width: 100%;
     height: 100%;
+    background-color: rgba(104, 111, 129, 0.719);
+    color: #DEDAD1;
+    display: none;
+}
+
+#imagen1:hover #contenido1, #imagen2:hover #contenido2, #imagen3:hover #contenido3,
+#imagen4:hover #contenido4, #imagen5:hover #contenido5, #imagen6:hover #contenido6,
+#imagen7:hover #contenido7, #imagen8:hover #contenido8, #imagen9:hover #contenido9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
