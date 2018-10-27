@@ -369,9 +369,9 @@ footer div div {
     /*-------------------------------SOBRE NOSOTROS------------------------------*/
     .about .f1 .title {
        text-align: center;
-       width: 100%;
-       margin-top: 24px;
-       margin-bottom: 24px;
+       width: 80%;
+       margin: 24px auto;
+       float: none;
     }
 
     .about::after {
@@ -382,6 +382,11 @@ footer div div {
 
     .about .f1, .about .f2 {
        position: relative;
+    }
+
+    section.about {
+        margin: 0;
+        width: 100%;
     }
 
     .about .f1 .img, .about .f2 .img {
@@ -399,16 +404,16 @@ footer div div {
 
     .about .f2 .content {
        position: relative;
+       box-sizing: border-box;
        text-align: center;
        width: 100%;
-       margin: 24px auto;
+       padding: 8px;
        border-bottom: none;
        border-left: none;
     }
    
     .about .f2 .content div {
-       margin: 24px auto;
-       padding: 0px;
+       text-align: justify;
     }
 }
 
@@ -445,10 +450,17 @@ footer div div {
 
     .history .title {
         width: 50%;
+        font-size: 2em;
     }
 
-    /*-------------------------------SOBRE NOSOTROS------------------------------*/
-    
+    .about .f1 .title {
+        font-size: 2em;
+     }
+
+     .about .f2 .content div {
+        margin: 24px auto;
+        padding: 0px;
+     }
 
     /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
     .more .textHeader .subtitle {
@@ -462,8 +474,17 @@ footer div div {
         width: 0;
     }
 
+    .wrapperMore .header {
+        height: 100%;
+    }
+
+    .more .textHeader .subtitle {
+        padding: 16px 8px;
+    }
+
     .wrapperMore .title {
         text-align: center;
+        font-size: 2em;
         width: 50%;
         right: 0;
         border-bottom: 1px solid #121333;
@@ -483,18 +504,21 @@ footer div div {
         float: left;
         top: 0;
         left: 0;
-        padding: 30px;
+        padding: 8px;
         box-sizing: border-box;
     }
 
     .more .image {
-        height: 100%;
+        position: relative;
+        height: auto;
+        width: 100%;
     }
 
     .more .image::before {
         content: '';
         display: block;
-        padding-bottom: 50%;
+        padding-bottom: 60%;
+        background-position: right center;
     }
     
 }
