@@ -372,7 +372,82 @@ section.gallery .images {
 }
 
 @media screen and (max-width: 800px) {
+    /*------------------------------Proyectos---------------------------*/
+    #main .section .title {
+        border: none;
+    }
 
+    #main .section .line {
+        border: none;
+    }
 
+    #main .img {
+        border: none;
+    }
 
+    .prada {
+        border: none;
+    }
+
+    section.projects {
+        width: 100%;
+    }
+
+    .prada .content .description {
+        padding: 24px 16px;
+    }
+
+    .prada .img4, .interlace .img4{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .prada .img2, .prada .img3, .prada .img1, .interlace .img2, .interlace .img3, .interlace .img1 {
+        display: none;
+    } 
+
+    .interlace {
+        padding-bottom: 32px;
+    }
+
+    /*-------------------------------Galería--------------------------*/
+    section.gallery{
+        width: 100%;
+    }
+
+    section.gallery .images {
+        margin-top: 0;
+    }
+    
+    section.gallery .frame {
+        height: 0;
+        border: none;
+    }
+
+    section.gallery .title {
+        border: none;
+    }
+
+    section.gallery .title::before {
+        right: 0.5em;
+    }
+
+    section.gallery .title::after {
+        left: 0.5em;
+    }
+
+    section.gallery .title::after, section.gallery .title::before {
+        background-color: #3C4C5D;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        width: 32vw;
+    }
+
+    .images .img {
+        width: 75%;
+        margin: 16px 12.5%;
+    }
 }
