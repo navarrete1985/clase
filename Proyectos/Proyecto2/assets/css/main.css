@@ -415,6 +415,10 @@ hr{
         border-left: none;
     }
 
+    .about .f1 .img div {
+        font-size: 1.25em;
+    }
+
     .wrapperMore .shape {
         border-right: none;
         border-top: none;
@@ -443,6 +447,7 @@ hr{
 
     .more .textHeader .subtitle {
         width: 100%;
+        font-size: 1.25em;
     }
 
     .more .textContent {

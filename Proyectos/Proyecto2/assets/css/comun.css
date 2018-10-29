@@ -169,7 +169,6 @@ html,body{
     height: 100%;
     margin:0;
     padding:0;
-    overflow-x: hidden;
 }
 
 /*Clases genéricas*/
@@ -196,7 +195,7 @@ html,body{
 }
 
 .text-title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Julius Sans One', sans-serif;
     font-size: 2.625em;
     color: #808795;
 }
