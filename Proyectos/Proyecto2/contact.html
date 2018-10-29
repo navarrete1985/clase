@@ -6,24 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto</title>
     <link rel="stylesheet" href="./assets/css/comun.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
     <link rel="stylesheet" href="./assets/css/nav.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
 </head>
 <body>
     <div class="wrapper">
+        <nav>
+            <div class="mainpic image-lb"></div>
+            <div>
+                <ul class="link">
+                    <li><a href="./index.html" class="text-menu">Inicio</a></li>
+                    <li><a href="./projects.html" class="text-menu">Proyectos</a></li>
+                    <li><a href="./contact.html" class="text-menu">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
         <section class="contact">
-            <nav>
-                <div class="mainpic image-lb"></div>
-                <div>
-                    <ul class="link">
-                        <li><a href="./index.html" class="text-menu">Inicio</a></li>
-                        <li><a href="./projects.html" class="text-menu">Proyectos</a></li>
-                        <li><a href="./contact.html" class="text-menu">Contacto</a></li>
-                    </ul>
+            <div class="titleContact text-title">CONTACTO</div>
+            <div class="wrapper">
+                <div class="form">
+                    <form action="" method="post">
+                        <span class="text-normal">Nombre</span><br>
+                        <input type="text" name="name" id="name" class="text-normal"><br>
+                        <span class="text-normal">Sociedad</span><br>
+                        <input class="text-normal" type="text" name="enterprise" id="enterprise"><br>
+                        <span class="text-normal">Email</span><br>
+                        <input class="text-normal" type="email" name="email" id="email"><br>
+                        <span class="text-normal">Mensaje/Consulta</span><br>
+                        <textarea class="text-normal" name="query" id="query" cols="30" rows="10"></textarea>
+                        <input class="text-normal" type="submit" name="send" id="send" value="Enviar">
+                    </form>
+                    <div class="border1 bt br bl"></div>
+                    <div class="border2 bb br bl"></div>
                 </div>
-            </nav>
+                <div class="info">
+                    <div class="title text-subtitle">Contacta con nosotros</div>
+                    <div class="content text-normal">Estamos a su disposición ante cualquier duda o consulta que quiera realizarnos.<br>
+                        En caso de que quiera hacernos llegar cualquier petición o consulta, rellene el siguiente formulario, y en la mayor
+                        brevedad posible nos pondremos en contacto con usted. <br> 
+                    </div><hr>
+                    <div class="title text-subtitle">Encuéntranos en</div>
+                    <div class="content text-normal">Heer Bokelweg 149 <br>
+                            3032 AD, Rotterdam <br>
+                            Netherlands <br>
+                            
+                            Teléfono <br>
+                            T: +31 10 243 82 00 <br>
+                            F: +31 10 243 82 02 <br>
+                            
+                            Email <br>
+                            office@oma.com
+                    </div>
+                </div>
+            </div>
         </section>
+        <div style="width: 100%">
+                <iframe id="map" width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=es&coord=51.928513, 4.480530&q=Heer%20Bokelweg%20149%2C%203032%20AD%20Rotterdam%2C%20Pa%C3%ADses%20Bajos+(OMA%20Arquitectos)&ie=UTF8&t=p&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    <a href="https://www.mapsdirections.info/crear-un-mapa-de-google/">Crear Mapa Google</a> by <a href="https://www.mapsdirections.info/">Mapa España</a>
+                </iframe>
+            </div><br />
         <footer>
             <ul class="link">
                 <li><a href="#" class="text-normal">Política de privacidad</a></li>
