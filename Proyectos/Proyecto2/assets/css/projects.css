@@ -65,6 +65,7 @@ section.projects {
 
 .prada .content .title {
     width: max-content;
+    width: -moz-fit-content;
     padding: 16px 0px 0px 24px;
 }
 
@@ -137,6 +138,7 @@ section.projects {
 .interlace .content .title {
     float: right;
     width: max-content;
+    width: -moz-fit-content;
     padding: 16px 24px 0px 0px;
 }
 
@@ -212,6 +214,8 @@ section.gallery .frame {
 section.gallery .title {
     position: relative;
     width: max-content;
+    width: -moz-fit-content;
+    padding-top: 16px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -359,7 +363,7 @@ section.gallery .images {
         width: 100%;
     }
 
-    .prada .content .description {
+    .prada .content .description, .interlace .content .description {
         padding: 24px 16px;
     }
 
