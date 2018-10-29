@@ -48,7 +48,8 @@ section {
     top: 0;
     left: 0;
     width: 98%;
-    height: 56%;   
+    height: 56%;
+    z-index: -10;
 }
 
 .contact .wrapper .form .border2 {
@@ -56,7 +57,8 @@ section {
     bottom: 0;
     right: 0;
     width: 98%;
-    height: 56%;   
+    height: 56%;
+    z-index: -10;
 }
 
 .contact .info {
@@ -89,8 +91,28 @@ input[type='text'], input[type='email'], textarea {
     border: 1px solid #818693;
 }
 
+textarea {
+    resize: none;
+}
+
 iframe {
     margin-bottom: -23px;
 }
+
+input[type='submit'] {
+    float: right;
+    z-index: 10;
+    padding: 4px 8px 4px 8px;
+    border: 1px solid #818693;
+    background-color: white;
+}
+
+#send:hover {
+    background-color: rgba(222, 218, 209, 0.452);
+    border: 1px solid #81869344;
+    color: #818693;
+}
+
+
 
 
