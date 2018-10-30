@@ -139,4 +139,17 @@ footer .header a {
     background-size: cover;
 }
 
+@media screen and (max-width: 850px){
+    footer .col {
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 130px;
+    }
 
+    footer .wrapper {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
