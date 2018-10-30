@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oma Arquitectos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="./assets/js/smoothScroll.js" defer></script>
     <link rel="stylesheet" href="./assets/css/comun.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="start">
         <section id="main" class="image-lb">
             <nav>
                 <div>
                     <ul class="link">
-                        <li><a href="#" class="text-menu">Inicio</a></li>
+                        <li><a href="./index.html" class="text-menu">Inicio</a></li>
                         <li><a href="./projects.html" class="text-menu">Proyectos</a></li>
-                        <li><a href="#" class="text-menu">Contacto</a></li>
+                        <li><a href="./contact.html" class="text-menu">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,14 +81,40 @@
             </div>
         </section>
         <footer>
-            <ul class="link">
-                <li><a href="#" class="text-normal">Política de privacidad</a></li>
-                <li><a href="#" class="text-normal">Política de Cookies</a></li>
-            </ul>
-            <div>
-                <p class="text-normal">&copy;2018 MOA Arquitectos</p>
-                <div></div>
+            <div class="header">
+                <div class="ico"></div>
+                <div class="up"><a href="#start"></a></div>
             </div>
+            <div class="wrapper">
+                <div class="col">
+                    <div class="title text-normal bb">Navegación</div>
+                    <ul>
+                        <li><a href="#start" class="text-normal">Inicio</a></li>
+                        <li><a href="./projects.html" class="text-normal">Proyectos</a></li>
+                        <li><a href="./contact.html" class="text-normal">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="title text-normal bb">Contacto</div>
+                    <ul>
+                        <li><a href="https://gmail.com" class="text-normal" target="_blank">office@oma.com</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="title text-normal bb">Privacidad</div>
+                    <ul>
+                        <li><a href="#" class="text-normal">Política de privacidad</a></li>
+                        <li><a href="#" class="text-normal">Política de Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col social">
+                    <div class="title text-normal bb">Social</div>
+                    <a href="https://es-es.facebook.com/OMAAMO/" id="facebook" target="_blank"></a>
+                    <a href="https://twitter.com/eslamoma" id="twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/oma.eu/?hl=es" id="instagram" target="_blank"></a>
+                </div>
+            </div>
+            <div class="text-normal copy">&copy;2018 MOA Arquitectos</div>
         </footer>
     </div>
 </body>

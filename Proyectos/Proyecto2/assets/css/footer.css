@@ -127,3 +127,16 @@ footer a:hover, footer a:focus {
     width: 35px;
     height: 35px;
 }
+
+footer .header a {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    position: absolute;
+    background-image: url(../images/up-arrow\ \(1\).svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
