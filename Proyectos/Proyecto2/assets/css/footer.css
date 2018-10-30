@@ -1,25 +1,22 @@
 /*-------------------------------------------Footer-------------------------------*/
 footer {
-    height: 120px;
     width: 100%;
     background-color: #808795;
     position: relative;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
 footer ul {
-    padding-top: calc(50% - (22px / 2));
+    /* padding-top: calc(50% - (22px / 2)); */
     width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    top: 50px;
 }
 
 footer li {
-    width: 12%;
+    margin-right: 16px;
     color: #E0DBD2;
 }
 
@@ -40,13 +37,93 @@ footer p {
     color: #E0DBD2;
 }
 
-footer div div {
+footer .header {
+    margin-top: 32px;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 16px;
+    width: 100%;
+    height: 80px;
+}
+
+footer .up {
     width: 40px;
     height: 40px;
     background-color: rgba(224, 219, 210, 0.24);
     position: absolute;
     right: 60px;
-    top: 40px;
+    top: 27px;
+}
+
+footer .ico {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/Logo3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer .wrapper {
+    width: 90%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 40px 0 40px 10%;
+}
+
+footer .col {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width: 25%;
 }
 
 
+footer .col .title {
+    margin-bottom: 16px;
+    width: max-content;
+}
+
+footer .copy {
+    position: relative;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+footer .social a {
+    float: left;
+    margin: 0px 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer a:link {
+    text-decoration: none;
+    color: #E0DBD2;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: none;
+    color: rgba(224, 219, 210, 0.445);
+}
+
+#facebook {
+    background-image: url(../images/facebook-logo-in-circular-button-outlined-social-symbol.svg);
+}
+
+#twitter {
+    background-image: url(../images/twitter-circular-button.svg);
+}
+
+#instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+#facebook:hover, #facebook:focus, #twitter:hover, #twitter:focus, #instagram:hover, #instagram:focus {
+    margin: 0;
+    width: 35px;
+    height: 35px;
+}
