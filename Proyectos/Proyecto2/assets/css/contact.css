@@ -69,7 +69,7 @@ section {
     float: right;
     width: 30%;
     height: 100%;
-    background-color: #DEDAD1;
+    background-color: rgba(222, 218, 209, 0.541);
 }
 
 .contact .info .title {
@@ -86,7 +86,7 @@ input[type='text'], input[type='email'], textarea {
     box-sizing: border-box;
     width: 100%;
     margin: 4px 0px 16px 0px;
-    background-color: #DEDAD1;
+    background-color: rgba(222, 218, 209, 0.541);
     padding: 2px 8px;
     border: 1px solid #818693;
 }
