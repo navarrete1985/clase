@@ -113,6 +113,50 @@ input[type='submit'] {
     color: #818693;
 }
 
+@media screen and (max-width: 1155px) {
+    .contact .wrapper .form {
+        width: 100%;
+    }
+
+    .contact .info {
+        margin-bottom: 32px;
+        margin-top: 72px;
+        position: relative;
+        width: 100%;
+    }
+
+    .contact .info .title {
+        text-align: left;
+    }
+
+    .contact .info .content {
+        margin: 24px 16px 24px 16px;
+        text-align: left;
+    }
+
+    hr {
+        width: 95%
+    }
+}
 
 
+@media screen and (max-width: 750px) {
+    section {
+        width: auto;
+        margin: 120px 16px 40px 16px;
+    }
+
+    .contact .wrapper .form {
+        padding: 0;
+    }
+
+    .contact .wrapper .form .border1, .contact .wrapper .form .border2 {
+        border: none;
+    }
+
+    input[type='submit'] {
+        float: left;
+    }
+
+}
 
