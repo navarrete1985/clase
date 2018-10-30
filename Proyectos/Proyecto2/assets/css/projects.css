@@ -23,6 +23,7 @@
     width: 40%;
     height: 92%;
     position: relative;
+    z-index: -10;
 }
 
 #main .section .header {

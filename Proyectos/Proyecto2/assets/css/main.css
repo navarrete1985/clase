@@ -487,3 +487,29 @@ hr{
     }
     
 }
+
+@media screen and (max-width: 670px) {
+    nav ul .item {
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+
+    nav div {
+        height: 65px;
+    } 
+}
+
+@media screen and (max-width: 430px) {
+    nav ul .item {
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    nav div {
+        height: 60px;
+    }
+
+    nav li {
+        margin: 22px 8px 22px 8px;
+    }
+}

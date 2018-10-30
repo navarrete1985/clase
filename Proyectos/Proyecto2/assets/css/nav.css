@@ -32,3 +32,49 @@ nav .mainpic{ /*logotipo del main*/
     background-repeat: no-repeat;
     background-image: url(../images/Logo3.png);
 }
+
+
+@media screen and (max-width: 800px) {
+    nav ul a.text-menu {
+        font-weight: 100;
+        font-size: 1.2em;
+    }
+
+    nav div {
+        height: 65px;
+    } 
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav .mainpic {
+        width: 100px;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav ul a.text-menu {
+        font-weight: 100;
+        font-size: 1em;
+    }
+
+    nav div {
+        height: 65px;
+    } 
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav .mainpic {
+        width: 100px;
+        height: 34px;
+    }
+
+    nav li {
+        margin: 22px 8px 22px 8px;
+    }
+
+}
