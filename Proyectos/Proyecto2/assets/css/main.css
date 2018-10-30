@@ -367,6 +367,10 @@ hr{
 
 @media screen and (max-width: 750px) {
     
+    body {
+        overflow-x: hidden;
+    }
+
     /*---------------------------------HISTORIA----------------------------------*/
     .history .wrapper {
         width: 100%;
@@ -383,6 +387,10 @@ hr{
     section.history {
         margin: 0;
         width: 100%;
+    }
+
+    .history .title {
+        padding-right: 16px;
     }
 
     .history .img {
@@ -410,6 +418,10 @@ hr{
      }
 
     /*-------------------------------NUESTRO ENFOQUE-----------------------------*/
+    .wrapperMore .title {
+        padding-right: 16px;
+    }
+    
     .more .textHeader .subtitle {
         border-top: none;
         border-left: none;

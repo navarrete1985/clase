@@ -171,6 +171,10 @@ html,body{
     padding:0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*Clases genéricas*/
 .image-lb {
     background-size: cover;

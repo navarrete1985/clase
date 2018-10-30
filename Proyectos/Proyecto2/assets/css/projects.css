@@ -227,7 +227,7 @@ section.gallery .images {
 }
 
 .images .img {
-    width: 31%;
+    width: 31.3%;
     margin: 30px 1%;
     box-sizing: border-box;
     text-align: center;
@@ -342,6 +342,10 @@ section.gallery .images {
 }
 
 @media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
     /*------------------------------Proyectos---------------------------*/
     #main .section .title {
         border: none;

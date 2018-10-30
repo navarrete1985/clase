@@ -141,6 +141,10 @@ input[type='submit'] {
 
 
 @media screen and (max-width: 750px) {
+    body {
+        overflow-x: hidden;
+    }
+
     section {
         width: auto;
         margin: 120px 16px 40px 16px;

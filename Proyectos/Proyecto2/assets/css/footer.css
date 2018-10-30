@@ -82,6 +82,7 @@ footer .col {
 footer .col .title {
     margin-bottom: 16px;
     width: max-content;
+    width: -moz-fit-content;
 }
 
 footer .copy {
@@ -146,6 +147,11 @@ footer .header a {
         float: left;
         width: 50%;
         height: 130px;
+    }
+
+    footer .ico {
+        margin-left: 40px;
+        background-position: center left;
     }
 
     footer .wrapper {
