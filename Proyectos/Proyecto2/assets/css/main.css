@@ -376,8 +376,8 @@ hr{
         border-right: none;
     }
 
-    .history .content {
-        padding: 8px;
+    .history .content, .about .f2 .content {
+        padding: 16px;
     }
 
     section.history {
@@ -448,6 +448,7 @@ hr{
     .more .textHeader .subtitle {
         width: 100%;
         font-size: 1.25em;
+        padding: 16px;
     }
 
     .more .textContent {
@@ -456,7 +457,7 @@ hr{
         float: left;
         top: 0;
         left: 0;
-        padding: 8px;
+        padding: 16px;
         box-sizing: border-box;
     }
 

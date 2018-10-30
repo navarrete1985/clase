@@ -387,6 +387,10 @@ section.gallery .images {
         padding-bottom: 32px;
     }
 
+    .interlace .content .title, .prada .content .title {
+        font-size: 2em;
+    }
+
     /*-------------------------------Galería--------------------------*/
     section.gallery{
         width: 100%;
@@ -403,6 +407,7 @@ section.gallery .images {
 
     section.gallery .title {
         border: none;
+        font-size: 2em;
     }
 
     section.gallery .title::before {

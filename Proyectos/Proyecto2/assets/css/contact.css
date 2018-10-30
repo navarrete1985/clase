@@ -158,5 +158,13 @@ input[type='submit'] {
         float: left;
     }
 
+    .contact .titleContact {
+        font-size: 2.425em;
+    }
+
+    .contact .info .title {
+        font-size: 1.25em;
+    }
+    
 }
 
