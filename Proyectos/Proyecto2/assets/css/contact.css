@@ -3,7 +3,11 @@ section .contact {
     box-sizing: border-box;
 }
 
-.contact .titleContact {
+.titleContact {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
     font-size: 4em;
     text-align: center;
 }
@@ -20,7 +24,7 @@ nav ul {
 
 section {
     width: 90%;
-    margin: 120px auto 40px auto;
+    margin: 0px auto 40px auto;
 }
 
 .contact .title {
@@ -162,7 +166,7 @@ input[type='submit'] {
         float: left;
     }
 
-    .contact .titleContact {
+    .titleContact {
         font-size: 2.425em;
     }
 
