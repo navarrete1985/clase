@@ -1,0 +1,42 @@
+.wrapper {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.centerMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.item1 {
+    height: 100px;
+    width: 100px;
+    background-color: lightskyblue;
+}
+
+.item2 {
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen
+}
+
+.item3 {
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon
+}
+
+.item4 {
+    height: 100px;
+    width: 100px;
+    background-color: lightslategray;
+}
+
+.item5 {
+    height: 100px;
+    width: 100px;
+    background-color: lime;
+}
