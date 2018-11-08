@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .wrapper {
     position: relative;
     width: 100%;
@@ -14,34 +18,26 @@ nav {
 nav {
     position: relative;
     height: 8%;
-    background-color: lightgray;
 }
 
 nav ul{
     display: flex;
+    background-color: lightblue;
     justify-content: flex-end;
     flex-flow: row nowrap; /*shorthand -> disposición en columna y no ocupamos todo*/
     width: 100%;
     list-style-type: none;
+    padding: 16px 0;
     margin: 0;
-    padding: 0;
     position: absolute;
     text-align: center;
 }
 
 nav li {
     display: inline-block;
-    margin: 22px;
     color: #121333;
-    background-color: cadetblue;
-    /* padding: 6px 20px; */
-    width: 15%;
+    margin-right: 32px;
     height: 30px;
-}
-
-/*Seleccionamos el primer hijo (1 li)*/
-li:nth-child(1) {
-    margin-right: auto;/*Hay que variar margin para colocar a la izquierda */
 }
 
 a {
@@ -49,10 +45,17 @@ a {
     color: black;
 }
 
-.rigth {
-    float: right;
+@media screen and (max-width: 800px) {
+    nav ul {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
-.left {
-    float: left;
+@media screen and (max-width: 600px) {
+    nav ul {
+        justify-content: space-around;
+        flex-flow: column wrap;
+        padding: 0;
+    }
 }
