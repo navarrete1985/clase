@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Kodchasan|Lobster|Noto+Serif|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./pattern.jpg);
+    font-family: "Roboto", sans-serif;
+    color: #2c2c2c;
+}
+
+.wrapper {
+    background-color: rgba(255, 255, 255, .4);
+    width: 90%;
+    min-width: 380px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1, h2, h3 {
+    font-family: 'Merienda', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 800;
+    color: #98083f;
+}
+
+.intro {
+    margin-bottom: 1.5em;
+    font-size: 125%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline {
+    font-family: 'Spicy Rice', sans-serif;
+    font-size: 1.6em;
+    color: #ff00a7;
+    text-shadow: 1px 1px 1px grey;
+}
+
+.list-nav {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Spicy Rice', sans-serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+.list-nav li a {
+    text-decoration: none;
+
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.list-nav li:first-child a {
+    background-color: #566c43;
+    color: #a2f8af;
+}
+
+
+.list-nav li:nth-child(2) a {
+    background-color: #fca33c;
+    color: #f1f8a2;
+}
+
+.list-nav li:nth-child(3) a {
+    background-color: #98083f;
+    color: #f2b3cb;
+}
+
+.list-nav li:last-child a {
+    background-color: #25adf5;
+    color: #0bebfd;
+}
+
+
+/******************form builder-****************/
+.builder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.component {
+    /*Propiedad de item flex*/
+    flex: 1 1 200px;
+    
+    /*El item flex lo convertimos también en contenedor flex*/
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, .3);
+}
+
+.component h2 {
+    position: relative;
+    margin: 0 0 .5em 0;
+    padding: 10px 0 0 0;
+    border-bottom: 1px solid #ffa489;
+}
+
+.component ul {
+    margin: 0;
+    padding: 0;
+    flex: 1;/*Forzamos a que sea el máximo de alto, puesto que no podemos especificar el alto en porcentaje....puesto que no hay definido ningún alto*/
+
+    display: flex;
+    flex-direction: column;
+}
+
+.builder ul li {
+    list-style-type: none;
+    line-height: 1.5em;
+}
+
+.component ul li:last-child {
+    /*Ponemos que el último item abajo*/
+    margin-top: auto;
+}
+
+.component li {
+    margin-bottom: 0.5em;
+}
+
+.component li:last-child {
+    /*Convertimos el útimo item en un contenedor flex*/
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.component li:last-child label {
+    margin-right: 10px;
+}
+
+.component .other-name {
+    /*Hacemos que nuestro input text ocupen todo el espacio libre*/
+    flex: 1;
+    margin: 0;
+}
+
+.action {
+    /*Propiedad item flex*/
+    flex: 1 1 100%;
+
+    /*Propiedad contenedor flex*/
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    /*Propiedades normales*/
+    margin: 0 0 0 20px;
+}
+
+.action label {
+    margin-right: 10px;
+
+    font-family: 'Roboto' sans-serif;
+    font-weight: normal;
+    font-size: 112.5%;
+    text-transform: uppercase;
+}
+
+.action input {
+    /*Agrandamos el imput para que ocupe todo el espacio*/
+    flex: 1;
+}
+
+.action button {
+    flex: 1 1 100%;
+    
+    margin-top: 10px;
+
+    background-color: #ff006c;
+    padding: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;    
+    border: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+.gallery-item {
+    /*Min width 200px*/
+    flex: 1 0 200px;
+
+    margin: 0 0 10px 10px;
+    padding: 20px;
+    border-radius: 2px;
+
+    border: 1px solid hsl(30, 28%, 20%);
+    background: hsl(20, 28%, 30%);
+    color: hsl(30, 28%, 90%);
+}
+
+.gallery-item:hover {
+    background: hsl(30, 28%, 20%);
+    color: #e8ab21;
+    /*Ponemos cursor a los elementos que no sean ancla, para eso es esta propiedad*/
+    cursor: pointer;
+}
+
+.gallery-item h3 {
+    margin: 0 0 .5em 0;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white; 
+}
+
+.gallery-item ul {
+    margin: 0;
+    padding: 5px;
+    list-style: square;
+    text-align: left;
+}
+
+/*-----------------paginación--------------------*/
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 20px 10px 40px 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination a {
+    display: inline-block;
+
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #e9e2d8;
+    background: #e1d8ca;
+    background: hsla(0, 0%, 100%, .4);
+    text-decoration: none;
+}
+
+.pagination li:last-child {
+    /*Propiedad con la que cambiamos el orden de los elementos item flex
+    para poner el orden tenemos que poner el orden a los demás items
+    En este caso si ponemos un número negativo, como los demas items tienen un orden
+    te lo cambia a la posición*/
+    order: 1;
+    text-align: right;
+}
+
+
+
