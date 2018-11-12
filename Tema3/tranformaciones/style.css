@@ -1,0 +1,24 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapp {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 20%;
+    height: 50px;
+    background-color: lightseagreen;
+    transition: transform, 10s;
+}
+
+.container:hover {
+    transform: rotate(9600deg);
+}

@@ -37,6 +37,10 @@ nav li {
     /* padding: 6px 20px; */
     width: 15%;
     height: 30px;
+    transition-property: color, background-color, padding, font-weigth;
+    transition-timing-function: ease-in;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s, 0.2s;
 }
 
 /*Seleccionamos el primer hijo (1 li)*/
@@ -44,7 +48,7 @@ li:nth-child(1) {
     margin-right: auto;/*Hay que variar margin para colocar a la izquierda */
 }
 
-a {
+nav li a {
     text-decoration: none;
     color: black;
 }
@@ -55,4 +59,12 @@ a {
 
 .left {
     float: left;
+}
+
+nav li:hover {
+    background-color: lightgray;
+    color: red;
+    cursor: pointer; 
+    padding: 0px 50px;
+    font-weight: 900;
 }
