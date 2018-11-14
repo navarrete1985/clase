@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'urban_brush_zoneregular';
+    src: url('../font/urban_brush_zone-webfont.eot');
+    src: url('../font/urban_brush_zone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/urban_brush_zone-webfont.woff2') format('woff2'),
+         url('../font/urban_brush_zone-webfont.woff') format('woff'),
+         url('../font/urban_brush_zone-webfont.ttf') format('truetype'),
+         url('../font/urban_brush_zone-webfont.svg#urban_brush_zoneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*-------------------------FUENTES-------------------------------*/
+.text-normal {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.text-big-title {
+    font-family: 'urban_brush_zoneregular', sans-serif;
+    font-size: 5em;
+}
+
+.text-nav-title {
+    font-family: 'urban_brush_zoneregular', sans-serif;
+    font-size: 1.625em;
+}
+
+.text-small-title {
+    font-family: 'urban_brush_zoneregular', sans-serif;
+    font-size: 3em;
+}
+
+.text-title {
+    font-family: 'urban_brush_zoneregular', sans-serif;
+    font-size: 3.75em;
+}
+
+/*-------------------------NAV-----------------------------------*/
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.98);
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    transition: color, font-size, 0.25s;
+}
+
+nav .content img {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    
+    width: 100px;
+    height: 102px;
+    margin-bottom: 16px;
+}
+
+nav .content ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+nav .content li {
+    margin-right: 30px;
+}
+
+nav .content a:hover {
+    color: gray;
+    font-size: 1.05em;
+}
+
+/*-------------------------FOOTER--------------------------------*/
+
+

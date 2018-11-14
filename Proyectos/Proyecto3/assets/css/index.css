@@ -1,0 +1,133 @@
+/*-----------------VIDEO----------------------*/
+.header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+img {
+    width: 100%;
+    z-index: 1;
+}
+
+/*----------------------DESCRIPCION-----------------------*/
+.section-parkour .description {
+    position: relative;
+    margin-top: -16.5vw;
+    padding-top: 10%;
+    padding-bottom: 14%;
+    clip-path: polygon(0 10.5%, 100% 0, 100% 100%, 0 89.5%);
+    background-color: black;
+}
+
+.section-parkour .description .title, .section-parkour .description .content {
+    color: white;
+    margin: 0 14%;
+}
+
+.section-parkour .description .title {
+    text-align: center;
+}
+.section-parkour .description .content {
+    margin-top: 24px;
+    column-count: 2; 
+    column-gap: 40px;
+    text-align: justify;
+}
+
+
+/*-----------------------FILOSOFÍA-------------------------*/
+section.section-filosofia {
+    position: relative;
+    z-index: -1;
+    margin-top: -14%;
+    background-color: black;
+}
+
+section.section-filosofia .container {
+    z-index: 2;
+    width: 52%;
+    margin-top: -43%;
+    margin-left: 48%;
+}
+
+section.section-filosofia .wrapper {
+    background-color: black;
+}
+
+section.section-filosofia .container p {
+    color: white;
+    text-align: center;
+}
+
+section.section-filosofia .container p.content {
+    text-align: justify;
+    margin-right: 32px;
+}
+
+/*---------------------ARTE URBANO-----------------------*/
+section.arte-urbano .header {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-color: black;
+    margin-top: -24px;
+}
+
+section.arte-urbano .header img {
+    position: absolute;
+    bottom: 0;
+    max-height: 250px;
+}
+
+section.arte-urbano .header-paint {
+    text-align: center;
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+    background-color: white;
+    z-index: 5;
+}
+
+section.arte-urbano .header-paint img{
+    width: 50%;
+}
+
+section.arte-urbano img.img {
+    margin-top: -180px;
+    z-index: -1;
+}
+
+section.arte-urbano .info {
+    z-index: 5;
+    padding: 100px 14%;
+    margin-top: -200px;
+    background: white;
+    text-align: center;
+    clip-path: polygon(0 calc(0% + 100px), 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+section.arte-urbano p.content {
+    column-count: 2;
+    text-align: justify;
+    column-gap: 40px;
+    padding-bottom: 48px;
+}
+
+section.arte-urbano p.content span {
+    font-weight: bold;
+}
