@@ -31,7 +31,7 @@ img {
     margin-top: -16.5vw;
     padding-top: 10%;
     padding-bottom: 14%;
-    clip-path: polygon(0 10.5%, 100% 0, 100% 100%, 0 89.5%);
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
     background-color: black;
 }
 
@@ -104,7 +104,7 @@ section.arte-urbano .header-paint {
 }
 
 section.arte-urbano .header-paint img{
-    width: 50%;
+    width: 60%;
 }
 
 section.arte-urbano img.img {
@@ -112,13 +112,17 @@ section.arte-urbano img.img {
     z-index: -1;
 }
 
-section.arte-urbano .info {
+section.arte-urbano .info-A, section.arte-urbano .info-B {
     z-index: 5;
     padding: 100px 14%;
     margin-top: -200px;
     background: white;
     text-align: center;
-    clip-path: polygon(0 calc(0% + 100px), 100% 0, 100% 100%, 0 calc(100% - 100px));
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+section.arte-urbano .info-B {
+    clip-path: polygon(0 0, 100% 100px, 100% calc(100% - 100px), 0 100% );
 }
 
 section.arte-urbano p.content {

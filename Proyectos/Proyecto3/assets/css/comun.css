@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /*-------------------------FUENTES-------------------------------*/
 .text-normal {
     font-family: 'Roboto Condensed', sans-serif;
@@ -41,12 +42,12 @@ body {
 
 .text-small-title {
     font-family: 'urban_brush_zoneregular', sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .text-title {
     font-family: 'urban_brush_zoneregular', sans-serif;
-    font-size: 3.75em;
+    font-size: 3em;
 }
 
 /*-------------------------NAV-----------------------------------*/
@@ -96,5 +97,10 @@ nav .content a:hover {
 }
 
 /*-------------------------FOOTER--------------------------------*/
-
+footer div.content {
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    margin-top: -4px;
+}
 
