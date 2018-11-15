@@ -1,0 +1,16 @@
+/*-----------------------------HEADER----------------------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url(../images/traceurs-background.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+header .title {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    width: 50%;
+}
