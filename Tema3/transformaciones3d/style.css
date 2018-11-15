@@ -1,0 +1,74 @@
+.cubo, .cubo .cara {
+    width: 200px;
+    height: 200px;
+}
+
+/*Pintamos el fondo de cada cara*/
+.cubo .cara#superior {
+    background-color: rgba(255, 165, 0, 0.83);
+}
+
+.cubo .cara#frente {
+    background-color: rgba(255, 0, 0, 0.79);
+}
+
+.cubo .cara#derecha {
+    background-color: rgba(48, 234, 48, 0.76);
+}
+
+.cubo .cara#atras {
+    background-color: rgba(0, 186, 255, 0.83);
+}
+
+.cubo .cara#izquierda {
+    background-color: rgba(255, 255, 42, 0.84);
+}
+
+.cubo .cara#inferior {
+    background-color: rgba(255, 0, 117, 0.76);
+}
+
+/*Posición absoluta para manejarlos individualmente*/
+.cubo .cara {
+    position: absolute;
+    border: 1px dotted grey;
+}
+
+/*Lo centramos respecto al contenedor*/
+.cubo {
+    margin: 100px auto;
+}
+
+/*Preservar el espacio 3D para el padre -cuno y los hijos -caras
+Asignar una perpectiva para poder apreciar mejor el efecto*/
+.cubo {
+    transform-style: preserve-3d;
+    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
+}
+
+/*Posicionamos todas las caras de nuestro cubo*/
+.cubo .cara#derecha {
+    /*Si transladamos de forma positiva transladamos hacia nosotros, en caso de que sea neg la translación será hacia el final del horizonte*/
+    transform: rotateY(90deg) translateZ(100px); 
+}
+
+.cubo .cara#superior {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.cubo .cara#atras {
+    transform: translateZ(100px);
+}
+
+.cubo .cara#inferior {
+    transform: rotateX(90deg) translateZ(-100px);
+} 
+
+.cubo .cara#izquierda {
+    transform: rotateY(90deg) translateZ(-100px);
+}
+
+
+.cubo .cara#frente {
+    transform: translateZ(-100px);
+}

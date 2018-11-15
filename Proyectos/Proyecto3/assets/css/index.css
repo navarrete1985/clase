@@ -28,6 +28,7 @@ img {
 /*----------------------DESCRIPCION-----------------------*/
 .section-parkour .description {
     position: relative;
+    z-index: 2;
     margin-top: -16.5vw;
     padding-top: 10%;
     padding-bottom: 14%;
@@ -52,6 +53,11 @@ img {
 
 
 /*-----------------------FILOSOFÍA-------------------------*/
+section {
+    display: flex;
+    flex-direction: column;
+}
+
 section.section-filosofia {
     position: relative;
     z-index: -1;
