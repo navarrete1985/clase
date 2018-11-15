@@ -27,7 +27,9 @@ img {
 
 /*----------------------DESCRIPCION-----------------------*/
 .section-parkour .description {
-    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+
     z-index: 2;
     margin-top: -16.5vw;
     padding-top: 10%;
@@ -59,17 +61,21 @@ section {
 }
 
 section.section-filosofia {
-    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
     z-index: -1;
     margin-top: -14%;
     background-color: black;
 }
 
 section.section-filosofia .container {
+    display: flex;
+    flex-flow: column nowrap;
+
     z-index: 2;
     width: 52%;
     margin-top: -43%;
-    margin-left: 48%;
 }
 
 section.section-filosofia .wrapper {
@@ -79,6 +85,7 @@ section.section-filosofia .wrapper {
 section.section-filosofia .container p {
     color: white;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 section.section-filosofia .container p.content {
@@ -88,21 +95,23 @@ section.section-filosofia .container p.content {
 
 /*---------------------ARTE URBANO-----------------------*/
 section.arte-urbano .header {
-    position: relative;
+    align-items: flex-end;
+
     width: 100%;
     height: 380px;
     background-color: black;
-    margin-top: -24px;
 }
 
 section.arte-urbano .header img {
-    position: absolute;
     bottom: 0;
     max-height: 250px;
 }
 
 section.arte-urbano .header-paint {
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
     padding-bottom: 100px;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
     background-color: white;
@@ -110,7 +119,7 @@ section.arte-urbano .header-paint {
 }
 
 section.arte-urbano .header-paint img{
-    width: 60%;
+    width: 65%;
 }
 
 section.arte-urbano img.img {
@@ -119,12 +128,19 @@ section.arte-urbano img.img {
 }
 
 section.arte-urbano .info-A, section.arte-urbano .info-B {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
     z-index: 5;
     padding: 100px 14%;
     margin-top: -200px;
     background: white;
-    text-align: center;
     clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+section.arte-urbano .info-A p.title, section.arte-urbano .info-B p.title {
+    margin-bottom: 16px;
 }
 
 section.arte-urbano .info-B {

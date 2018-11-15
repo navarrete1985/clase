@@ -104,6 +104,8 @@ footer .social a {
 footer a:link {
     text-decoration: none;
     color: #E0DBD2;
+    background-size: cover;
+    background-position: center center;
 }
 
 footer a:hover, footer a:focus {

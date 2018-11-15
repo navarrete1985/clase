@@ -30,6 +30,12 @@ body {
     font-weight: 300;
 }
 
+.text-footer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
 .text-big-title {
     font-family: 'urban_brush_zoneregular', sans-serif;
     font-size: 5em;
@@ -102,15 +108,176 @@ footer {
     flex-direction: column;
 }
 
-footer div.content {
-    background-color: black;
+footer img {
     width: 100%;
-    margin-top: -4px;
-    display: flex;
-    flex-flow: row nowrap;
 }
 
+footer div.content {
+    display: flex;
+    flex-flow: column wrap;
 
+    background-color: black;
+    width: 100%;
+}
 
+footer .links img.mainpic-white {
+    width: 150px;
+    height: 150px;
+}
 
+footer .links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+footer .header-footer {
+    color: white;
+}
+
+footer .links .wrapper {
+    flex: 1 1 130px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    justify-content: center;
+}
+
+footer .links .wrapper ul {
+    min-width: 230px;
+}
+
+footer .links ul, footer .links .image {
+    list-style: none;
+}
+
+footer .links .image {
+    align-items: center;
+}
+
+footer .links li .social {
+    display: flex;
+    flex-flow: row nowrap;
+
+    margin-top: 8px;
+    height: 40px;
+}
+
+footer .links li a {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    background-size: cover;
+    background-position: center center;
+    transition: width, height, color, .25s;
+}
+
+footer .links li a.facebook {
+    background-image: url(../images/icons/facebook-logo-in-circular-button-outlined-social-symbol\ \(1\).svg);
+}
+
+footer .links li a.flickr {
+    background-image: url(../images/flickr-social-outlined-logo-in-a-circle.svg);
+}
+
+footer .links li a.instagram {
+    background-image: url(../images/instagram\ \(1\).svg);
+}
+
+footer .links li a.twitter {
+    background-image: url(../images/twitter-circular-button\ \(1\).svg);
+}
+
+footer .links li a:hover {
+    height: 35px;
+    width: 35px;
+    font-size: 1.02em;
+    color: lightgray;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: ligth;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer .wrapper .header-footer div {
+    margin-bottom: 8px;
+    border-bottom: thin solid white;
+    width: min-content;
+    width: -moz-min-content;
+}
+
+footer .newsletter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer .newsletter .copyright, footer .newsletter form, footer .newsletter .designed-by {
+    flex: 1 1 300px;
+    width: 33%;
+    color: white;
+}
+
+footer .newsletter .copyright {
+    margin-left: 32px;
+    align-self: flex-end;
+    margin-bottom: 32px;
+}
+
+footer .newsletter .designed-by {
+    align-self: flex-end;
+    text-align: right;
+    margin-bottom: 32px;
+    margin-right: 32px;
+}
+
+footer .newsletter form {
+    align-self: flex-end;
+    margin-bottom: 32px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer .newsletter form p, footer .newsletter form input {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 16px;
+}
+
+footer .newsletter form input[type=text], footer .newsletter form input[type=button] {
+    margin-bottom: 16px;
+    background: none;
+    padding-bottom: 4px;
+    border: none;
+    border-bottom: thin solid white;
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    transition: all, .25s;  
+}
+
+footer .newsletter form input[type=button] {
+    background: none;
+    border: thin solid white;
+    border-radius: 3px;
+    padding: 4px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+footer .newsletter form input[type=button]:hover {
+    color: black;
+    background: white;
+}
+
+footer .newsletter form input[type=text]:hover {
+    color: white;
+}
