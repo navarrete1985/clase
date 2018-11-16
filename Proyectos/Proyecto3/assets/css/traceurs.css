@@ -117,14 +117,41 @@ section .row2 .img1::before, section .row2 .img2::before, section .row2 .img3::b
     padding-bottom: 100%;
 }
 
-section .row2 .img1 {
+section.bvdl .row2 .img1 {
     background-image: url(../images/bvdl1.jpg);
 }
 
-section .row2 .img2 {
+section.bvdl .row2 .img2 {
     background-image: url(../images/bvdl2.jpg);
 }
 
-section .row2 .img3 {
+section.bvdl .row2 .img3 {
     background-image: url(../images/bvdl-f3.jpg);
+}
+
+section.dk .row2 .img1 {
+    background-image: url(../images/dk1.jpg);
+    background-position: left center;
+}
+
+section.dk .row2 .img2 {
+    background-image: url(../images/dk2.jpg);
+    background-position: 60% center;
+}
+
+section.dk .row2 .img3 {
+    background-image: url(../images/dk3.jpg);
+    background-position: left center;
+}
+
+section.tm .row2 .img1 {
+    background-image: url(../images/tm1.jpg);
+}
+
+section.tm .row2 .img2 {
+    background-image: url(../images/tm2.jpg);
+}
+
+section.tm .row2 .img3 {
+    background-image: url(../images/tm3.jpg);
 }

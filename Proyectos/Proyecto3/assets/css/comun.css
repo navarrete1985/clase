@@ -56,6 +56,12 @@ body {
     font-size: 3em;
 }
 
+.text-small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+}
+
 /*-------------------------NAV-----------------------------------*/
 header nav {
     position: fixed;
@@ -175,7 +181,7 @@ footer .links li a {
 }
 
 footer .links li a.facebook {
-    background-image: url(../images/icons/facebook-logo-in-circular-button-outlined-social-symbol\ \(1\).svg);
+    background-image: url(../images/facebook-logo-in-circular-button-outlined-social-symbol\ \(1\).svg);
 }
 
 footer .links li a.flickr {

@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+}
+
+/*-------------------------VECTOR---------------------*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header img {
+    flex: 1 0 100%;
+
+    width: 100%;
+    z-index: -1;
+}
+
+header .title {
+    text-align: center;
+    width: 100%;
+    margin-top: -35%;
+    z-index: 1;
+}
+
+/*-------------------------FORM-----------------------------*/
+section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+section .content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    color: white;
+}
+
+section form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 52%;
+}
+
+section .content .title {
+    font-size: 1.5em;
+    margin-bottom: 32px;
+}
+
+section .content .description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1.25em;
+}
+
+section form label {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    color: white;
+}
+
+section form input, section form textarea {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: lightgray;
+    padding: 8px;
+}
+
+section form textarea {
+    resize: none;
+}
+
+section form input[type="button"] {
+    width: 120px;
+    align-self: flex-end;
+    margin-top: 32px;
+    cursor: pointer;
+    transition: all, .25s;
+}
+
+section form input[type="button"]:hover {
+    color: black;
+    background: white;
+}
+
+/*---------------------TRANSFORMACIÓN DEL FOOTER------------------*/
+footer div.content {
+    background-color: white;
+}
+
+footer .links li a:hover {
+    color: darkgray;
+}
+
+footer a {
+    color: black;
+}
+
+footer .wrapper .header-footer div {
+    border-bottom: thin solid black;
+    color: black;
+}
+
+footer .newsletter .copyright, footer .newsletter form, footer .newsletter .designed-by {
+    color: black;
+}
+
+footer .newsletter form input[type=text], footer .newsletter form input[type=button] {
+    border-bottom: thin solid black;
+    color: black;
+}
+
+footer .newsletter form input[type=button] {
+    border: thin solid black;
+}
+
+footer .newsletter form input[type=button]:hover {
+    color: white;
+    background: black;
+}
+
+footer .newsletter form input[type=text]:hover {
+    color: black;
+}
+
+footer .links li a.facebook {
+    background-image: url(../images/icons/facebook-logo-in-circular-button-outlined-social-symbol\ \(1\).svg);
+}
+
+footer .links li a.flickr {
+    background-image: url(../images/icons/flickr.svg);
+}
+
+footer .links li a.instagram {
+    background-image: url(../images/icons/instagram\ \(1\).svg);
+}
+
+footer .links li a.twitter {
+    background-image: url(../images/icons/twitter-circular-button\ \(1\).svg);
+}
