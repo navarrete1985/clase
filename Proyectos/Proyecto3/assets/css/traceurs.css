@@ -14,3 +14,116 @@ header .title {
     margin-top: 100px;
     width: 50%;
 }
+
+section {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin: 10% 60px;
+}
+
+section .row1, section .row2 {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+section .row2 {
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+section .row1 .img {
+    align-self: center;
+    flex: 1 1 200px;
+    
+    width: 40%;
+}
+
+section .row1 .content {
+    align-self: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    width: 60%;
+    margin-left: 32px;
+}
+
+section .img div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.bvdl .img div {
+    background-image: url(../images/bartVanDerLinden.jpg);
+}
+
+section.dk .img div {
+    background-image: url(../images/dimitrisKyrsanidis.jpg);
+}
+
+section.tm .img div {
+    background-image: url(../images/ThomasMougue.jpg);
+}
+
+section .img div::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+section .row1 .title {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+section .row1 .img-flag {
+    align-self: center;
+    flex: 1 0 70px;
+
+    width: 70px;
+    height: 48px;
+    margin-left: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.bvdl .row1 .img-flag {
+    background-image: url(../images/nl.png);
+}
+
+section.dk .row1 .img-flag {
+    background-image: url(../images/gr.png);
+}
+
+section.tm .row1 .img-flag {
+    background-image: url(../images/fr.png);
+}
+
+section .row2 .img1, section .row2 .img2, section .row2 .img3{
+    width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section .row2 .img1::before, section .row2 .img2::before, section .row2 .img3::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+section .row2 .img1 {
+    background-image: url(../images/bvdl1.jpg);
+}
+
+section .row2 .img2 {
+    background-image: url(../images/bvdl2.jpg);
+}
+
+section .row2 .img3 {
+    background-image: url(../images/bvdl-f3.jpg);
+}
