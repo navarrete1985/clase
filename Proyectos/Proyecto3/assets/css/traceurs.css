@@ -15,6 +15,7 @@ header .title {
     width: 50%;
 }
 
+/*--------------------------TRACEURS---------------------------*/
 section {
     display: flex;
     flex-flow: column nowrap;
