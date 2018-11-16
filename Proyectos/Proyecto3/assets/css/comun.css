@@ -65,13 +65,18 @@ body {
 /*-------------------------NAV-----------------------------------*/
 header nav {
     position: fixed;
-    top: 0;
+    top: -150px;
     left: 0;
     width: 100%;
     z-index: 10;
     height: 150px;
-    background-color: rgba(255, 255, 255, 0.98);
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
+    transition: all, .4s; 
+}
+
+.shape-nav {
+    background-color: rgba(255, 255, 255, 0.98);
+    top: 0px;
 }
 
 header nav a {
@@ -287,3 +292,6 @@ footer .newsletter form input[type=button]:hover {
 footer .newsletter form input[type=text]:hover {
     color: white;
 }
+
+
+/**/
