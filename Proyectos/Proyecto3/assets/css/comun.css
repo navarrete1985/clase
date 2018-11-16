@@ -71,7 +71,7 @@ header nav {
     z-index: 10;
     height: 150px;
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
-    transition: all, .4s; 
+    transition: all, .8s; 
 }
 
 .shape-nav {

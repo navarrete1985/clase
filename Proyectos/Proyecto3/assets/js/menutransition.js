@@ -3,8 +3,6 @@
     document.addEventListener('scroll', event => {
         if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             element.classList.add('shape-nav');
-        }else {
-            element.classList.remove('shape-nav');
         }
     });
 })();
