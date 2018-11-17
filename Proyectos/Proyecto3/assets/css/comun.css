@@ -62,6 +62,91 @@ body {
     font-weight: 200;
 }
 
+/*------------------------ico nav----------------*/
+#nav-ico {
+    position: absolute;
+    top: -50px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    margin: 4px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-ico span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: black;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-ico span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 4px 4px 0;
+}
+
+#nav-ico span:nth-child(odd) {
+    left:0px;
+    border-radius: 4px 0 0 4px;
+}
+
+#nav-ico span:nth-child(1), #nav-ico span:nth-child(2) {
+    top: 0px;
+}
+
+#nav-ico span:nth-child(3), #nav-ico span:nth-child(4) {
+    top: 10px;
+}
+
+#nav-ico span:nth-child(5), #nav-ico span:nth-child(6) {
+    top: 20px;
+}
+
+/*------------------------ico nav animacion----------------*/
+#nav-ico.open span:nth-child(1),#nav-ico.open span:nth-child(6) {
+    transform: rotate(45deg);
+}
+
+#nav-ico.open span:nth-child(2),#nav-ico.open span:nth-child(5) {
+    transform: rotate(-45deg);
+}
+
+#nav-ico.open span:nth-child(1) {
+    left: 2px;
+    top: 5px;
+}
+  
+  #nav-ico.open span:nth-child(2) {
+    left: calc(50% - 3px);
+    top: 5px;
+}
+  
+  #nav-ico.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+  
+  #nav-ico.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+  
+  #nav-ico.open span:nth-child(5) {
+    left: 2px;
+    top: 16px;
+}
+  
+  #nav-ico.open span:nth-child(6) {
+    left: calc(50% - 2px);
+    top: 16px;
+}
+
 /*-------------------------NAV-----------------------------------*/
 header nav {
     position: fixed;
@@ -294,4 +379,149 @@ footer .newsletter form input[type=text]:hover {
 }
 
 
-/**/
+/*-----------------------media navbar y footer----------------*/
+@media screen and (max-width: 1100px) {
+    /*---------------------------NAV----------------*/
+    #nav-ico {
+        position: unset;
+        margin-right: 16px;
+    }
+
+    header nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-content: center;
+
+        clip-path: none;
+        height: auto;
+    }
+
+    nav .content img {
+        flex: unset;
+
+        position: unset;
+        width: 80px;
+        height: 80px;
+        padding: 16px;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    nav .content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+
+        width: 100%;
+    }
+
+    nav .content ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        
+        margin-top: -100%;
+        transition: all .5s ;
+    }
+
+    nav .content ul li {
+        margin-right: 200%;
+        transition: all, 0.5s;
+    }
+
+    nav .content ul.visible {
+        margin-top: 0%;
+    }
+
+    nav .content ul li.show {
+        margin-right: 0%;
+    }    
+    
+    /*---------------------------FOOTER-------------------------*/
+    footer .links > :first-child {
+        order: 2;
+    }
+
+    footer .links > :nth-child(2) {
+        order: 3;
+    }
+
+    footer .links > :nth-child(3) {
+        flex: 1 0 100vw;
+        order: 1;
+
+        margin-bottom: 16px;
+    }
+
+    footer .links > :nth-child(4) {
+        order: 4;
+    }
+
+    footer .links > :nth-child(5) {
+        order: 5;
+    }
+
+    footer .newsletter > form {
+        flex: 1 0 70vw;
+        margin: 32px 70vw;
+        order: 1;
+    }
+
+    footer .newsletter > :first-child {
+        order: 2;
+    }
+
+    footer .newsletter > :last-child {
+        order: 3;
+    }
+}
+
+
+@media screen and (max-width: 830px) {
+    /*---------------------------FOOTER-------------------------*/
+    footer .links > :first-child {
+        flex: 1 0 50%;
+        order: 2;
+    }
+
+    footer .links > :nth-child(2) {
+        flex: 1 0 50%;
+        order: 3;
+    }
+    
+    footer .links > :nth-child(4) {
+        order: 4;
+    }
+
+    footer .links > :nth-child(5) {
+        order: 5;
+    }
+
+    footer .newsletter {
+        flex-flow: column;
+    }
+
+    footer .newsletter > form {
+        flex: auto;
+        width: 70vw;
+        align-self: center;
+    }
+
+    footer .newsletter > :first-child {
+        order: 3;
+    }
+
+    footer .newsletter > :last-child {
+        order: 2;
+    }
+
+    footer .newsletter > :first-child, footer .newsletter > :last-child {
+        flex: auto;
+        align-self: flex-start;
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+    }
+}

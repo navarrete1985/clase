@@ -6,19 +6,24 @@ body {
 header {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    min-height: 550px;
+    background-image: url(../images/background-contact.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header img {
     flex: 1 0 100%;
 
-    width: 100%;
     z-index: -1;
 }
 
 header .title {
-    text-align: center;
-    width: 100%;
-    margin-top: -35%;
     z-index: 1;
 }
 
