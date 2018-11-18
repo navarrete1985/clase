@@ -20,6 +20,7 @@ body {
 
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -149,10 +150,11 @@ body {
 
 /*-------------------------NAV-----------------------------------*/
 header nav {
+    overflow-x: hidden;
     position: fixed;
     top: -150px;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
     height: 150px;
     clip-path: polygon(0 0, 100% 0, 100% 35%, 0 100%);
@@ -384,7 +386,7 @@ footer .newsletter form input[type=text]:hover {
     /*---------------------------NAV----------------*/
     #nav-ico {
         position: unset;
-        margin-right: 16px;
+        margin-right: 32px;
     }
 
     header nav {
@@ -401,11 +403,9 @@ footer .newsletter form input[type=text]:hover {
         flex: unset;
 
         position: unset;
-        width: 80px;
-        height: 80px;
-        padding: 16px;
-        margin-right: auto;
-        margin-bottom: 0;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 4px 16px;
     }
 
     nav .content {
@@ -433,6 +433,7 @@ footer .newsletter form input[type=text]:hover {
 
     nav .content ul.visible {
         margin-top: 0%;
+        padding: inherit;
     }
 
     nav .content ul li.show {
@@ -523,5 +524,41 @@ footer .newsletter form input[type=text]:hover {
         width: 100%;
         text-align: center;
         margin-left: auto;
+    }
+
+    @media screen and (max-width: 540px)  {
+        footer .links {
+            display: flex;
+            flex-flow: column nowrap;
+
+            align-items: center;
+        }
+
+        footer .links .wrapper {
+            display: flex;
+            justify-content: flex-start;
+
+            margin-left: inherit;
+            flex: 1 1 100%;
+            width: 100%;
+        }
+        
+        footer .links {
+            flex: 1 1 100%;
+        }
+
+        footer .links > :nth-child(3) {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            margin-left: inherit;
+            margin-top: 32px;
+        }
+
+        footer .newsletter > form {
+            margin: 0 16px 32px 0;
+            width: 90%;
+        }
+        
     }
 }

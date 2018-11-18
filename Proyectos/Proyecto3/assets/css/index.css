@@ -67,6 +67,7 @@ section.section-filosofia {
     z-index: -1;
     margin-top: -14%;
     background-color: black;
+    overflow: hidden;
 }
 
 section.section-filosofia .container {
@@ -141,6 +142,7 @@ section.arte-urbano .info-A, section.arte-urbano .info-B {
 
 section.arte-urbano .info-A p.title, section.arte-urbano .info-B p.title {
     margin-bottom: 16px;
+    text-align: center;
 }
 
 section.arte-urbano .info-B {
@@ -156,4 +158,140 @@ section.arte-urbano p.content {
 
 section.arte-urbano p.content span {
     font-weight: bold;
+}
+
+/*--------------------------MEDIA-QUERIES---------------------*/
+@media screen and (max-width: 1600px ) {
+    section.section-filosofia .container {
+        flex-flow: column wrap;
+        z-index: 2;
+        width: 100%;
+        padding: 14% 14% 0 14%;
+        margin-top: -48%;
+        clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    section.section-filosofia .container p.content {
+        margin-right: inherit;
+        column-count: 2;
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1280px ) {
+    .section-parkour .description {
+        margin-top: -18.5vw;
+    }
+
+    .section-parkour .description .title, .section-parkour .description .content {
+        margin: 16px 5%;
+    }
+
+    section.section-filosofia .container {
+        padding: 14% 5% 0 5%;
+    }
+
+    section.arte-urbano .info-A, section.arte-urbano .info-B {
+        padding: 100px 5%;
+    }
+
+}
+
+@media screen and (max-width: 900px ) {
+    .section-parkour .description {
+        margin-top: -20vw;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    section.section-filosofia {
+        flex-wrap: wrap;
+        align-items: flex-end;
+        z-index: -1;
+        margin-top: -100px;
+        background-color: black;
+    }
+
+    .section-parkour .description .content, section.section-filosofia .container p.content,
+    section.arte-urbano p.content {
+        column-count: 1;
+    }
+
+    section.arte-urbano p.content span {
+        display: inline-block;
+        margin: 8px 0 4px 0;
+    }
+
+    section.arte-urbano .header {
+        height: auto;
+        padding-top: 32px;
+    }
+
+    section.arte-urbano .header-paint img {
+        width: 100%;
+    }
+
+    section.arte-urbano .header-paint {
+        clip-path: none;
+        padding-bottom: 32px;
+    }
+
+    section.arte-urbano img.img {
+        margin-top: auto;
+    }
+
+    section.arte-urbano .info-A, section.arte-urbano .info-B {
+        margin-top: inherit;
+        background: white;
+        clip-path: none;
+        padding-top: inherit;
+        padding-bottom: inherit;
+    }
+
+    .section-parkour .description {
+        clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+        padding-bottom: 16px;
+        background-color: black;
+    }
+    
+    section.section-filosofia .container {
+        clip-path: none;
+        margin-top: 0px;
+        padding-top: 0px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+@media screen and (max-width: 750px ) {
+    .section-parkour .description {
+        margin-top: -24vw;
+    }
+
+    .text-title, .text-small-title {
+        font-size: 2em;
+    }
+
+    .text-normal {
+        font-size: 1.2em;
+    }
+
+    
+
+    section.section-filosofia {
+        margin-top: 0px;
+    }
+
+
+    section.section-filosofia .container p {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 530px ) {
+    .section-parkour .description {
+        margin-top: -30vw;
+    }
+
+    
 }
