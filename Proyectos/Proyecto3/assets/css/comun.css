@@ -526,39 +526,56 @@ footer .newsletter form input[type=text]:hover {
         margin-left: auto;
     }
 
-    @media screen and (max-width: 540px)  {
-        footer .links {
-            display: flex;
-            flex-flow: column nowrap;
-
-            align-items: center;
-        }
-
-        footer .links .wrapper {
-            display: flex;
-            justify-content: flex-start;
-
-            margin-left: inherit;
-            flex: 1 1 100%;
-            width: 100%;
-        }
-        
-        footer .links {
-            flex: 1 1 100%;
-        }
-
-        footer .links > :nth-child(3) {
-            display: flex;
-            flex-flow: row;
-            justify-content: center;
-            margin-left: inherit;
-            margin-top: 32px;
-        }
-
-        footer .newsletter > form {
-            margin: 0 16px 32px 0;
-            width: 90%;
-        }
-        
+    .text-title, .text-small-title {
+        font-size: 2em;
     }
+
+    .text-normal {
+        font-size: 1.2em;
+    }
+
+    .text-big-title {
+        font-size: 3em;
+    }
+
+}
+
+@media screen and (max-width: 540px)  {
+    footer .links {
+        display: flex;
+        flex-flow: column nowrap;
+
+        align-items: center;
+    }
+
+    footer .links .wrapper {
+        display: flex;
+        justify-content: flex-start;
+
+        margin-left: inherit;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    
+    footer .links {
+        flex: 1 1 100%;
+    }
+
+    footer .links > :nth-child(3) {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin-left: inherit;
+        margin-top: 32px;
+    }
+
+    footer .newsletter > form {
+        margin: 0 16px 32px 0;
+        width: 90%;
+    }
+    
+    .text-big-title {
+        font-size: 1.9em;
+    }
+    
 }

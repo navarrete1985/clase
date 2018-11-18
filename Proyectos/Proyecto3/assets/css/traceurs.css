@@ -155,3 +155,98 @@ section.tm .row2 .img2 {
 section.tm .row2 .img3 {
     background-image: url(../images/tm3.jpg);
 }
+
+/*---------------------------MEDIA QUERIES------------------*/
+@media screen and (max-width: 1024px) {
+    header {
+        min-height: 700px;
+        background-position: -180px center;
+    }
+
+    .text-big-title {
+        font-size: 3.9em;
+    }
+
+    section .row1 {
+        flex-flow: column wrap;
+    }
+
+    section .row1 .img {
+        align-self: center;
+        flex: 1 1 50%;
+        width: 50%;
+    }
+
+    section .row1 .content {
+        width: 100%;
+        margin-left: inherit;
+    }
+
+    section.dk .row1 .img {
+        order: 1;
+    }
+
+    section.dk .row1 .content {
+        order: 2;
+    }
+
+    section .row1 .content .description{
+        column-count: 2;
+        column-gap: 30px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section .row1 .content .description{
+        column-count: 1;
+    }
+
+    section {
+        margin: 10% 0;
+    }
+
+    section .row1 .content {
+        padding: 0 32px;
+    }
+
+    section .row2 {
+        flex-flow: column wrap;
+    }
+
+    section .row2 .img1, section .row2 .img2, section .row2 .img3 {
+        width: 100%;
+        margin-bottom: 32px;
+        background-position: center center;
+    }
+
+    section .row2 .img1::before, section .row2 .img2::before, section .row2 .img3::before {
+        padding-bottom: 60%;
+    }
+
+    .text-big-title {
+        font-size: 2.0em
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        align-items: flex-start;
+        margin-top: 50px;
+        justify-content: flex-end;
+    }
+
+    section .row1 .content {
+        padding: 0 5%;;
+    }
+
+    header .title {
+        text-align: center;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .text-small-title {
+        font-size: 1.4em;
+    }
+}
