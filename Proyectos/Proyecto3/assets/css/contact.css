@@ -27,6 +27,10 @@ header .title {
     z-index: 1;
 }
 
+.text-title-contact p {
+    margin-top: 0;
+}
+
 /*-------------------------FORM-----------------------------*/
 section {
     display: flex;
@@ -144,4 +148,32 @@ footer .links li a.instagram {
 
 footer .links li a.twitter {
     background-image: url(../images/icons/twitter-circular-button\ \(1\).svg);
+}
+
+/*--------------------------------MEDIA QUERIES-------------------*/
+@media screen and (max-width: 850px) {
+    section {
+        flex-flow: column nowrap;
+        align-items: center;
+
+        margin-top: 0;
+    }
+
+    section .content {
+        width: 100%;
+    }
+
+    section .content .title {
+        font-size: 1.5em;
+        margin-bottom: 16px;
+    }
+
+    section form {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .text-title-contact {
+        font-size: 3em;
+    }
 }

@@ -184,6 +184,10 @@ section.arte-urbano p.content span {
         margin-top: -18.5vw;
     }
 
+    video {
+        transform: scale(0.8) translateY(-20%) translateX(-30%);
+    }
+
     .section-parkour .description .title, .section-parkour .description .content {
         margin: 16px 5%;
     }
@@ -203,6 +207,10 @@ section.arte-urbano p.content span {
         margin-top: -20vw;
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    video {
+        transform: scale(0.6) translateY(-40%) translateX(-50%);
     }
 
     section.section-filosofia {
@@ -268,16 +276,10 @@ section.arte-urbano p.content span {
         margin-top: -24vw;
     }
 
-    .text-title, .text-small-title {
-        font-size: 2em;
+    video {
+        transform: scale(0.59) translateY(-40%) translateX(-70%);
     }
-
-    .text-normal {
-        font-size: 1.2em;
-    }
-
     
-
     section.section-filosofia {
         margin-top: 0px;
     }
@@ -293,5 +295,8 @@ section.arte-urbano p.content span {
         margin-top: -30vw;
     }
 
+    video {
+        transform: scale(0.57) translateY(-39%) translateX(-70%);
+    }
     
 }

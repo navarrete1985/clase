@@ -3,7 +3,7 @@
     let menu = document.getElementById('nav-ico');
     let menuUl = document.querySelector('nav .content ul');
     let li = document.querySelectorAll('nav .content ul li');
-    
+
     document.addEventListener('scroll', event => {
         if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             element.classList.add('shape-nav');
@@ -19,8 +19,10 @@
     window.addEventListener('load', event => {
         let uri = './assets/videos/vid?.mp4';
         let video = document.querySelector('header .video-wrap video');
-        video.setAttribute('src', uri.replace('?', random(1,3)));
-        video.play();
+        if (video !== null) {
+            video.setAttribute('src', uri.replace('?', random(1,3)));
+            video.play();
+        }
     })
 
     /**

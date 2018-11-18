@@ -37,7 +37,7 @@ body {
     font-weight: 300;
 }
 
-.text-big-title {
+.text-big-title, .text-title-contact {
     font-family: 'urban_brush_zoneregular', sans-serif;
     font-size: 5em;
 }
@@ -532,10 +532,6 @@ footer .newsletter form input[type=text]:hover {
 
     .text-normal {
         font-size: 1.2em;
-    }
-
-    .text-big-title {
-        font-size: 3em;
     }
 
 }
