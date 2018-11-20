@@ -483,6 +483,13 @@ footer .newsletter form input[type=text]:hover {
     footer .newsletter > :last-child {
         order: 3;
     }
+
+    header .title {
+        width: 100% !important;
+        height: 49% !important;
+        background-color: rgba(0, 0, 0, 0.267);
+        justify-self: center;
+    }
 }
 
 
@@ -540,6 +547,13 @@ footer .newsletter form input[type=text]:hover {
         font-size: 1.2em;
     }
 
+    .text-bold {
+        font-size: 1.4em;
+    }
+
+    .text-big-title {
+        font-size: 3em !important;
+    }
 }
 
 @media screen and (max-width: 540px)  {
@@ -580,4 +594,8 @@ footer .newsletter form input[type=text]:hover {
         font-size: 1.9em;
     }
     
+    span {
+        font-size: 1.3em !important;
+    }
+
 }
