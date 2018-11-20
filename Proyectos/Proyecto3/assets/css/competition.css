@@ -59,17 +59,53 @@ section.redbull .image::before, section.fig .image::before {
     padding-bottom: 56.25%;
 }
 
+/*----------------------Descripción-----------------------------*/
+section .content {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 116px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+section .content.A {
+    clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+}
+
+section .content.B {
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+}
+
+.content.A .title {
+    text-align: right;
+}
+
+.content .wrapper {
+    width: 85%;
+    align-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.content .wrapper .description {
+    column-count: 2;
+    column-gap: 40px;
+    text-align: justify;
+    margin-top: 32px;
+}
+
+.content .wrapper .comment {
+    margin-top: 32px;
+    width: 90%;
+    align-self: center;
+}
+
 /*----------------------GALERIA COMPETICIONES--------------------*/
 section .gallery {
     display: flex;
     flex-flow: row wrap;
 }
-
-/* section .gallery .img{
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
 
 section .gallery .img div{
     background-size: cover;
