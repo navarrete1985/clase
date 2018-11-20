@@ -269,3 +269,57 @@ section .gallery .img div{
 .fig .clasification .podium {
     background-image: url(../images/fig_podium.jpg);
 }
+
+@media screen and (max-width: 1000px) {
+    .content .wrapper .description {
+        column-count: 1;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    section .gallery {
+        flex-flow: column nowrap;
+    }
+
+    .gallery .c1::before, .gallery .c2::before {
+        content: none;
+    }
+
+    .gallery .c1, .gallery .c2 {
+        flex-flow: column nowrap;
+    }
+
+    .gallery .img-A, .gallery .img-B {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .gallery .img-A::before, .gallery .img-B::before {
+        content: '';
+        display: flex;
+        padding-bottom: 50%;
+    }
+
+    .gallery .img div {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .clasification .result {
+        align-items: center;
+    }
+
+    section .content.A, section .content.B {
+        clip-path: none;
+        padding: 0;
+        margin: 50px auto;
+    }
+
+    .clasification .podium {
+        margin-top: 32px;
+    }
+}
