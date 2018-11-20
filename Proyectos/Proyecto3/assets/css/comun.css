@@ -63,6 +63,12 @@ body {
     font-weight: 200;
 }
 
+.text-bold {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
 /*------------------------ico nav----------------*/
 #nav-ico {
     position: absolute;
