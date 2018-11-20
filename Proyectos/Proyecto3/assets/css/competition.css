@@ -274,6 +274,18 @@ section .gallery .img div{
     .content .wrapper .description {
         column-count: 1;
     }
+
+    header .title {
+        width: 100% !important;
+        height: 49% !important;
+        background-color: rgba(0, 0, 0, 0.267);
+        justify-self: center;
+    }
+
+    .content .wrapper {
+        width: 90% !important;
+    }
+
 }
 
 
@@ -321,5 +333,9 @@ section .gallery .img div{
 
     .clasification .podium {
         margin-top: 32px;
+    }
+
+    span {
+        font-size: 1.3em;
     }
 }
