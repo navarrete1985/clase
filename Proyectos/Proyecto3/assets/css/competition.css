@@ -24,6 +24,10 @@ header .title {
     font-size: 4em;
 }
 
+section {
+    box-sizing: border-box;
+}
+
 /*-----------------------COMPETIICONES--------------------*/
 section {
     display: flex;
@@ -222,4 +226,46 @@ section .gallery .img div{
 .gallery .img:hover .hover,
 .gallery .img:focus .hover {
     transform: scale(1.2) rotate(1.9deg);
+}
+
+/*----------------------------Clasificación------------------------------*/
+.clasification {
+    align-self: center;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 85%;
+    margin: 50px 0;
+}
+
+.clasification .result {
+    flex: 1 0 300px;
+    align-self: center;
+    
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+.clasification .podium {
+    display: flex;
+    flex: 1 0 300px;
+    width: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clasification .podium::before {
+    content: '';
+    padding-bottom: 60%;
+}
+
+.redbull .clasification .podium {
+    background-image: url(../images/aom-podium.jpg);
+}
+
+.fig .clasification .podium {
+    background-image: url(../images/fig_podium.jpg);
 }
