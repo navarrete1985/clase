@@ -21,7 +21,7 @@ header .title {
     color: white;
     width: 50%;
     height: 50%;
-    font-size: 4em;
+    font-size: 3.4em;
 }
 
 section {
@@ -44,13 +44,13 @@ span {
 section .image {
     flex: 1 1 100%;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 section.redbull .image {
-    background-image: url(../images/SantoriniVector.jpg);
+    background-image: url(../images/SantoriniVector-2.jpg);
 }
 
 section.fig .image {
@@ -216,17 +216,33 @@ section .gallery .img div{
     top: 0;
     left: 0;
     background-color: rgba(52, 73, 94, 0.75);
-  }
+}
   
   .gallery .img:hover .hover:before,
   .gallery .img:focus .hover:before {
-    display: block;
-  }
+    display: flex;
+}
 
 .gallery .img:hover .hover,
 .gallery .img:focus .hover {
     transform: scale(1.2) rotate(1.9deg);
 }
+
+.gallery .img:hover .eye {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/eye.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /*----------------------------Clasificación------------------------------*/
 .clasification {
@@ -287,7 +303,6 @@ section .gallery .img div{
     }
 
 }
-
 
 @media screen and (max-width: 900px) {
     section .gallery {
