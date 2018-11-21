@@ -230,8 +230,8 @@ section .gallery .img div{
 
 .gallery .img:hover .eye {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     margin: auto;
     top: 0;
     left: 0;
@@ -260,8 +260,36 @@ section .gallery .img div{
     align-self: center;
     
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     width: 50%;
+}
+
+.clasification .result .pos {
+    width: 90%;
+    height: 80%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.redbull .clasification .result .pos {
+    background-image: url(../images/Podium1.png);
+}
+
+.fig .clasification .result .pos {
+    background-image: url(../images/Podium2.png);
+}
+
+.clasification .result .title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+.clasification .result .pos::before {
+    content: '';
+    display: block;
+    padding-bottom: 66%;
 }
 
 .clasification .podium {
@@ -302,6 +330,10 @@ section .gallery .img div{
         width: 90% !important;
     }
 
+    .clasification .result .title {
+        font-size: 2em;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -332,6 +364,10 @@ section .gallery .img div{
     .gallery .img div {
         width: 100%;
         height: auto;
+    }
+
+    .clasification .result .title {
+        font-size: 1.7em;
     }
 }
 

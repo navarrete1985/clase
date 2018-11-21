@@ -185,7 +185,7 @@ section.arte-urbano p.content span {
     }
 
     video {
-        transform: scale(0.8) translateY(-20%) translateX(-30%);
+        transform: scale(0.85) translateY(-10%) translateX(-30%);
     }
 
     .section-parkour .description .title, .section-parkour .description .content {
@@ -210,7 +210,7 @@ section.arte-urbano p.content span {
     }
 
     video {
-        transform: scale(0.6) translateY(-40%) translateX(-50%);
+        transform: scale(0.8) translateY(-10%) translateX(-20%);
     }
 
     section.section-filosofia {
@@ -277,7 +277,7 @@ section.arte-urbano p.content span {
     }
 
     video {
-        transform: scale(0.59) translateY(-40%) translateX(-70%);
+        transform: scale(0.8) translateY(-10%) translateX(-40%);
     }
     
     section.section-filosofia {
