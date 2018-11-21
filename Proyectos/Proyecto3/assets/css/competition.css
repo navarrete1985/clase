@@ -85,7 +85,7 @@ section .content.B {
     text-align: right;
 }
 
-.content .wrapper {
+section .content .wrapper {
     width: 85%;
     align-self: center;
     display: flex;
@@ -242,7 +242,6 @@ section .gallery .img div{
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 
 /*----------------------------Clasificación------------------------------*/
 .clasification {

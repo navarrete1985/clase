@@ -4,11 +4,13 @@
     let menuUl = document.querySelector('nav .content ul');
     let li = document.querySelectorAll('nav .content ul li');
 
-    document.addEventListener('scroll', event => {
-        if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            element.classList.add('shape-nav');
-        }
-    });
+    // document.addEventListener('scroll', event => {
+    //     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    //         element.classList.add('shape-nav');
+    //     }
+    // });
+
+    window.setTimeout(() => element.classList.add('shape-nav'), 500);
 
     menu.addEventListener('click', event => {
         menu.classList.toggle('open');
