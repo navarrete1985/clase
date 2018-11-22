@@ -72,3 +72,17 @@ Asignar una perpectiva para poder apreciar mejor el efecto*/
 .cubo .cara#frente {
     transform: translateZ(-100px);
 }
+
+.cubo {
+    animation: girar 2s infinite linear;
+}
+
+@keyframes girar {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
