@@ -1,5 +1,5 @@
 $(document).ready(function($) {
-      $("iframe").vimeo("seekTo", 10);
+      $("iframe").vimeo("seekTo", 55);
       $("iframe").vimeo("play");
 
 });
