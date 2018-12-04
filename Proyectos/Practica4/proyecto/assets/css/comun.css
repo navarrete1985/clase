@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather|Oxygen');
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Oxygen', sans-serif;
+*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav .content {
+    background-color: brown;
+}
+
+nav .content img {
+    width: 60px;
+    height: 30px;
+}
