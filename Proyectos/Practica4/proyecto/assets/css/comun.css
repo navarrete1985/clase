@@ -1,4 +1,85 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather|Oxygen');
+
+/*FUENTES/BACKGROUND/LINEAS COMUN*/
+.txt-bt {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.75em;
+}
+
+.txt-btb {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+}
+
+.txt-tc {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em; 
+    font-weight: 400;   
+}
+
+.txt-nc {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;    
+}
+
+.txt-ht {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3em; 
+    font-weight: 700;
+    color: #DF1735;
+}
+
+.bgc-g {
+    background-color: #FAFBFC;
+}
+
+.bgc-dg {
+    background-color: #353638;
+}
+
+.bb {
+    border-bottom: 1px solid #DAE1E9;
+}
+
+.init-move-right {
+    left: -300%;
+    opacity: 0;
+}
+
+.visible-right {
+    left: 0;
+    opacity: 1;
+}
+
+.exit-right {
+    left: 300%;
+    opacity: 0;
+}
+
+.init-move-left {
+    left: 300%;
+    opacity: 0;
+}
+
+.visible-left {
+    left: 0;
+    opacity: 1;
+}
+
+.exit-left {
+    left: -300%;
+    opacity: 0;
+}
+
+.carousel .frame {
+    position: absolute;
+    min-width: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
 /*
 font-family: 'Merriweather', serif;
 font-family: 'Libre Baskerville', serif;
@@ -10,13 +91,137 @@ body {
     box-sizing: border-box;
     width: 100%;
     overflow-x: hidden;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/*Nav bar*/
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(191, 29, 56, 0.8);
 }
 
 nav .content {
-    background-color: brown;
+    font-weight: 700;
+    height: 100%;
+}
+
+nav .content a {
+    color: white;
+    text-decoration: none;
+    transition: color, font-size, 0.25s;
 }
 
 nav .content img {
-    width: 60px;
+    position: absolute;
+    width: 39px;
+    top: 8px;
+    left: 24px;
+    margin-bottom: 16px;
+}
+
+nav .content ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+
+    list-style-type: none;
+}
+
+nav .content li {
+    margin-right: 30px;
+}
+
+nav .content a:hover {
+    color: #35363859;
+    font-size: 1.05em;
+}
+
+/*------------------------ico nav----------------*/
+#nav-ico {
+    position: absolute;
+    top: -50px;
+    right: 16px;
+    width: 30px;
     height: 30px;
+    margin: 4px auto;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-ico span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: black;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+#nav-ico span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 4px 4px 0;
+}
+
+#nav-ico span:nth-child(odd) {
+    left:0px;
+    border-radius: 4px 0 0 4px;
+}
+
+#nav-ico span:nth-child(1), #nav-ico span:nth-child(2) {
+    top: 0px;
+}
+
+#nav-ico span:nth-child(3), #nav-ico span:nth-child(4) {
+    top: 10px;
+}
+
+#nav-ico span:nth-child(5), #nav-ico span:nth-child(6) {
+    top: 20px;
+}
+
+/*------------------------ico nav animacion----------------*/
+#nav-ico.open span:nth-child(1),#nav-ico.open span:nth-child(6) {
+    transform: rotate(45deg);
+}
+
+#nav-ico.open span:nth-child(2),#nav-ico.open span:nth-child(5) {
+    transform: rotate(-45deg);
+}
+
+#nav-ico.open span:nth-child(1) {
+    left: 2px;
+    top: 5px;
+}
+  
+  #nav-ico.open span:nth-child(2) {
+    left: calc(50% - 3px);
+    top: 5px;
+}
+  
+  #nav-ico.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+  
+  #nav-ico.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+  
+  #nav-ico.open span:nth-child(5) {
+    left: 2px;
+    top: 16px;
+}
+  
+  #nav-ico.open span:nth-child(6) {
+    left: calc(50% - 2px);
+    top: 16px;
 }
