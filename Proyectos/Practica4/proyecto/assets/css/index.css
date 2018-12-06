@@ -214,11 +214,70 @@ section.conocenos .right .image::before {
 }
 
 /*CULTURA*/
-section.cultura {
+section.culture {
     display: flex;
     flex-flow: column nowrap;
-    width: 100%;
     align-items: center;
+    
+    box-sizing: border-box;
+    padding: 60px 5%;
+    width: 100%;
 }
 
+section.culture .title{
+    margin-bottom: 8px;
+}
 
+section.culture .subtitle {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+section.culture .subtitle .line {
+    flex: 0 2 200px;
+    width: 20%;
+    height: 50%;
+    border-top: 1px solid black;
+}
+
+section.culture .subtitle .line.left {
+    border-left: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+}
+
+section.culture .subtitle .line.right {
+    border-right: 1px solid black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 50%;
+}
+
+section.culture .subtitle .content {
+    width: 60%;
+    text-align: center;
+}
+
+section.culture .container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5% 64px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section.culture .container .description {
+    width: 90%;
+    max-width: 900px;
+}
