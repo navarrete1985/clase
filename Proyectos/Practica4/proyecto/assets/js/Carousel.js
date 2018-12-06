@@ -7,14 +7,15 @@ class Carousel {
         this._items = this._carousel.querySelectorAll('.frame');
         this._position = 0;
         this._maxLength = this._items.length - 1;
-        Array.from(this._items).forEach(item => this.__returnOrigin(item));
+        this.__prepare();
+        this._isInterval = false;
     }
 
     startWithInterval() {
-        this.next();
+        this._isInterval = true;
         if (this._maxLength > 1) {
             let interval = (this._timeInterval !== undefined) ? parseInt(this._timeInterval) * 1000 : 8000;
-            window.setInterval(() => {
+            this._intervalId = window.setInterval(() => {
                 this.next();
             }, interval);
         }
@@ -25,31 +26,68 @@ class Carousel {
         if (this._maxLength > 1) {
             let previous = this._position;
             this._position = this._position === this._maxLength ? 0 : this._position + 1;
-            this.__dissapear(this._items[previous]);
-            this.__appear(this._items[this._position]);
-            this.__returnOrigin(this._items[(this._position - 2) < 0 ? (this._position - 2 == -2 ? this._maxLength - 1 : this._maxLength)  : this._position - 2]);
+            if (this._direction === 'left') {
+                this.__moveLeftToRight(this._items[previous], this._items[this._position]);
+            }else {
+                this.__moveRightToLeft(this._items[previous], this._items[this._position]);
+            }
+            this.__isInterval();
         }
     }
 
-    __dissapear(element) {
-        element.classList.remove((this._direction === 'left') ? 'visible-left' :'visible-right');
-        element.classList.add((this._direction === 'left') ? 'exit-left' : 'exit-right');
+    previous() {
+        if (this._maxLength > 1) {
+            let previous = this._position;
+            this._position = this._position === 0 ? this._maxLength : this._position - 1;
+            if (this._direction === 'left') {
+                this.__moveRightToLeft(this._items[previous], this._items[this._position]);
+            }else {
+                this.__moveLeftToRight(this._items[previous], this._items[this._position]);
+            }
+            
+            this.__isInterval();
+        }
     }
 
-    __appear(element) {
-        element.classList.remove((this._direction === 'left') ? 'init-move-left' : 'init-move-right');
-        element.classList.add((this._direction === 'left') ? 'visible-left' : 'visible-right');
+    async __moveLeftToRight(dissapearElement, appearElement) {
+        appearElement.classList.remove('activate-transition', 'invisible', 'move-to-right');
+        appearElement.classList.add('move-to-left');
+        await this.__sleep(250);
+        appearElement.classList.add('activate-transition');
+        await this.__sleep(250)
+        dissapearElement.classList.add('activate-transition', 'move-to-right');
+        dissapearElement.classList.remove('visible');
+        appearElement.classList.remove('move-to-left');
+        appearElement.classList.add('visible');
     }
 
-    __returnOrigin(element) {
-        element.classList.remove((this._direction === 'left') ? 'exit-left' : 'exit-right');
-        element.classList.add((this._direction === 'left') ? 'init-move-left' : 'init-move-right');
-        
+    async __moveRightToLeft(dissapearElement, appearElement) {
+        appearElement.classList.remove('activate-transition', 'invisible', 'move-to-left');
+        appearElement.classList.add('move-to-right');
+        await this.__sleep(250);
+        appearElement.classList.add('activate-transition');
+        await this.__sleep(250)
+        dissapearElement.classList.add('activate-transition', 'move-to-left');
+        dissapearElement.classList.remove('visible');
+        appearElement.classList.remove('move-to-right');
+        appearElement.classList.add('visible');
+    }
+
+    __prepare() {
+        Array.from(this._items).forEach(element => element.classList.add('invisible'));
+        this._items[0].classList.remove('invisible');
+        this._items[0].classList.add('visible', 'activate-transition');
     }
 
     __sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    
+    __isInterval() {
+        if (this._isInterval) {
+            window.clearInterval(this._intervalId);
+            this.startWithInterval();
+        }
+    }
+
 }

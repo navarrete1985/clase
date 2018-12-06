@@ -42,39 +42,10 @@
     border-bottom: 1px solid #DAE1E9;
 }
 
-.init-move-right {
-    left: -300%;
-    opacity: 0;
-}
-
-.visible-right {
-    left: 0;
-    opacity: 1;
-}
-
-.exit-right {
-    left: 300%;
-    opacity: 0;
-}
-
-.init-move-left {
-    left: 300%;
-    opacity: 0;
-}
-
-.visible-left {
-    left: 0;
-    opacity: 1;
-}
-
-.exit-left {
-    left: -300%;
-    opacity: 0;
-}
-
 .carousel .frame {
     position: absolute;
     min-width: 100%;
+    max-width: 100%;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
@@ -85,6 +56,7 @@ font-family: 'Merriweather', serif;
 font-family: 'Libre Baskerville', serif;
 font-family: 'Oxygen', sans-serif;
 */
+
 body {
     margin: 0;
     padding: 0;

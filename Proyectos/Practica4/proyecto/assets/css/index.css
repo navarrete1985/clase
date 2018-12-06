@@ -1,3 +1,36 @@
+/*PRELOADER*/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    transition: all 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.loader {
+    background-image: url(../images/Jelly-Preloader.gif);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+}
+
+.hidden-preloader {
+    opacity: 0;
+    z-index: -10;
+}
+
+.loader::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
 /*Posicionamiento video*/
 .vimeo-wrapper {
     position: relative;
@@ -60,14 +93,16 @@
 .carousel-info a.left {
     background-image: url(../images/espalda.svg);
     margin-left: 3%;
+    z-index: 2;
 }
 
 .carousel-info a.right {
     background-image: url(../images/proximo.svg);
     margin-right: 3%;
+    z-index: 2;
 }
 
-.carousel-info a:hover, .carousel-info a:focus {
+.carousel-info a:hover {
     width: 36px;
     height: 54px;
 }
@@ -111,14 +146,6 @@
 
 .carousel-info .btn:hover:before {
     width: 100%;
-}
-
-.carousel-info .frame {
-    transition: all 3s;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    max-width: 100%;
 }
 
 #carouselHeader {
@@ -185,4 +212,13 @@ section.conocenos .right .image::before {
     text-align: justify;
     text-justify: inter-character;
 }
+
+/*CULTURA*/
+section.cultura {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    align-items: center;
+}
+
 

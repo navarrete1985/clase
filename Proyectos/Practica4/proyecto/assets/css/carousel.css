@@ -1,0 +1,27 @@
+.move-to-left {
+    left: -150%;
+    opacity: 0;
+}
+
+.move-to-right {
+    left: 150%;
+    opacity: 0;
+}
+
+.visible {
+    left: 0;
+    opacity: 1;
+}
+
+.invisible {
+    left: -150%;
+    opacity: 0;
+}
+
+.activate-transition {
+    transition: all 2s; 
+}
+
+.deactivate-transition {
+    transition: none;
+}
