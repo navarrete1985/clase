@@ -281,3 +281,185 @@ section.culture .container .description {
     width: 90%;
     max-width: 900px;
 }
+
+section.culture .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    position: relative;
+    width: 100%;
+}
+
+section.culture .gallery .shape {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+} 
+
+section.culture .gallery .img {
+    flex: 0 0 25%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+section.culture .gallery .img:before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+section.culture .gallery .img .desc {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.651);
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 5px 8px;
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+section.culture .gallery .img:hover > .desc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+}
+
+section.culture .gallery .img1 {
+    background-image: url(../images/indigena-canada.jpg);
+}
+
+section.culture .gallery .img2 {
+    background-image: url(../images/irland-canada.jpg);
+}
+
+section.culture .gallery .img3 {
+    background-image: url(../images/fr-canada.jpg);
+}
+
+/*NUESTRA GASTRONOMIA*/
+section.gastronomia {
+    position: relative;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    width: 100%;
+}
+
+section.gastronomia .description {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+
+    flex: 1 1 400px;
+}
+
+section.gastronomia .item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+
+    flex: 1 1 400px;
+}
+
+section.gastronomia .wrapper {
+    margin: 10% 10% 50px 10%;
+}
+
+
+section.gastronomia .wrapper-r {
+    margin: 10% 10% 100px 0;
+}
+
+section.gastronomia .item .content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-left: 1px solid black;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+section.gastronomia .item .img {
+    margin-top: 32px;
+    width: 90%;
+    background-image: url(../images/Ostras-570x321.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+section.gastronomia .item .img:before {
+    content: '';
+    display: block;
+    padding-bottom: 60%;
+}
+
+section.gastronomia hr {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid;
+    border-bottom: none;
+    z-index: -2;
+    margin-right: 35%;
+}
+
+section.gastronomia .item .title, section.gastronomia .item .subtitle {
+    text-align: center;
+}
+
+section.control {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: -100px;
+}
+
+section.control .control {
+    position: relative;
+    width: 140px;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+}
+
+.control .previous, .control .next {
+    width: 100%;
+    height: 100%;
+}
+
+.control .next, .control .previous {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.control .next {
+    background-image: url(../images/next.svg);
+    background-color: #FAFBFC;
+}
+
+.control .previous {
+    background-image: url(../images/back.svg);
+    background-color: white;
+}
+
+section.ciudades {
+    margin-top: 50px;
+}

@@ -197,3 +197,12 @@ nav .content a:hover {
     left: calc(50% - 2px);
     top: 16px;
 }
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    height: 0%;
+    display: none;
+}
