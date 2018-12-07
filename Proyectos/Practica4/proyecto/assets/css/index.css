@@ -460,6 +460,129 @@ section.control .control {
     background-color: white;
 }
 
+/*CIUDADES*/
 section.ciudades {
     margin-top: 50px;
+    padding-top: 64px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+section.ciudades .title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+
+section.ciudades .subtitle {
+    width: 60%;
+    min-width: 300px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+section.ciudades .skyline {
+    width: 100%;
+    background-image: url(../images/Toronto_Ontario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.ciudades .skyline:before {
+    content: '';
+    display: block;
+    padding-bottom: 25%;
+    min-height: 100px;
+}
+
+.carousel-city {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    margin-top: 52px;
+}
+
+.carousel-city .content {
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+    flex: 1 1 80%;
+    padding: 0 32px;
+    margin: 0 42px;
+}
+
+.carousel-city a {
+    width: 32px;
+    height: 50px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .25s ease-in-out;
+}
+
+.carousel-city a.left {
+    background-image: url(../images/back.svg);
+    margin-left: 3%;
+    z-index: 2;
+}
+
+.carousel-city a.right {
+    background-image: url(../images/next.svg);
+    margin-right: 3%;
+    z-index: 2;
+}
+
+.carousel-city a:hover {
+    width: 36px;
+    height: 54px;
+}
+
+.carousel-city .btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 32px;
+    color: black;
+    padding: 4px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 120px;
+    margin: 16px auto;
+    z-index: 10;
+}
+
+.carousel-city .btn:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background: rgba(191, 29, 56, 0.8);
+    transition: all .7s ease;
+    z-index: -1;
+}
+
+.carousel-city .btn:hover:before {
+    width: 100%;
+}
+
+.carousel-city .city {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.carousel-city .description {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
 }
