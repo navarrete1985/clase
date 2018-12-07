@@ -516,6 +516,7 @@ section.ciudades .skyline:before {
     flex: 1 1 80%;
     padding: 0 32px;
     margin: 0 42px;
+    box-sizing: border-box;
 }
 
 .carousel-city a {
@@ -585,4 +586,46 @@ section.ciudades .skyline:before {
     text-align: justify;
     max-width: 1200px;
     margin: 0 auto 32px auto;
+}
+
+section.ciudades .pointer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    position: relative;
+    align-self: center;
+    width: 200px;
+    height: 20px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+section.ciudades .line {
+    position: absolute;
+    background-image: linear-gradient(to right, black 50%, white 50%);
+    background-position: top;
+    background-size: 10px;
+    background-repeat: repeat-x;
+    border-color: red;
+    border-width: 1px;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+section.ciudades .circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 10%;
+    height: 100%;
+    z-index: 10;
+    transition: all .25s;
+}
+
+.white-circle {
+    background-color: white;
+}
+
+.black-circle {
+    background-color: black;
 }
