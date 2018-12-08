@@ -53,6 +53,18 @@
     border-bottom: 1px solid #DAE1E9;
 }
 
+.bgi-c {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bgi-cov {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 .carousel .frame {
     position: absolute;
     min-width: 100%;
