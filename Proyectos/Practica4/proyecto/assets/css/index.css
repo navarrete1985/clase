@@ -397,10 +397,33 @@ section.gastronomia .item .content {
 section.gastronomia .item .img {
     margin-top: 32px;
     width: 90%;
-    background-image: url(../images/Ostras-570x321.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.img0 {
+    background-image: url(../images/Ostras-570x321.jpg);
+}
+
+.img1 {
+    background-image: url(../images/Arctic-Char.jpg);
+}
+
+.img2 {
+    background-image: url(../images/Tourtiere-de-Quebec.jpg);
+}
+
+.img3 {
+    background-image: url(../images/Butter-tarts.jpg);
+}
+
+.img4 {
+    background-image: url(../images/Fiddleheads.jpg);
+}
+
+.img5 {
+    background-image: url(../images/Jarabe-de-arce.jpg);
 }
 
 section.gastronomia .item .img:before {
@@ -486,10 +509,25 @@ section.ciudades .subtitle {
 
 section.ciudades .skyline {
     width: 100%;
-    background-image: url(../images/Toronto_Ontario.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
+}
+
+.skyline0 {
+    background-image: url(../images/Toronto_Ontario.jpg);
+}
+
+.skyline1 {
+    background-image: url(../images/2015_vancouverfalsecreek2.jpg);
+}
+
+.skyline2 {
+    background-image: url(../images/ottawa_final_cover.jpg);
+}
+
+.skyline3 {
+    background-image: url(../images/Montreal_Twilight_Panorama_2006.jpg);
 }
 
 section.ciudades .skyline:before {
@@ -624,6 +662,9 @@ section.ciudades .circle {
 
 .white-circle {
     background-color: white;
+    height: 80% !important;
+    width: 8%!important;
+    align-self: center;
 }
 
 .black-circle {
