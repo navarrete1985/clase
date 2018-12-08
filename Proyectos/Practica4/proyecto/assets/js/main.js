@@ -8,14 +8,16 @@
     let displayed = document.querySelector('section.naturaleza-content .display');
     let list = document.querySelector('section.naturaleza-content .list');
     let action = false;
+    let accomodation = document.querySelector('.travel .left .select .accommodation');
+    let bundle = document.querySelector('.travel .left .select .bundle');
     Array.from(natureItems).forEach(element => {
         element.addEventListener('click', actionNaturalItem);
     });
-
+    accomodation.addEventListener('click', travelAcction);
+    bundle.addEventListener('click', travelAcction);
     async function actionNaturalItem(event) {
         let nodeEvent = event.target;
         if (nodeEvent.parentNode.classList.contains('list') && !action) {
-            // let nodeDisplay = document.querySelector('section.naturaleza-content .display .item');
             action = true;
             let nodeDisplay = displayed.firstElementChild;
             nodeDisplay.firstElementChild.classList.remove('displayed');
@@ -40,6 +42,17 @@
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function travelAcction (evnet){
+        let parent = event.target.parentNode;
+        if (parent.classList.contains('accommodation')) {
+            bundle.querySelector('.fill').classList.remove('arrow');
+            accomodation.querySelector('.fill').classList.add('arrow');
+        }else if (parent.classList.contains('bundle')) {
+            bundle.querySelector('.fill').classList.add('arrow');
+            accomodation.querySelector('.fill').classList.remove('arrow');
+        }
     }
 
 })();

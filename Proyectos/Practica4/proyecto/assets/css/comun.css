@@ -11,6 +11,11 @@
     font-size: 3em;
 }
 
+.txt-btc {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.2em;
+}
+
 .txt-tc {
     font-family: 'Merriweather', serif;
     font-size: 1.2em; 
@@ -20,6 +25,12 @@
 .txt-nc {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
+    font-weight: 300;    
+}
+
+.txt-ncs {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
     font-weight: 300;    
 }
 
@@ -49,6 +60,35 @@
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 32px;
+    padding: 4px 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 120px;
+    margin: 16px auto;
+    z-index: 2;
+}
+
+.button:before {
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background: rgba(191, 29, 56, 0.8);
+    transition: all .7s ease;
+    z-index: -1;
+}
+
+.button:hover:before {
+    width: 100%;
 }
 
 /*
