@@ -1,0 +1,285 @@
+section.gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+}
+
+section.gallery .content {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
+    margin-top: 100px;
+    justify-self: center;
+    z-index: 2;
+    padding: 8px 32px;
+    margin-bottom: 64px;
+}
+
+section.gallery .content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-left: 4px solid #353638;
+    border-top: 4px solid #353638;
+    border-bottom: 4px solid #353638;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+section.gallery .content::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-right: 4px solid white;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+
+section.gallery .background {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: #353638;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/*GALERÍA*/
+section.gallery .wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+section.gallery .wrapper .left {
+    flex: 1 1 800px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: start;
+}
+
+section.gallery .wrapper .right {
+    flex: 1 1 800px;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: start;
+} 
+
+section.gallery .img {
+    position: relative;
+    cursor: pointer;
+}
+
+.img1 {
+    background-image: url(../images/galeria/img1.jpg);
+    width: 80%;
+}
+
+.img::after {
+    content: '';
+    display: block;
+}
+
+.img1::after {
+    padding-bottom: 60%;
+}
+
+.img12 {
+    background-image: url(../images/galeria/img2.jpg);
+    width: 70%;
+}
+
+.img12::after {
+    padding-bottom: 70%;
+}
+
+.img3 {
+    width: 60%;
+    background-image: url(../images/galeria/img3.jpg);
+}
+
+.img3::after {
+    padding-bottom: 60%
+}
+
+.img4 {
+    width: 50%;
+    background-image: url(../images/galeria/img5.jpg);
+}
+
+.img4::after {
+    padding-bottom: 70%;
+}
+
+.img5 {
+    width: 70%;
+    background-image: url(../images/galeria/img7.jpg);
+}
+
+.img5::after {
+    padding-bottom: 65%;
+}
+
+.img6 {
+    width: 90%;
+    background-image: url(../images/galeria/img8.jpg);
+}
+
+.img6::after {
+    padding-bottom: 57%;
+}
+
+.img7 {
+    width: 100%;
+    background-image: url(../images/galeria/Mountains-mountain-lac-blue-nature-hd-wallpapers-iphone-5-4k-high-definition-windows-10-mac.apple-colourful-images-backgrounds-download-wallpaper-free-1920x1080.jpg);
+}
+
+.img7::after {
+    padding-bottom: 65%;
+}
+
+.img8 {
+    width: 60%;
+    background-image: url(../images/galeria/peyto-lake-canada-mountains-4k-tj.jpg);
+}
+
+.img8::after {
+    padding-bottom: 60%;
+}
+
+.img9 {
+    width: 70%;
+    background-image: url(../images/galeria/sunwapta-fall-parque-nacional-de-jasper-montanas-rocosas-de-canada-en-15-dias.jpg);
+}
+
+.img9::after {
+    padding-bottom: 65%;
+}
+
+.img10 {
+    width: 90%;
+    background-image: url(../images/galeria/ten-melting-peaks-moraine-lake-banff-canada.jpg);
+}
+
+.img10::after {
+    padding-bottom: 65%;
+}
+
+.img11 {
+    width: 80%;
+    background-image: url(../images/galeria/1347.jpg);
+}
+
+.img11::after {
+    padding-bottom: 56%;
+}
+
+.img2 {
+    width: 100%;
+    background-image: url(../images/galeria/Canada_wallpaper_001.jpg);
+}
+
+.img2::after {
+    padding-bottom: 57%;
+}
+
+.img13 {
+    width: 50%;
+    background-image: url(../images/galeria/canada-pano.jpg);
+}
+
+.img13::after {
+    padding-bottom: 57%;
+}
+
+.img14 {
+    width: 50%;
+    background-image: url(../images/galeria/Canada-Wallpaper-22.jpg);
+}
+
+.img14::after {
+    padding-bottom: 70%;
+}
+
+.img1, .img3, .img5, .img7, .img9, .img11, .img13 {
+    box-shadow: -0.5px 0.5px 3px 0px rgba(50,50,50,0.75);
+}
+
+.img2, .img4, .img6, .img8, .img10, .img12, .img14 {
+    box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.75);
+}
+
+/*Hover imagen*/
+.img {
+    transition: all .5s;
+}
+
+.img::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.75);
+}
+
+.img:hover::before,
+.img:focus::before {
+    display: flex;
+}
+
+.img:hover,
+.img:focus{
+    transform: scale(1.01);
+    z-index: 20;
+}
+
+.img1:hover, .img3:hover, .img5:hover, .img7:hover, .img9:hover, .img11:hover, .img13:hover,
+.img1:focus, .img3:focus, .img5:focus, .img7:focus, .img9:focus, .img11:focus, .img13:focus {
+    box-shadow: -2px 2px 3px 0px rgba(50,50,50,0.75);
+}
+
+.img2:hover, .img4:hover, .img6:hover, .img8:hover, .img10:hover, .img12:hover, .img14:hover,
+.img2:focus, .img4:focus, .img6:focus, .img8:focus, .img10:focus, .img12:focus, .img14:focus {
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.img:hover .eye {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/eye.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
