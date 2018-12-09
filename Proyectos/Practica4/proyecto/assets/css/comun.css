@@ -180,7 +180,7 @@ nav .content a::before {
     border-right: 0px solid transparent;
     bottom:  0;
     left: 0;
-    transition: width .075s ease-out, height 0.075s ease-out  0.075s;
+    transition: width .12s ease-out, height 0.12s ease-out  0.12s;
 }
 
 nav .content a::after {
@@ -188,7 +188,7 @@ nav .content a::after {
     border-left: 0px solid transparent;
     top:  -1px;
     right: -1px;
-    transition: border-color 0s ease-out 0.15s, width .075s ease-out 0.15s, height 0.075s ease-out  0.225s;
+    transition: width .12s ease-out, height 0.12s ease-out  0.12s;
 }
 
 
