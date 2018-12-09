@@ -400,6 +400,7 @@ ol {
 	content: '';
 	display: block;
 	padding-bottom: 30%;
+	min-height: 100px;
 }
 
 .wrapper-day5 .title {
