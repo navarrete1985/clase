@@ -424,4 +424,19 @@ ol {
 .wrapper-day5 .description {
 	display: flex;
 	flex-flow: column nowrap;
+
+	padding: 0 0 0 16px;
 }
+
+.wrapper-day5 .description .wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-top: 16px;
+	max-width: 900px;
+}
+
+.wrapper-day5 .description .wrapper .text {
+	margin-bottom: 32px;
+}
+
+

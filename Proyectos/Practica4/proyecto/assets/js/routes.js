@@ -18,5 +18,8 @@
         titles[position].classList.remove('hidden');
         img.classList.add(`img${position}`);
     }
+})();
 
+(function() {
+    
 })();
