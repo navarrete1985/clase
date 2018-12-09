@@ -134,9 +134,11 @@ nav .content {
 }
 
 nav .content a {
+    position: relative;
     color: white;
     text-decoration: none;
-    transition: color, font-size, 0.25s;
+    transition: color, font-size, 0.15s;
+    padding: 4px 8px;
 }
 
 nav .content img {
@@ -161,8 +163,47 @@ nav .content li {
 }
 
 nav .content a:hover {
-    color: #35363859;
-    font-size: 1.05em;
+    /* color: #35363859; */
+    font-size: 1.28em;
+}
+
+nav .content a::before, nav .content a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 0%;
+}
+
+nav .content a::before {
+    border-bottom: 0px solid transparent;
+    border-right: 0px solid transparent;
+    bottom:  0;
+    left: 0;
+    transition: width .075s ease-out, height 0.075s ease-out  0.075s;
+}
+
+nav .content a::after {
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    top:  -1px;
+    right: -1px;
+    transition: border-color 0s ease-out 0.15s, width .075s ease-out 0.15s, height 0.075s ease-out  0.225s;
+}
+
+
+nav .content a:hover::before{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+nav .content a:hover::after {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    width: 100%;
+    height: 100%;
 }
 
 /*------------------------ico nav----------------*/
