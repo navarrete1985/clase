@@ -124,7 +124,7 @@ header nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
     background-color: rgba(191, 29, 56, 0.8);
 }
 
