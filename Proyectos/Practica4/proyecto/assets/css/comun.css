@@ -16,6 +16,12 @@
     font-size: 2.2em;
 }
 
+.txt-btd {
+    font-family: 'Merriweather', serif;
+    font-size: 1.6em;
+    font-weight: 600; 
+}
+
 .txt-tc {
     font-family: 'Merriweather', serif;
     font-size: 1.2em; 
