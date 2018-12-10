@@ -140,12 +140,13 @@ ol {
 }
 
 .events-content .wrapper .content1 .img {
-	background-image: url(../images/glenbow2.jpg);
+	background-image: url(../images/maid_of_the_mist_getty.jpg);
 	z-index: 1;
 }
 
 .events-content .wrapper .content2 .img {
-	background-image: url(../images/1596675.v.d0536b615ef7077b44c0a57178e652c1.jpg);
+    background-image: url(../images/skylon_01.jpg);
+    background-size: cover;
 	z-index: 1;
 }
 
@@ -192,7 +193,9 @@ ol {
 	content: '';
 	display: block;
 	padding-bottom: 20%;
-	background-image: url(../images/parque-nacional-jasper.jpg);
+    background-image: url(../images/1000_islands.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 	margin-bottom: 32px;
 }
 
@@ -205,10 +208,6 @@ ol {
 	flex-flow: column nowrap;
 	max-width: 600px;
 	align-self: center;
-}
-
-.wrapper-day2 .description .txt-nc::before {
-	content: '\25CB';
 }
 
 .wrapper-day2 .description .txt-nc {
@@ -305,15 +304,17 @@ ol {
 }
 
 .wrapper-day3 .col1 .img {
-	background-image: url(../images/canoes-on-lake-louise-with-victoria-glacier-in-background.jpg);
+    background-image: url(../images/96725900.jpg);
+    background-position: left top;
 }
 
 .wrapper-day3 .col2 .img {
-	background-image: url(../images/20160828-Hiking-to-Grizzly-Lake.jpg);
+    background-image: url(../images/vieux-quebec.jpg);
+    background-position: center bottom;
 }
 
 .wrapper-day3 .col3 .img {
-	background-image: url(../images/banff-gondola-L-17.jpg);
+	background-image: url(../images/parlement_2.jpg);
 }
 
 /*DÍA 4*/
@@ -367,8 +368,9 @@ ol {
 	content: '';
 	display: block;
 	padding-bottom: 80%;	
-	background-image: url(../images/696557.jpg);
-	background-position: right center;
+	background-image: url(../images/lago_saint_jean.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .wrapper-day4 .wrapper-content .img {
@@ -393,7 +395,8 @@ ol {
 
 .img-day5 {
 	width: 100%;
-	background-image: url(../images/Things-to-Do-in-Whistler-Feature.jpg);
+    background-image: url(../images/panorama-fjord-saguenay-coucher-de-soleil_5.jpg);
+    background-position: bottom center;
 }
 
 .img-day5::before {
