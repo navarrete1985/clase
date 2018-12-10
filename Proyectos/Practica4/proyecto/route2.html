@@ -7,6 +7,9 @@
     <title>Document</title>
     <script src="./assets/js/menutransition.js" defer></script>
     <link rel="stylesheet" href="./assets/css/comun.css">
+    <link rel="stylesheet" href="assets/timeline/style.css">
+    <link rel="stylesheet" href="./assets/css/route2.css">
+	<script src="assets/timeline/modernizr.js"></script>
 </head>
 <body>
     <header class="bgi-c">
@@ -30,5 +33,137 @@
             </div>
         </nav>
     </header>
+    <section class="cd-horizontal-timeline">
+        <div class="background"></div>
+        <div class="timeline">
+            <div class="events-wrapper">
+                <div class="events">
+                    <ol class="txt-ht">
+                        <li><a href="#0" data-date="16/01/2014" class="selected">Día 1</a></li>
+                        <li><a href="#0" data-date="28/02/2014">Día 2</a></li>
+                        <li><a href="#0" data-date="20/04/2014">Día 3</a></li>
+                        <li><a href="#0" data-date="20/05/2014">Día 4</a></li>
+                        <li><a href="#0" data-date="09/07/2014">Día 5</a></li>
+                    </ol>
+                    <span class="filling-line" aria-hidden="true"></span>
+                </div>
+            </div>
+            <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li><a href="#0" class="next">Next</a></li>
+            </ul>
+        </div> 
+        <div class="events-content">
+            <ol>
+                <li class="selected" data-date="16/01/2014">
+                    <div class="img-day2 bgi-cov"></div>
+                    <div class="wrapper-day2">
+                        <div class="title txt-ht">Día 1</div>
+                        <div class="subtitle txt-btb">Punto de partida, Toronto, Ontario</div>
+                        <div class="description">
+                            <div class="intro txt-btd">Toronto es la ciudad más grande de Canadá, su centro financiero y el destino más popular para los viajeros.</div><br>
+                            <div class="txt-nc">Si no está preparado para enfrentarse a las multitudes, continúe por Toronto, al norte por la autopista 400, donde en tres horas llegará a Ontario, una región de lagos y bosques. Aquí puede encontrar moteles o resorts de menor escala en un entorno bonito.
+                                <br><br> Otra opción es llegar a Barrie, una ciudad de tamaño mediano que reducirá el viaje de mañana en una hora y media.
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-date="28/02/2014">
+                    <div class="wrapper-day4">
+                        <div class="right">
+                            <div class="wrapper-header">
+                                <div class="title txt-ht">Día 2</div>
+                                <div class="subtitle txt-btb">Thunder Bay, Ontario</div>
+                                <div class="intro txt-nc">Es en este día que te preguntarás si alguna vez Ontario termina. ¡Es enorme!</div>
+                            </div>
+                            <div class="content txt-nc">A unos 30 kilómetros al oeste de Thunder Bay se encuentra el Parque Provincial de Kakabeka Falls. Es un paraje precioso y las Kakabeka Falls son sencillamente espectaculares y el ruido del agua al caer es impresionante. Creo que otoño es la mejor época del año para recorrer los puentes de madera y ver las cataratas desde todos los ángulos...</div>
+                        </div>
+                        <div class="wrapper-content">
+                            <div class="img bgi-c"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li data-date="20/04/2014">
+                    <div class="wrapper-day3">
+                        <div class="wrapper-header">
+                            <div class="title txt-ht">Día 3</div>
+                            <div class="subtitle txt-btb">Winnipeg, Manitoba</div>
+                            <div class="intro txt-tc">¡Lo has conseguido estás en Manitoba! </div>
+                        </div>
+                        <div class="col col1">
+                            <div class="content txt-nc"> <span class="txt-tc">Museo canadiense de los derechos humanos</span> <br><br> Es el único museo en el mundo dedicado exclusivamente a generar conciencia y educación sobre los derechos humanos; durante tu visita aprenderás sobre la perspectiva indígena de los derechos, el Holocausto y otros genocidios, cómo romper el silencio e inspirar el cambio y mucho más, todo a través de una visión canadiense única.</div>
+                            <div class="img bgi-c"></div>
+                        </div>
+                        <hr>
+                        <div class="col col2">
+                            <div class="content txt-nc"><span class="txt-tc">FortWhyte Alive</span> <br><br>FortWhyte Alive es un oasis de vida silvestre en la ciudad. <br>	 Con una extensión de 640 acres, se localiza en el corazón de la ciudad capital de Manitoba. El parque tiene todos los atractivos de un centro de actividades al aire libre: pesca, remo, caminata con raqueta sobre nieve, patinaje, esquí y toboganes, así como una gran variedad de vida silvestre (bisontes, venados de cola blanca, reptiles, ratas almizcleras y más de 160 especies de pájaros),</div>
+                            <div class="img bgi-c"></div>
+                        </div>
+                        <hr>
+                        <div class="col col3">
+                            <div class="content txt-nc"><span class="txt-tc">Exchange District</span> <br><br>Las 20 manzanas que conforman el Exchange District (distrito financiero) son como una cápsula del tiempo de unos 150 edificios increíblemente conservados y que son un legado del siglo antepasado. Este sitio histórico nacional tiene sus orígenes alrededor de 1880</div>
+                            <div class="img bgi-c"></div>
+                        </div>
+                        <hr>
+                    </div>
+                </li>
+    
+                <li data-date="20/05/2014">
+                    <div class="wrapper-day5">
+                        <div class="title txt-ht">Día 4</div>
+                        <div class="subtitle txt-btb">Kelowna, BC</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="intro txt-btd">El interior de BC es realmente una de las regiones más hermosas de Canadá: el viaje entre Calgary y Kelowna lo dejará sin aliento.</div><br>
+                                <div class="text txt-nc">La ruta más corta a lo largo de la autopista Trans-Canada es increíblemente pintoresca a través de las ciudades de Golden y Revelstoke, hogar de dos de las mejores estaciones de esquí de Canadá, y lugares perfectos para almorzar y tomar fotos. 
+
+                                        <br><br> Hemos elegido la ruta a través de Kelowna en lugar de Kamloops simplemente por el hecho de que Kelowna es el corazón de la región vinícola de Okanagan. Si no está loco por el vino, sáltese y permanezca en la autopista Trans-Canada. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-day5 bgi-c"></div>
+                </li>
+
+                <li data-date="09/07/2014">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="wrapper-header">
+                                <div class="title txt-ht">Día 5</div>
+                                <div class="subtitle-h">
+                                    <div class="sub-content txt-btb">Parada final: Vancouver, BC</div>
+                                    <div class="text txt-nc">Quítate la ropa de lluvia y ponte tus Birkenstocks. Llegaste a Vancouver, BC , la respuesta de Canadá a San Francisco y una de las ciudades más habitables del mundo.</div>
+                                </div>
+                            </div>
+                            <div class="content content1">
+                                <div class="img bgi-cov"></div>
+                                <div class="description">
+                                    <div class="subtitle txt-btc">Stanley Park</div>
+                                    <hr>
+                                    <div class="text txt-nc"> El principal parque de Vancouver ocupa una península a la que la geografía peculiar de Vancouver deja casi aislada del resto del Downtown y es el auténtico pulmón de la ciudad y su principal atractivo natural. Podemos dedicar una mañana entera a recorrerlo a pie o en bicicleta.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content content2">
+                                <div class="img bgi-cov"></div>
+                                <div class="description">
+                                    <div class="subtitle txt-btc">North Vancouver y Grouse Mountain</div>
+                                    <hr>
+                                    <div class="text txt-nc">No es muy habitual en una gran ciudad ver a los esquiadores llegar a pie de pista en autobús urbano, pero es otra de las cosas insólitas que ver en Vancouver. <br><br> Cruzar el mar en el Sea Bus para acercarnos a North Vancouver en invierno supone cruzarnos con jóvenes aficionados al snowboard de camino a las pistas de la cercana Grouse Mountain, que hace que sea posible esquiar a 40 minutos del centro de Vancouver.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ol>
+        </div> <!-- .events-content -->
+    </section>
+    <script src="assets/timeline/jquery-2.1.4.js"></script>
+    <script src="assets/timeline/jquery.mobile.custom.min.js"></script>
+    <script src="assets/timeline/main.js"></script>
 </body>
 </html>
