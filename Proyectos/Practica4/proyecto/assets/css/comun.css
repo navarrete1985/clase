@@ -505,6 +505,11 @@ footer .row2 .social form input[type="text"] {
     margin: 8px auto 8px auto;
     border-bottom: 1px solid white;
     width: 100%;
+    color: #FAFBFC;
+}
+
+footer .row2 .social form input[type="text"]::placeholder {
+    color: #DAE1E9;
 }
 
 footer .row2 .social form .button {
