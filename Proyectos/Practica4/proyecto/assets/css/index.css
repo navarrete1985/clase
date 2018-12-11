@@ -1152,6 +1152,8 @@ section.comments .author span {
 
     section.gastronomia .wrapper {
         margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     section.gastronomia {
@@ -1258,6 +1260,11 @@ section.comments .author span {
         padding: unset;
         margin-top: 16px;
         margin-bottom: 16px;
+    }
+
+    section.culture .container .description {
+        width: 100%;
+        text-align: justify;
     }
 
     section.culture .gallery .shape {
