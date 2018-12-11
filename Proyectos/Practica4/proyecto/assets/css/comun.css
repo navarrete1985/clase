@@ -34,10 +34,28 @@
     font-weight: 300;    
 }
 
+.txt-ncb {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;    
+}
+
 .txt-ncs {
     font-family: 'Oxygen', sans-serif;
     font-size: 1em;
-    font-weight: 300;    
+    font-weight: 200;    
+}
+
+.txt-ncsb {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
+    font-weight: bold;    
+}
+
+.txt-ft {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em; 
+    font-weight: 200;  
 }
 
 .txt-ht {
@@ -305,6 +323,287 @@ nav .content a:hover::after {
     height: 0%;
     display: none;
 }
+
+/*FOOTER*/
+/*
+    gris claro #FAFBFC;
+    gris oscuro #353638;
+    gris azulado #DAE1E9;
+*/
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 64px;
+    background-color: #353638;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer .row1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .row1 .header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+footer .row1 .header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(33% - 40px);
+    border-top: 1px solid white;
+    left: 40px;
+    top: 50%;
+}
+
+footer .row1 .header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(33% - 40px);
+    border-top: 1px solid white;
+    right: 40px;
+    top: 50%;
+}
+
+footer .row1 .header .ico {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/maple-leaf.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer .row1 .header img {
+    height: 1.8em;
+    margin-bottom: 8px;
+}
+
+footer .row1 .header .slogan {
+    margin-bottom: 16px;
+}
+
+footer .row2 {
+    display: flex;
+    flex-flow: row wrap;
+    padding:  40px;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .row2 > div {
+    flex: 1 1 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer .row2 .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+footer .row2 .wrapper ul {
+    padding-left: initial;
+}
+
+footer .row2 .social .icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+
+footer .row2 .icons > div {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+footer .row2 .icons > div:hover {
+    width: 43px;
+    height: 43px;
+}
+
+footer .row2 .icons .face {
+    background-image: url(../images/icons/facebook-logo-in-circular-button-outlined-social-symbol\ \(2\).svg);
+}
+
+footer .row2 .icons .twit {
+    background-image: url(../images/icons/twitter-circular-button\ \(2\).svg);
+}
+
+footer .row2 .icons .inst {
+    background-image: url(../images/icons/instagram\ \(2\).svg);
+}
+
+footer .row2 .icons .pint {
+    background-image: url(../images/icons/pinterest.svg);
+}
+
+footer .row2 .social .wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+footer .row2 .social .newsletter {
+    margin-top: 100px;
+}
+
+footer .row2 .social .newsletter::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 60px;
+    position: absolute;
+    border-right: 1px solid white;
+    top: 20px;
+    left: 0;
+}
+
+footer .row2 .social form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 8px;
+    width: 80%;
+    max-width: 300px;
+}
+
+footer .row2 .social form input[type="text"] {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    margin: 8px auto 8px auto;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+footer .row2 .social form .button {
+    border: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a:hover {
+    font-size: 105%;
+    color: #DF1735; 
+}
+
+footer .routes .title, footer .links .title {
+    color: #DAE1E9;
+    font-size: 130%;
+}
+
+footer .routes li, footer .links li {
+    margin-bottom: 3px;
+}
+
+footer .row3 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc(100% - 40px);
+}
+
+footer .row3 .info {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%
+}
+
+footer .row3 .info > div {
+    flex: 1 0 300px;
+    margin-bottom: 16px;
+}
+
+footer .row3 .info .design {
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+footer .row3 .terms ul{
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: unset;
+    margin-top: unset;
+}
+
+footer .row3 .terms li {
+    margin-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media para ordenar 
+footer .row2 .links {
+    order: 2;
+}
+
+footer .row2 .social {
+    order: 1;
+}
+
+footer .row2 .routes {
+    order: 3;
+}
+*/
+
+
+
 
 @media screen and (max-width: 1100px) {
     /*---------------------------NAV----------------*/
