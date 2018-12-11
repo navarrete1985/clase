@@ -73,6 +73,15 @@
     margin-top: 52px;
 }
 
+.carousel-info .content .carousel .frame a {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
 .carousel-info .content {
     display: flex;
     height: 100%;
