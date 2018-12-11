@@ -616,8 +616,17 @@ footer .row3 .terms li {
     nav .content ul li.show {
         margin-right: 0%;
     }
+
+    .txt-btb {
+        font-size: 2.3em;
+    }
 }
 
+@media screen and (max-width: 1000px) {
+    
+}
+
+/*Medias footer*/
 @media screen and (max-width:696px) {
     
     footer .row2 > div {
