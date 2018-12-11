@@ -89,13 +89,13 @@
     }
 
     function hiddenElement(position) {
-        changeClass(images.querySelector(`div[position="${position}"]`), ['big-img'], null);
+        changeClass(images.querySelector(`div[position="${position}"]`), ['big-img'], ['no-visible-sd']);
         changeClass(comments.querySelector(`div[position="${position}"]`), null, ['hidden']);
         changeClass(author.querySelector(`div[position="${position}"]`), null, ['hidden']);
     }
 
     function visible(position) {
-        changeClass(images.querySelector(`div[position="${position}"]`), null, ['big-img']);
+        changeClass(images.querySelector(`div[position="${position}"]`), ['no-visible-sd'], ['big-img']);
         changeClass(comments.querySelector(`div[position="${position}"]`), ['hidden'], null);
         changeClass(author.querySelector(`div[position="${position}"]`), ['hidden'], null);
     }

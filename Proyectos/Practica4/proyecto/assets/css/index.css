@@ -1,3 +1,7 @@
+section.conocenos .left{
+  overflow-x: hidden;  
+}
+
 /*PRELOADER*/
 .preloader {
     position: fixed;
@@ -64,6 +68,7 @@
     align-items: center;
     justify-content: center;
 
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -402,6 +407,10 @@ section.gastronomia .item .content {
     border-left: 1px solid black;
     padding-bottom: 60px;
     width: 100%;
+}
+
+section.gastronomia .description .wrapper .title {
+    margin-bottom: 8px;
 }
 
 section.gastronomia .item .img {
@@ -1121,6 +1130,10 @@ section.comments .author span {
     section.naturaleza .title {
         margin-top: 0px;
     }
+    
+    section.gastronomia .description .wrapper .txt-btd {
+        font-size: 1.3em;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -1130,7 +1143,7 @@ section.comments .author span {
     }
 
     section.gastronomia .wrapper-r {
-        margin: 5% 0 0 0;
+        margin: 64px 0 0 0;
     }
     
     section.gastronomia .item .title, section.gastronomia .item .subtitle {
@@ -1163,4 +1176,162 @@ section.comments .author span {
     section.conocenos .left .content {
         columns: 1;
     }
+
+    section.naturaleza .description, section.naturaleza .subtitle {
+        width: 90%;
+        min-width: unset;
+    }
+
+    /* .txt-btc {
+        font-size: 1.5em;
+    }    
+
+    .txt-btb {
+        font-size: 1.8em;
+    }   
+
+    .txt-ht {
+        font-size: 1.1em;
+    } */
+}
+
+@media screen and (max-width: 700px) {
+    .carousel-city {
+        flex-flow: row wrap;
+        margin-top: 16px;
+    }
+
+    .carousel-city a.left {
+        order: 2;
+        margin-right: 16px;
+        margin-bottom: 32px;
+        margin-top: 16px;
+        margin: 16px 16px 32px 0;
+    }
+
+    .carousel-city .content {
+        order: 1;
+        flex: 1 1 800px;
+        margin: unset;
+    }
+
+    .carousel-city a.right {
+        order: 3;
+        margin-left: 16px;
+        margin-bottom: 32px;
+        margin: 16px 0 32px 16px;
+    }
+
+    section.naturaleza-content .list {
+        flex-flow: row nowrap;
+        margin: 16px 5% 0;
+        order: 2;
+
+        flex: 1 1 300px;
+    }
+
+    section.naturaleza-content .display {
+        order: 1;
+    }
+
+    section.naturaleza-content .item{
+        margin: 4px;
+    }
+
+    section.naturaleza-content {
+        padding-top: 32px;
+    }
+
+    section.culture .subtitle .line.right,
+    section.culture .subtitle .line.left {
+        border-right: none;
+        border-left: none;
+        width: 10%;
+    }
+
+    section.culture .subtitle .content {
+        width: 80%;
+    }
+
+    section.culture .container {
+        border: none;
+        padding: unset;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    section.culture .gallery .shape {
+        border: none;
+        width: 0%;
+    }
+
+    section.culture .gallery .img {
+        flex: 0 0 33%;
+    }
+
+    section.culture .gallery .img span{
+        font-size: 1em;
+    }
+
+    section.naturaleza-content .display .description {
+        font-size: 1em
+    }
+    
+    section.naturaleza-content .list .item {
+        min-height: 120px;
+    }
+
+    section.naturaleza-content .display .title {
+        font-size: 1.2em;
+    }
+
+    section.naturaleza-content .display {
+        margin: 0;
+    }
+
+    section.naturaleza-content .item .content {
+        padding: 0 4px;
+    }
+
+    section.naturaleza-content {
+        padding-bottom: 32px;
+    }
+
+    section.comments {
+        padding: 32px 0;
+    }
+
+    section.comments .wrapper-subtitle, section.comments .wrapper-people {
+        width: 100%;
+    }
+
+    section.comments .wrapper-subtitle .left {
+        border-left: none;
+    }
+
+    section.comments .wrapper-subtitle .right {
+        border-right: none;
+    }
+
+    section.comments .wrapper-people .people .border {
+        border: none;
+        display: none;
+    }
+
+    .no-visible-sd {
+        display: none;
+    }
+
+    .visible-sd {
+        display: block;
+    }
+
+    .carousel-info a.left, .carousel-info a.right {
+        display: none;
+    }
+
+    .carousel-info .content {
+        margin: 0;
+    }
+
 }
