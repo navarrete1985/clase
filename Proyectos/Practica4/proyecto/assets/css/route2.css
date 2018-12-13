@@ -60,8 +60,10 @@ ol {
 	padding-bottom: 30%;
     background-image: url(../images/Toronto-Canada-.jpg);
     background-position: bottom center;
-    background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin-bottom: 32px;
+	min-height: 90px;
 }
 
 .wrapper-day2 .title {
@@ -173,14 +175,14 @@ ol {
 }
 
 .events-content .wrapper .content1 .img, .events-content .wrapper .content2 .img {
-	flex: 1 1 400px;
+	flex: 1 1 450px;
 	padding: 32px;
 	box-sizing: border-box;
 	order: 2;
 }
 
 .events-content .wrapper .content1 .description, .events-content .wrapper .content2 .description {
-	flex: 1 1 400px;
+	flex: 1 1 450px;
 	padding: 32px;
 	box-sizing: border-box;
 	

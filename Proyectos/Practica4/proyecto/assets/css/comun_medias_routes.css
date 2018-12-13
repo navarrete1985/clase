@@ -1,0 +1,93 @@
+@media screen and (max-width: 1016px) {
+    .events-content .wrapper .header .wrapper-header {
+        width: 90%;
+    }
+
+    .events-content .wrapper .content1 .description, .events-content .wrapper .content2 .description {
+        align-items: center;
+    }
+
+    .events-content .wrapper .content1 .description .subtitle {
+        align-self: flex-start;
+    }
+
+    .events-content .wrapper .content2 .text {
+        text-align: unset;
+        align-self: center;
+    }
+
+    .events-content .wrapper .content2 .img, .events-content .wrapper .content1 .img {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 976px) {
+    .wrapper-day3 .col .content {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+
+}
+
+@media screen and (max-width: 700px) {
+    .events-content .wrapper, .wrapper-day3 {
+        width: 100%;
+    }
+
+    .wrapper-day3 .col {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .wrapper-day3 .col .content, .wrapper-day4 .right .content {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+    }
+
+    .events-content .wrapper .content1 .description, .events-content .wrapper .content2 .description {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+    }
+
+    .events-content .wrapper .header .subtitle-h::before {
+        border-left: unset;
+    }
+
+    .wrapper-day2 .description .txt-nc {
+        text-align: justify;
+    }
+
+    .wrapper-day4 {
+        width: 100%;
+    }
+
+    .wrapper-day4 .wrapper-content .img {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .wrapper-day4 .wrapper-header::before {
+        border-right: unset;
+    }
+
+    .wrapper-day4 .right .intro {
+        text-align: right;
+    }
+
+    .wrapper-day5 {
+        width: 100%;
+    }
+
+    .wrapper-day5 .description {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .wrapper-day5 .description .wrapper .text {
+        text-align: justify;
+    }
+}

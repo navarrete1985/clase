@@ -1,0 +1,220 @@
+header nav {
+	position: absolute;
+}
+
+header .contact-container {
+    position: relative;
+    /* margin-top: 56px; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: url(../images/toronto-1.jpg);
+    height: calc(90vh - 56px);
+    justify-content: center;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
+
+header .contact-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.25);
+    top: 0;
+    left: 0;
+}
+
+header .contact-container .title {
+    position: relative;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 5em;
+}
+
+footer {
+    margin-top: -25px;
+}
+
+
+section.info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    padding-top: 64px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 64px;
+    box-sizing: border-box;
+    background-color: #FAFBFC;
+}
+
+section.info .title {
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+section.info .title::before, section.info .title::after {
+     content: '';
+     display: block;
+     position: absolute;
+     width: calc(50% - 130px);
+     height: calc(50% + 8px);
+     top: calc(50% - 4px);
+     border-top: 1px solid black;
+}
+
+section.info .title::before {
+    left: 0;
+    border-left: 1px solid black;
+}
+
+section.info .title::after {
+    right: 0;
+    border-right: 1px solid black;
+}
+
+section.info .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section.info .wrapper .content {
+    max-width: 800px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+section.info .wrapper .wrapper-inside {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section.info .wrapper .wrapper-inside > div {
+    flex: 1 1 300px;
+    padding: 32px;
+}
+
+section.info .wrapper .wrapper-inside  .ti {
+    margin-bottom: 8px;
+}
+
+.notes {
+    background-image: linear-gradient(#FAFBFC, #FAFBFC 30px, #ccc 30px, #ccc 31px, #FAFBFC 31px);
+    background-size: 100% 35px;
+    background-position: center 4px;
+    border: none;
+    border-radius: 0px ;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 35px;
+    font-family: Arial, Helvetica, Sans-serif;
+    padding: 8px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+
+
+section.form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.form .left{
+    flex: 1 1 300px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+section.form .left form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 100%;
+}
+
+section.form .left form > input {
+    border: unset;
+    appearance: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+}
+
+section.form .right{
+    flex: 1 1 300px;
+    background-color: #FAFBFC;
+
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+section.send .button {
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 1009px) {
+    section.info .wrapper .wrapper-inside > div {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    section.form .right {
+        padding-bottom: 100px;
+    }
+
+    section.form .left {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section.info {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    section.info .wrapper {
+        border-left: unset;
+        border-right: unset;
+        border-bottom: unset;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    section.info .title::before, section.info .title::after {
+        border-left: unset;
+        border-right: unset;
+    }
+}
+
+@media screen and (max-width: 616px) {
+    section.form .left form > input {
+        margin-bottom: 32px;
+    }
+
+    section.form .left {
+        padding-bottom: 32px;
+    }
+}

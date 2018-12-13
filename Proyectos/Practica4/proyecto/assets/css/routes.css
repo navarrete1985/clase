@@ -14,9 +14,40 @@ section.select a {
 }
 
 header .wrapper {
-    border: 4px solid black;
+    /* border: 1px solid black; */
     padding: 8px 32px;
-    background-color: rgba(255, 255, 255, 0.466);
+    position: relative;
+    /* background-color: rgba(255, 255, 255, 0.466); */
+}
+
+header .wrapper::before, header .wrapper::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.wrapper .routes {
+    color: white;
+    /* text-shadow: 2px 3px #353638; */
+    /* text-shadow: 1px 1px rgba(150, 150, 150, .5); */
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+header .wrapper::before {
+    top: 0;
+    right: 0;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+}
+
+header .wrapper::after {
+    bottom: 0;
+    left: 0;
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
 }
 
 section.select .button {
@@ -143,5 +174,9 @@ section.select .right .item .button {
     section.control {
         margin-top: -70px;
         margin-bottom: unset;
+    }
+
+    .txt-btr {
+        font-size: 4em;
     }
 }
