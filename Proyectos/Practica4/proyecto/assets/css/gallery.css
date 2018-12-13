@@ -3,6 +3,8 @@ section.gallery {
     flex-flow: column nowrap;
     position: relative;
     align-items: center;
+    margin-bottom: 10%;
+    box-sizing: border-box;
 }
 
 section.gallery .content {
