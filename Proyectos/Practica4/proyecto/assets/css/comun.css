@@ -540,7 +540,19 @@ footer .routes li, footer .links li {
 footer .row3 {
     display: flex;
     flex-flow: column nowrap;
-    width: calc(100% - 40px);
+    width: 100%;
+    /* width: calc(100% - 40px); */
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    background-color: #C1C5CC;
+    color: black;
+    padding-top: 32px;
+    font-size: .8em;
+}
+
+footer .row3 .terms a {
+    color: black;
 }
 
 footer .row3 .info {
