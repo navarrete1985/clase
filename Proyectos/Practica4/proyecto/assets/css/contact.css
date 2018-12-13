@@ -217,4 +217,8 @@ section.send .button {
     section.form .left {
         padding-bottom: 32px;
     }
+
+    .contact-container .txt-btr {
+        font-size: 3.5em !important;
+    }
 }
