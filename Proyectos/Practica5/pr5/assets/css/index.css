@@ -4,7 +4,7 @@ header .ico {
     left: 16px;
     padding-top: 4px;
     width: 15%;
-    z-index: 3;
+    z-index: 11;
     transition: all .7s;
 }
 
@@ -186,4 +186,120 @@ section.title.second::before {
     bottom: -16px;
     background-color: var(--primary-color);
     z-index: -1;
+}
+
+section.title.second p {
+    margin: 0;
+    z-index: 4;
+}
+
+section.expo {
+    margin-top: -76px;
+    width: 100%;
+}
+
+section.expo .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+section.expo .wrapper .item {
+    flex: 1 1 250px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 32px;
+}
+
+section.expo .wrapper .item .pinza {
+    position: relative;
+}
+
+section.expo .wrapper .item .pinza::before {
+    height: 180px;
+    background-image: url(../images/vectors/pinzas.svg);
+    background-position: center bottom;
+}
+
+section.expo .wrapper .item .wrapper-pinza {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+section.expo .wrapper .item .wrapper-pinza::before {
+    width: 100%;
+    padding-bottom: 126%;
+    background-position: center top;
+}
+
+section.expo .wrapper .item .wrapper-pinza::after {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity .3s;
+    padding: 15%;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+section.expo .wrapper .item1 .wrapper-pinza::after {
+    content: 'Ojos del mundo';
+}
+
+section.expo .wrapper .item2 .wrapper-pinza::after {
+    content: 'Retratos de Varanasi';
+}
+
+section.expo .wrapper .item3 .wrapper-pinza::after {
+    content: 'Retratos de Vietnam';
+}
+
+section.expo .wrapper .item .wrapper-pinza:hover::after {
+    opacity: 1;
+}
+
+section.expo .wrapper .item1 .wrapper-pinza::before {
+    background-image: url(../images/descarga\ \(4\).jpg);
+}
+
+section.expo .wrapper .item2 .wrapper-pinza::before {
+    background-image: url(../images/1268200_567058429997501_1809308154_o.jpg);
+}
+
+section.expo .wrapper .item3 .wrapper-pinza::before {
+    background-image: url(../images/1052396_541027769267234_1870984504_o.jpg);
+}
+
+section.expo .wrapper .item .framework {
+    background-image: url(../images/vectors/cuadro.svg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+section.expo .wrapper .item .wrapper-btn {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: var(--margin-big);
+    margin-bottom: var(--margin-big);
 }
