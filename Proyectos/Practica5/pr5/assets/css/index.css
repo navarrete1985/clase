@@ -9,7 +9,7 @@ header .ico {
 }
 
 header .ico::before {
-    background-image: url(../images/icons/ico@300x.png);
+    background-image: url(../images/vectors/logo.svg);
 }
 
 header .ico::before {

@@ -512,9 +512,67 @@ nav .content a:hover:not(.selected)::before, nav .content a.selected::before {
 }
 
 /* footer */
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
 
+footer .pre {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 64px;
+    background-color: var(--primary-color);
+}
 
+footer .pre .img-social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+footer .pre .img-social .img {
+    flex: 1 1 200px;
+    cursor: pointer;
+}
+
+footer .pre .img-social .img:nth-child(odd)::before {
+    padding-bottom: 100%;
+}
+
+footer .pre .img-social .img:nth-child(even)::before {
+    padding-bottom: 80%;
+}
+
+footer .pre .img-social .img1::before {
+    background-image: url(../images/Ethnie-Xtieng.jpg);
+}
+
+footer .pre .img-social .img2::before {
+    background-image: url(../images/rehahnandreaddaoladies.jpg);
+}
+
+footer .pre .img-social .img3::before {
+    background-image: url(../images/descarga\ \(24\).jpg);
+}
+
+footer .pre .img-social .img4::before {
+    background-image: url(../images/descarga\ \(11\).jpg);
+}
+
+footer .pre .img-social .img5::before {
+    background-image: url(../images/descarga\ \(23\).jpg);
+}
+
+footer .pre .img-social .img6::before {
+    background-image: url(../images/Sapa180814-455.jpg);
+}
+
+footer .pre .img-social .img7::before {
+    background-image: url(../images/BuonMaThuot081014-393.jpg);
+}
 /* nav media */
 @media screen and (max-width: 1100px) {
     /*---------------------------NAV----------------*/
