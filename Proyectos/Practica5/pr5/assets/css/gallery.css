@@ -32,12 +32,12 @@ section.gallery .col {
     flex-flow: column nowrap;
 }
 
-/* Tam imagenes */
 section.bg .content {
     z-index: 4;
     mix-blend-mode: color-dodge;
 }
 
+/* Tam imagenes */
 .img-small::before {
     padding-bottom: 60%;
 }
@@ -53,9 +53,18 @@ section.bg .content {
 /* conf contenedores */
 section.gallery .img {
     position: relative;
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.gallery .img::before {
+    width: 100%;
+    transition: all .5s;
 }
 
 section.gallery .img a {
@@ -67,88 +76,89 @@ section.gallery .img a {
     z-index: 40;
 }
 
-section.gallery .col1 .img1 {
+section.gallery .col1 .img1::before {
     background-image: url(../images/galeria/img1.jpg);
 }
 
-section.gallery .col1 .img2 {
+section.gallery .col1 .img2::before {
     background-image: url(../images/galeria/img2.jpg);
 }
 
-section.gallery .col1 .img3 {
+section.gallery .col1 .img3::before {
     background-image: url(../images/galeria/img3.jpg);
 }
 
-section.gallery .col1 .img4 {
+section.gallery .col1 .img4::before {
     background-image: url(../images/galeria/img4.jpg);
 }
 
-section.gallery .col1 .img5 {
+section.gallery .col1 .img5::before {
     background-image: url(../images/galeria/img5.jpg);
 }
 
-section.gallery .col1 .img6 {
+section.gallery .col1 .img6::before {
     background-image: url(../images/galeria/img6.jpg);
 }
 
-section.gallery .col1 .img7 {
+section.gallery .col1 .img7::before {
     background-image: url(../images/galeria/img7.jpg);
 }
 
-section.gallery .col2 .img1 {
+section.gallery .col2 .img1::before {
     background-image: url(../images/galeria/img8.jpg);
 }
 
-section.gallery .col2 .img2 {
+section.gallery .col2 .img2::before {
     background-image: url(../images/galeria/img9.jpg);
 }
 
-section.gallery .col2 .img3 {
+section.gallery .col2 .img3::before {
     background-image: url(../images/galeria/img10.jpg);
 }
 
-section.gallery .col2 .img4 {
+section.gallery .col2 .img4::before {
     background-image: url(../images/galeria/img11.jpg);
 }
 
-section.gallery .col2 .img5 {
+section.gallery .col2 .img5::before {
     background-image: url(../images/galeria/img12.jpg);
 }
 
-section.gallery .col2 .img6 {
+section.gallery .col2 .img6::before {
     background-image: url(../images/galeria/img13.jpg);
 }
 
-section.gallery .col2 .img7 {
+section.gallery .col2 .img7::before {
     background-image: url(../images/galeria/img14.jpg);
 }
 
-section.gallery .col3 .img1 {
+section.gallery .col3 .img1::before {
     background-image: url(../images/galeria/img15.jpg);
 }
 
-section.gallery .col3 .img2 {
+section.gallery .col3 .img2::before {
     background-image: url(../images/galeria/img16.jpg);
 }
 
-section.gallery .col3 .img3 {
+section.gallery .col3 .img3::before {
     background-image: url(../images/galeria/img17.jpg);
 }
 
-section.gallery .col3 .img4 {
+section.gallery .col3 .img4::before {
     background-image: url(../images/galeria/img18.jpg);
 }
 
-section.gallery .col3 .img5 {
+section.gallery .col3 .img5::before {
     background-image: url(../images/galeria/img19.jpg);
 }
 
-section.gallery .col3 .img6 {
+section.gallery .col3 .img6::before {
     background-image: url(../images/galeria/img20.jpg);
 }
 
-section.gallery .col3 .img7 {
+section.gallery .col3 .img7::before {
     background-image: url(../images/galeria/img21.jpg);
+    width: 100%;
 }
 
 section.gallery .col2 :first-child.img::before, section.gallery .col1 :last-child::before, section.gallery .col3 :last-child::before {
@@ -157,4 +167,40 @@ section.gallery .col2 :first-child.img::before, section.gallery .col1 :last-chil
 
 section.gallery .col1 :not(:last-child)::before, section.gallery .col2 :not(:first-child)::before, section.gallery .col3 :not(:last-child)::before {
     padding-bottom: 100%;
+}
+
+section.gallery .col .img .ico {
+    content: '';
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    background-image: url(../images/icons/focus.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+section.gallery .col .img {
+    transition: all .5s;
+}
+
+section.gallery .col .img:hover::before, section.gallery .col .img:focus::before {
+    /* -webkit-filter: blur(3px);
+    filter: blur(8px); */
+    /* filter: invert(.6); */
+    filter: brightness(30%);
+}
+
+section.gallery .col .img:hover .ico, section.gallery .col .img:hover .ico {
+    opacity: 1;
+    filter: brightness(120%);
+}
+
+section.gallery .col .img:hover, section.gallery .col .img:focus {
+    transform: scale(1.08);
+    z-index: 4;
 }
