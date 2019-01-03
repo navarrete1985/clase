@@ -4,6 +4,10 @@ body {
     box-sizing: border-box;
 }
 
+section {
+    overflow: hidden;
+}
+
 p {
     overflow-x: hidden;
 }
@@ -200,7 +204,7 @@ p {
     border: 1px solid black;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 2;
 }
 

@@ -117,6 +117,7 @@ section.about .action {
 
 section.about .action .btn-n {
     background-color: var(--primary-color);
+    margin-right: 5px;
 }
 
 section.title {
@@ -194,7 +195,7 @@ section.title.second p {
 }
 
 section.expo {
-    margin-top: -76px;
+    margin-top: -90px;
     width: 100%;
 }
 
