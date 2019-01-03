@@ -155,10 +155,6 @@ section.gallery .col2 :first-child.img::before, section.gallery .col1 :last-chil
     padding-bottom: 60%;
 }
 
-/* section.gallery .col2 :first-child.img::before, section.gallery .col1 :last-child::before, section.gallery .col3 :last-child::before {
-    padding-bottom: 60%;
-} */
-
 section.gallery .col1 :not(:last-child)::before, section.gallery .col2 :not(:first-child)::before, section.gallery .col3 :not(:last-child)::before {
     padding-bottom: 100%;
 }

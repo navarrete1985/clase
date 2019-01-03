@@ -1,6 +1,6 @@
 
 AOS.init();
-if (document.getElementsByClassName('.rellax').length > 0) {
+if (document.getElementsByClassName('rellax').length > 0) {
   var rellax = new Rellax('.rellax');
 }
 (function(){ 
