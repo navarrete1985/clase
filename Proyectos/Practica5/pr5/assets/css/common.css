@@ -131,6 +131,7 @@ p {
     --margin-small: 8px;
     --margin-medium: 16px;
     --margin-big: 32px;
+    --margin-xxl: 64px;
     
     /* padding */
     --padding-small: 8px;
@@ -154,6 +155,11 @@ p {
     font-size: var(--font-big-title);
     font-family: 'Morva', sans-serif;
     color: var(--secondary-color);
+}
+
+.txt-t-m {
+    font-size: var(--font-title);
+    font-family: 'Morva', sans-serif;
 }
 
 .txt-nav {
@@ -203,6 +209,8 @@ p {
     color: black;
     width: 100%;
     height: 100%;
+    display: block;
+    text-align: center;
     transition: color .4s;
 }
 
@@ -573,6 +581,254 @@ footer .pre .img-social .img6::before {
 footer .pre .img-social .img7::before {
     background-image: url(../images/BuonMaThuot081014-393.jpg);
 }
+
+footer .newsletter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 8% 10% 5% 10%;
+}
+
+footer .newsletter .description {
+    flex: 1 1 300px;
+    text-align: justify;
+    margin: var(--margin-medium) var(--margin-big) var(--margin-medium) 0;
+}
+
+footer .newsletter .title {
+    flex: 0 0 300px;
+    text-align: center;
+    position: relative;
+    margin: var(--margin-medium) 0 ;
+}
+
+footer .newsletter .title::before, footer .newsletter .title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -150%;
+    height: 400%;
+    border-left: 2px solid black;
+}
+
+footer .newsletter .title::before {
+    left: 0;
+}
+
+footer .newsletter .title::after {
+    right: 0;
+}
+
+footer .newsletter form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: var(--margin-medium) 0 var(--margin-medium) var(--margin-big);
+}
+
+footer .newsletter form input {
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid black;
+    margin-bottom: var(--margin-medium);
+    padding: 4px 16px;
+    text-align: center;
+    outline: none;
+    transition: all .3s;
+    width: 100%;
+    max-width: 450px;;
+}
+
+footer .newsletter form input:focus, footer .newsletter form input:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+footer .newsletter form .btn-n {
+    width: 100%;
+    max-width: 180px;
+}
+
+footer .footer {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--subfooter-color);
+}
+
+footer .footer .use {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5% 10%;
+}
+
+footer .footer .use .links, footer .footer .use .social {
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer .footer .use .links {
+    margin-top: 20px;
+}
+
+footer .footer .use .social {
+    margin-top: 60px;
+}
+
+footer .footer .use .social .icons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+footer .footer .use .links .title, footer .footer .use .social .title {
+    font-size: 1.4em;
+    padding-top: 8px;
+}
+
+footer .footer .use .links .title {
+    padding-top: 16px !important;
+}
+
+footer .footer .use .links .title::before, footer .footer .use .social .title::before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid black;
+}
+
+footer .footer .use .links .title::before{
+    width: calc(50% - 40px);
+    right: 0;
+    top: calc(45% - 8px);
+} 
+
+footer .footer .use .social .title::before {
+    width: calc(50% - 80px);
+    left: 0;
+    top: calc(45% - 30px);
+}
+
+footer .footer .social .ico {
+    width: 50px;
+    height: 50px;
+    margin: 16px 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer .ico > svg {
+    transition: all .3s;
+    width: 45px;
+    cursor: pointer;
+}
+
+footer .footer .social .ico svg:hover {
+    fill: #8B7D67;
+    width: 50px;
+}
+
+footer .footer .links .items {
+    margin-top: 24px;
+    width: 320px;
+    height: 30px;
+    overflow: hidden;
+}
+
+footer .footer .links .items a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: all .3s;
+}
+
+footer .footer .links .items a:hover {
+    font-size: 1.1em;
+}
+
+footer .footer .links .items a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    bottom: -4px;
+    right: 25%;
+    transition: width .3s;
+    border-bottom: 1px solid black;
+}
+
+footer .footer .links .items a:hover::before {
+    left: 25%;
+    right: auto;
+    width: 50%;
+}
+
+footer .footer .terms {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 16px 16px 16px;
+    align-items: flex-end;
+}
+
+footer .footer .terms .links {
+    margin-left: auto;
+    position: relative;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+footer .footer .terms .links:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+footer .footer .terms .links a {
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+}
+
+footer .footer .terms .links a:hover {
+    color: #8B7D67;
+}
+
+footer .footer .terms .links a:first-child {
+    margin-right: 10px;
+}
+
+footer .footer .terms .links a:last-child {
+    margin-left: 10px;
+}
+
+footer .footer .terms .links a:nth-child(2) {
+    position: relative;
+}
+
+footer .footer .terms .links a:nth-child(2)::before, footer .footer .terms .links a:nth-child(2)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+footer .footer .terms .links a:nth-child(2)::before {
+    left: -8px;
+}
+
+footer .footer .terms .links a:nth-child(2)::after {
+    right: -8px;
+}
+
 /* nav media */
 @media screen and (max-width: 1100px) {
     /*---------------------------NAV----------------*/

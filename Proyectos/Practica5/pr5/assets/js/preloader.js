@@ -1,5 +1,7 @@
-(function(){ 
 
+AOS.init();
+var rellax = new Rellax('.rellax');
+(function(){ 
   document.body.style.overflow = 'hidden';
   let elements = document.querySelectorAll('section.preloader .cols .col');
   let count = 0.1;
