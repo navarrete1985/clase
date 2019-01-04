@@ -309,6 +309,29 @@ p {
 }
 
 /* nav */
+header .ico {
+    position: fixed;
+    top: 0;
+    left: 16px;
+    padding-top: 4px;
+    
+    z-index: 11;
+    transition: all .7s;
+}
+
+header .ico::before {
+    background-image: url(../images/vectors/logo.svg);
+    padding-bottom: 100%;
+}
+
+header .ico.a {
+    width: 15%;
+}
+
+header .ico.b {
+    width: 60px;
+}
+
 .resize-ico {
     width: 60px !important;
     padding-top: 0px;

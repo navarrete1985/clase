@@ -1,0 +1,180 @@
+section.bg {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+section.bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+section.bg .content {
+    position: relative;
+    z-index: 4;
+    mix-blend-mode: color-dodge;
+    padding: 20px 32px 0 32px;
+}
+
+section.bg .content::before, section.bg .content::after {
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+section.bg .content::before {
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    height: 80%;
+    border-left: 5px solid var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+section.bg .content::after {
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-right: 5px solid var(--secondary-color);
+    border-top: 5px solid var(--secondary-color);
+}
+
+section.contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.contact > div {
+    flex: 1 1 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .right {
+    display: flex;
+    background-color: var(--primary-color);
+}
+
+section.contact .right form {
+    display: flex;
+    width: 80%;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 32px;
+}
+
+/* Animación input */
+section.contact .container {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+section.contact .right form input {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: unset;
+    border-bottom: 1px solid white;
+    outline: unset;
+    padding: 4px 16px;
+    box-sizing: border-box;
+}
+
+section.contact form .container label, section.contact form .container input:invalid label {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    transition: all .5s;
+}
+
+section.contact form .container input:focus ~ label, section.contact form .container input:valid ~ label {
+    top: -24px;
+    font-size: 1em;
+    color: white;
+}
+
+/* borde */
+section.contact form .border-btn:before,
+section.contact form .border-btn::after,
+section.contact form .border-top:before,
+section.contact form .border-top::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+section.contact form .border-btn:before {
+    bottom: 0;
+    right: 0;
+    transition: width .1s;
+    border-bottom: 1px solid black;
+}
+
+section.contact form .border-btn::after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid black;
+    transition: height .1s .1s;
+}
+
+section.contact form .border-top:before {
+    top: 0;
+    left: 0;
+    border-top: 1px solid black;
+    transition: width .1s .2s;
+}
+
+section.contact form .border-top::after {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid black;
+    transition: height .1s .3s;
+}
+
+section.contact form input:focus ~ .border-btn:before,
+section.contact form input:valid ~ .border-btn:before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+section.contact form input:focus ~ .border-btn::after,
+section.contact form input:valid ~ .border-btn::after {
+    height: 100%;
+    bottom: 0;
+    top: auto;
+}
+
+section.contact form input:focus ~ .border-top:before,
+section.contact form input:valid ~ .border-top:before {
+    width: 100%;    
+    right: 0;
+    left: auto;
+}
+
+section.contact form input:focus ~ .border-top::after,
+section.contact form input:valid ~ .border-top::after {
+    height: 100%;
+    top: 0;
+    bottom: auto;
+}
+
+
