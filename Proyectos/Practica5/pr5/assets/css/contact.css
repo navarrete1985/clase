@@ -82,6 +82,7 @@ section.contact .container {
     width: 100%;
     position: relative;
     margin-bottom: 40px;
+    overflow: unset;
 }
 
 section.contact .right form input {
@@ -275,8 +276,8 @@ section.contact .right .content textarea:valid ~ span.border-btn:after {
 
 section.contact .right .content textarea:focus ~ span.border-top:before,
 section.contact .right .content textarea:valid ~ span.border-top:before {
-    left: 0;
-    right: auto;
+    left: auto;
+    right: 0;
     width: 100%;
 }
 

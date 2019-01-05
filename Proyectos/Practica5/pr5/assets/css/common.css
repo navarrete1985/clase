@@ -12,6 +12,10 @@ p, span, div {
     overflow: hidden;
 }
 
+input:required, textarea:required {
+    box-shadow: none;
+}
+
 /* imports fonts */
 @font-face {
     font-family: "Alcubierre";
@@ -634,6 +638,7 @@ footer .newsletter .title {
     text-align: center;
     position: relative;
     margin: var(--margin-medium) 0 ;
+    overflow: unset;
 }
 
 footer .newsletter .title::before, footer .newsletter .title::after {
