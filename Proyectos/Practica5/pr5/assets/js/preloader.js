@@ -92,7 +92,7 @@ if (document.getElementsByClassName('rellax').length > 0) {
 })();
 
 (function() {
-  if (document.querySelectorAll('section.gallery .img').length > 0) {
+  if (document.querySelectorAll('.gallery .img').length > 0) {
     var lightboxDescription = GLightbox({
       selector: 'glightbox'
     });

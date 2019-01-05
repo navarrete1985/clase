@@ -1,0 +1,252 @@
+section.bg {
+    padding-top: 180px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+div:not(.ov-h) {
+    overflow: unset;
+}
+
+section.bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 76%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+section.bg .content {
+    z-index: 4;
+    mix-blend-mode: color-dodge;
+}
+
+section.intro {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 5% 10%;
+    padding-bottom: 0;
+    background: var(--primary-color);
+}
+
+section.intro div {
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    overflow: unset;
+}
+
+section.intro div::before {
+    content: '';
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: -16px;
+    left: calc(50% - 40px);
+    border-top: 1px solid black;
+}
+
+section .intro, section .summary, section .book {
+    padding: 5% 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* comun trabajos */
+section.work {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.work .intro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.work .intro > div {
+    flex: 1 1 400px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+section.work .intro .img::before {
+    padding-bottom: 90%;
+}
+
+section.work .intro .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    overflow: unset;
+}
+
+section.work .intro .wrapper::before,
+section.work .intro .wrapper::after {
+    content: '';
+    position: absolute;
+}
+
+section.work .intro .wrapper::before {
+    height: 180px;
+    top: calc(50% - 90px);
+    border-left: 1px solid black;
+}
+
+section.work .intro .wrapper::after {
+    width: 50%;
+    top: 50%;
+    border-bottom: 1px solid black;
+}
+
+section.work .intro .img {
+    z-index: 2;
+}
+
+section.work .intro .wrapper .title {
+    margin-bottom: var(--margin-medium);
+    overflow: unset;
+}
+
+section.work .intro .wrapper .content {
+    text-align: justify;
+}
+
+section.work .summary .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section.work .summary .wrapper .back {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.work .summary .wrapper .back .title {
+    margin-bottom: var(--margin-medium);
+}
+
+section.work .summary .wrapper .back .content {
+    text-align: justify;
+}
+
+section.work .summary .wrapper .front {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 400px;
+    margin-top: var(--margin-big);
+    box-sizing: border-box;
+}
+
+section.work .summary .wrapper .front .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+section.work .summary .wrapper .front .img-cover {
+    width: 50%;
+}
+
+section.work .summary .wrapper .gallery > div {
+    width: 50%;
+    position: relative;
+}
+
+section.work .summary .wrapper .gallery > div::before {
+    content: '';
+    padding-bottom: 100%;
+    transition: all .3s;
+}
+
+.bg-cover a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    overflow: hidden;
+}
+
+.img:hover::before {
+    filter: invert(.2);
+}
+
+/* section.work .front .gallery {
+    overflow: hidden;
+} */
+
+/* trabajo 1 */
+section.work1 .intro {
+    background-color: var(--primary-color);
+}
+
+section.work1 .intro .img::before {
+    background-image: url(../images/NinhThuan100315-511.jpg);
+    margin-right: var(--margin-big);
+}
+
+section.work1 .intro .wrapper  {
+    padding-left: var(--padding-xxl);
+}
+
+section.work1 .intro .wrapper::before {
+    left: 32px;
+}
+
+section.work1 .intro .wrapper::after {
+    left: calc(-50% + 32px);
+}
+
+section.work1 .summary .wrapper .front .img1::before {
+    background-image: url(../images/main.jpg);
+    background-position: top right;
+}
+
+section.work1 .summary .wrapper .front .img2::before {
+    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+}
+
+section.work1 .summary .wrapper .front .img3::before {
+    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+}
+
+section.work1 .summary .wrapper .front .img4::before {
+    background-image: url(../images/galeria/img12.jpg);
+}
+
+section.work1 .back {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    margin-bottom: var(--margin-big);
+    padding: 16px 64px 16px 32px;
+    margin-right: -32px;
+    box-sizing: border-box;
+}
+
+section.work1 .front .gallery {
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    height: auto;
+}
+
+
+
+
+/* trabajo 2 */
+/* trabajo3 */

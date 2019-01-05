@@ -200,7 +200,6 @@ section.gallery .col .img:hover::before, section.gallery .col .img:focus::before
 
 section.gallery .col .img:hover .ico, section.gallery .col .img:hover .ico {
     opacity: 1;
-    filter: brightness(120%);
 }
 
 section.gallery .col .img:hover, section.gallery .col .img:focus {

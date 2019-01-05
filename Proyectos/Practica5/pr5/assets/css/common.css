@@ -155,6 +155,12 @@ input:required, textarea:required {
     font-weight: 100; 
 }
 
+.txt-nb {
+    font-size: var(--font-normal);
+    font-family: 'RonniaCond', sans-serif;
+    font-weight: normal; 
+}
+
 .txt-t {
     font-size: var(--font-title);
     font-family: 'Palash', sans-serif;
