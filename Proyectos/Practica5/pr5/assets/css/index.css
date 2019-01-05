@@ -57,6 +57,10 @@ section.about article.about .img, section.about article.about .content {
     position: relative;
 }
 
+section.about article.about .content {
+    overflow: initial;
+}
+
 section.about article.about .img::before {
     padding-bottom: 70%;
     background-image: url(../images/Rehahn.jpg);

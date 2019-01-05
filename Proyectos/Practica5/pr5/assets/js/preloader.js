@@ -1,5 +1,9 @@
 
+AOS.refresh();
 AOS.init();
+window.onbeforeunload = function(event) {
+  AOS.refreshHard()
+}
 if (document.getElementsByClassName('rellax').length > 0) {
   var rellax = new Rellax('.rellax');
 }
