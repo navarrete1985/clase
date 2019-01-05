@@ -310,3 +310,38 @@ section.contact .content .btn-n {
     background-color: var(--primary-color);
 }
 
+/* info */
+section.contact .left .wrapper {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .left .img {
+    width: 100%;
+}
+
+section.contact .left .bg-cover::before {
+    padding-bottom: 70%;
+    background-image: url(../images/withhmongchildren-1.jpg);
+}
+
+section.contact .left span {
+    text-align: center;
+    display: block;
+    margin-top: var(--margin-big);
+    margin-bottom: var(--margin-medium);
+    font-size: 1.5em;
+    font-family: 'Palash', sans-serif;
+}
+
+section.contact .left .wrapper {
+    margin-bottom: var(--margin-xxl);
+}
+
+iframe {
+    margin-bottom: calc(var(--margin-medium) * -1);
+}

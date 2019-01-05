@@ -8,8 +8,8 @@ section {
     overflow: hidden;
 }
 
-p {
-    overflow-x: hidden;
+p, span, div {
+    overflow: hidden;
 }
 
 /* imports fonts */
@@ -153,6 +153,11 @@ p {
 
 .txt-t {
     font-size: var(--font-title);
+    font-family: 'Palash', sans-serif;
+}
+
+.txt-tb {
+    font-size: var(--font-subtitle);
     font-family: 'Palash', sans-serif;
 }
 
