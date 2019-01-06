@@ -53,7 +53,7 @@ section.intro div::before {
 }
 
 section .intro, section .summary, section .book {
-    padding: 5% 10%;
+    padding: 10% 10%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -247,8 +247,9 @@ section.work1 .intro {
 }
 
 section.work1 .intro .img::before {
-    background-image: url(../images/NinhThuan100315-511.jpg);
+    background-image: url(../images/galeria/Jaipur280414-116-2.jpg);
     margin-right: var(--margin-big);
+    background-position: right center;
 }
 
 section.work1 .intro .wrapper  {
@@ -264,20 +265,19 @@ section.work1 .intro .wrapper::after {
 }
 
 section.work1 .summary .wrapper .front .img1::before {
-    background-image: url(../images/main.jpg);
-    background-position: top right;
+    background-image: url(../images/galeria/img15.jpg);
 }
 
 section.work1 .summary .wrapper .front .img2::before {
-    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+    background-image: url(../images/galeria/Rehahn-and-giving-back-in-travel-photography-Namaste-India-Photo-credit-Rehahn.jpg);
 }
 
 section.work1 .summary .wrapper .front .img3::before {
-    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+    background-image: url(../images/galeria/Jaipur300414-195.jpg);
 }
 
 section.work1 .summary .wrapper .front .img4::before {
-    background-image: url(../images/galeria/img12.jpg);
+    background-image: url(../images/galeria/Jaisalmer04052014-277.jpg);
 }
 
 section.work1 .back {
@@ -413,7 +413,7 @@ section.work3 .intro {
 }
 
 section.work3 .intro .img::before {
-    background-image: url(../images/NinhThuan100315-511.jpg);
+    background-image: url(../images/galeria/img7.jpg);
     margin-right: var(--margin-big);
 }
 
@@ -430,20 +430,19 @@ section.work3 .intro .wrapper::after {
 }
 
 section.work3 .summary .wrapper .front .img1::before {
-    background-image: url(../images/main.jpg);
-    background-position: top right;
+    background-image: url(../images/galeria/img5.jpg);
 }
 
 section.work3 .summary .wrapper .front .img2::before {
-    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+    background-image: url(../images/NinhThuan100315-511.jpg);
 }
 
 section.work3 .summary .wrapper .front .img3::before {
-    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+    background-image: url(../images/galeria/img4.jpg);
 }
 
 section.work3 .summary .wrapper .front .img4::before {
-    background-image: url(../images/galeria/img12.jpg);
+    background-image: url(../images/descarga\ \(23\).jpg);
 }
 
 section.work3 .back {
@@ -484,4 +483,94 @@ section.work3 .book .content .wrapper .btn-n {
 
 section.work3 .book .img::before {
     background-image: url(../images/work3.png)
+}
+
+section.work3 .book {
+    padding-bottom: calc(10% + 32px);
+}
+
+/* PREMIOS */
+section.title {
+    background-color: transparent;
+    margin-top: -64px;
+    text-align: center;
+}
+
+section.awards {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10%;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+section.awards::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+section.awards > div {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    box-sizing: border-box;
+}
+
+section.awards > div:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+section.awards > div:nth-child(even) {
+    justify-content: flex-end;
+}
+
+section.awards .content {
+    width: 50%;
+}
+
+section.awards > div .content {
+    position: relative;
+    box-sizing: border-box;
+}
+
+section.awards > div .content::before {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+    border: 3px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+section.awards > div:nth-child(odd) .content::before {
+    right: -9px;
+}
+
+section.awards > div:nth-child(even) .content::before {
+    left: -8px;
+}
+
+section.awards > div:nth-child(odd) .content span {
+    text-align: right;
+}
+
+section.awards .item .content {
+    padding: var(--padding-medium);
+    text-align: justify;
+}
+
+section.awards .item .content span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
 }
