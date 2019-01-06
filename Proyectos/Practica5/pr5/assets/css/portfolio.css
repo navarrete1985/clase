@@ -216,6 +216,10 @@ section.work .book .content {
     box-sizing: border-box;
 }
 
+section.work .book .content {
+    text-align: justify;
+}
+
 section.work .book .content .wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -317,51 +321,58 @@ section.work1 .book .img::before {
 }
 
 /* trabajo 2 */
-section.work2 .intro {
-    background-color: var(--primary-color);
-}
-
 section.work2 .intro .img::before {
-    background-image: url(../images/NinhThuan100315-511.jpg);
+    background-image: url(../images/galeria/img2.jpg);
     margin-right: var(--margin-big);
 }
 
 section.work2 .intro .wrapper  {
-    padding-left: var(--padding-xxl);
+    padding-right: var(--padding-xxl);
 }
 
 section.work2 .intro .wrapper::before {
-    left: 32px;
+    right: 32px;
 }
 
 section.work2 .intro .wrapper::after {
-    left: calc(-50% + 32px);
+    right: calc(-50% + 32px);
+}
+
+section.work2 .summary {
+    background-color: var(--primary-color);
+    /* z-index: -2; */
 }
 
 section.work2 .summary .wrapper .front .img1::before {
-    background-image: url(../images/main.jpg);
-    background-position: top right;
+    background-image: url(../images/galeria/lists-photo-gallery-16-incredible-photos-of-hoi-an-that-put-the-mellow-in-the-yellow.jpg);
 }
 
 section.work2 .summary .wrapper .front .img2::before {
-    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+    background-image: url(../images/galeria/descarga.jpg);
+    background-position: right center;
 }
 
 section.work2 .summary .wrapper .front .img3::before {
-    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+    background-image: url(../images/galeria/Praying-in-temple-Hcm.jpg);
 }
 
 section.work2 .summary .wrapper .front .img4::before {
-    background-image: url(../images/galeria/img12.jpg);
+    background-image: url(../images/galeria/descarga\ \(17\).jpg);
 }
 
 section.work2 .back {
-    background-color: var(--primary-color);
+    background-color: white;
     border-radius: 3px;
     margin-bottom: var(--margin-big);
-    padding: 16px 64px 16px 32px;
-    margin-right: -32px;
+    padding: 16px 32px 16px 64px;
+    margin-left: -32px;
     box-sizing: border-box;
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+section.work2 .front {
+    z-index: 2;
 }
 
 section.work2 .front .gallery {
@@ -370,29 +381,31 @@ section.work2 .front .gallery {
     height: auto;
 }
 
-section.work2 .book {
-    background-color: var(--primary-color);
-}
-
 section.work2 .book .content {
-    padding-left: var(--padding-big);
+    padding-right: var(--padding-big);
 }
 
 section.work2 .book .content .wrapper {
-    padding-left: var(--padding-big);
+    padding-right: var(--padding-big);
 }
 
 section.work .book .content .wrapper::before {
-    left: 0;
+    right: 0;
+}
+
+section.work2 .book .content .title {
+    text-align: right;
+    margin-right: var(--margin-big);
 }
 
 section.work2 .book .content .wrapper .btn-n {
-    margin-left: calc(var(--margin-big) * -1 - var(--margin-medium));
-    background-color: var(--primary-color);
+    margin-right: calc(var(--margin-big) * -1 - var(--margin-medium));
+    background-color: white;
+    align-self: flex-end;
 }
 
 section.work2 .book .img::before {
-    background-image: url(../images/book1.png)
+    background-image: url(../images/book-2.png)
 }
 /* trabajo3 */
 section.work3 .intro {
@@ -470,5 +483,5 @@ section.work3 .book .content .wrapper .btn-n {
 }
 
 section.work3 .book .img::before {
-    background-image: url(../images/book1.png)
+    background-image: url(../images/work3.png)
 }

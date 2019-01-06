@@ -220,7 +220,7 @@ input:required, textarea:required {
     border: 1px solid black;
     cursor: pointer;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 2;
 }
 
