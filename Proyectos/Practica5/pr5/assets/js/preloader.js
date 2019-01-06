@@ -92,9 +92,18 @@ if (document.getElementsByClassName('rellax').length > 0) {
 })();
 
 (function() {
+  let items = [];
   if (document.querySelectorAll('.gallery .img').length > 0) {
-    var lightboxDescription = GLightbox({
-      selector: 'glightbox'
-    });
+    openSeclector('glightbox');
+    openSeclector('glightbox1');
+    openSeclector('glightbox2');
+    openSeclector('glightbox3');
   }
+
+  function openSeclector(name) {
+    if (document.querySelectorAll(`.${name}`).length > 0)
+      items.push(GLightbox({
+        selector: name
+      })); 
+    }
 })();
