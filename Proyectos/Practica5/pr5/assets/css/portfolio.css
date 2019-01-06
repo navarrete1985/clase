@@ -183,13 +183,59 @@ section.work .summary .wrapper .gallery > div::before {
     overflow: hidden;
 }
 
-.img:hover::before {
+.gallery .img:hover::before {
     filter: invert(.2);
 }
 
-/* section.work .front .gallery {
-    overflow: hidden;
-} */
+section.work .book {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section.work .book > div {
+    flex: 1 1 400px;
+    display: flex;
+}
+
+section.work .book .wrapper-img {
+    justify-content: center;
+}
+
+section.work .book .wrapper-img .img {
+    width: 100%;
+}
+
+section.work .book .wrapper-img .img::before {
+    padding-bottom: 80%;
+}
+
+section.work .book .content {
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+}
+
+section.work .book .content .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    position: relative;
+    padding-top: var(--padding-medium);
+}
+
+section.work .book .content .wrapper::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--padding-medium));
+    height: calc(100% + var(--padding-big));
+    border-left: 1px solid black;
+}
+
+section.work .book .wrapper .btn-n {
+    margin-top: var(--margin-medium);
+    z-index: 4;
+}
 
 /* trabajo 1 */
 section.work1 .intro {
@@ -245,8 +291,184 @@ section.work1 .front .gallery {
     height: auto;
 }
 
+section.work1 .book {
+    background-color: var(--primary-color);
+}
 
+section.work1 .book .content {
+    padding-left: var(--padding-big);
+}
 
+section.work1 .book .content .wrapper {
+    padding-left: var(--padding-big);
+}
+
+section.work1 .book .content .wrapper::before {
+    left: 0;
+}
+
+section.work1 .book .content .wrapper .btn-n {
+    margin-left: calc(var(--margin-big) * -1 - var(--margin-medium));
+    background-color: var(--primary-color);
+}
+
+section.work1 .book .img::before {
+    background-image: url(../images/book1.png)
+}
 
 /* trabajo 2 */
+section.work2 .intro {
+    background-color: var(--primary-color);
+}
+
+section.work2 .intro .img::before {
+    background-image: url(../images/NinhThuan100315-511.jpg);
+    margin-right: var(--margin-big);
+}
+
+section.work2 .intro .wrapper  {
+    padding-left: var(--padding-xxl);
+}
+
+section.work2 .intro .wrapper::before {
+    left: 32px;
+}
+
+section.work2 .intro .wrapper::after {
+    left: calc(-50% + 32px);
+}
+
+section.work2 .summary .wrapper .front .img1::before {
+    background-image: url(../images/main.jpg);
+    background-position: top right;
+}
+
+section.work2 .summary .wrapper .front .img2::before {
+    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+}
+
+section.work2 .summary .wrapper .front .img3::before {
+    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+}
+
+section.work2 .summary .wrapper .front .img4::before {
+    background-image: url(../images/galeria/img12.jpg);
+}
+
+section.work2 .back {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    margin-bottom: var(--margin-big);
+    padding: 16px 64px 16px 32px;
+    margin-right: -32px;
+    box-sizing: border-box;
+}
+
+section.work2 .front .gallery {
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    height: auto;
+}
+
+section.work2 .book {
+    background-color: var(--primary-color);
+}
+
+section.work2 .book .content {
+    padding-left: var(--padding-big);
+}
+
+section.work2 .book .content .wrapper {
+    padding-left: var(--padding-big);
+}
+
+section.work .book .content .wrapper::before {
+    left: 0;
+}
+
+section.work2 .book .content .wrapper .btn-n {
+    margin-left: calc(var(--margin-big) * -1 - var(--margin-medium));
+    background-color: var(--primary-color);
+}
+
+section.work2 .book .img::before {
+    background-image: url(../images/book1.png)
+}
 /* trabajo3 */
+section.work3 .intro {
+    background-color: var(--primary-color);
+}
+
+section.work3 .intro .img::before {
+    background-image: url(../images/NinhThuan100315-511.jpg);
+    margin-right: var(--margin-big);
+}
+
+section.work3 .intro .wrapper  {
+    padding-left: var(--padding-xxl);
+}
+
+section.work3 .intro .wrapper::before {
+    left: 32px;
+}
+
+section.work3 .intro .wrapper::after {
+    left: calc(-50% + 32px);
+}
+
+section.work3 .summary .wrapper .front .img1::before {
+    background-image: url(../images/main.jpg);
+    background-position: top right;
+}
+
+section.work3 .summary .wrapper .front .img2::before {
+    background-image: url(../images/galeria/descarga\ \(26\).jpg);
+}
+
+section.work3 .summary .wrapper .front .img3::before {
+    background-image: url(../images/galeria/Rengao-103yearsold.jpg);
+}
+
+section.work3 .summary .wrapper .front .img4::before {
+    background-image: url(../images/galeria/img12.jpg);
+}
+
+section.work3 .back {
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    margin-bottom: var(--margin-big);
+    padding: 16px 64px 16px 32px;
+    margin-right: -32px;
+    box-sizing: border-box;
+}
+
+section.work3 .front .gallery {
+    box-shadow: 3px 3px 2px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    height: auto;
+}
+
+section.work3 .book {
+    background-color: var(--primary-color);
+}
+
+section.work3 .book .content {
+    padding-left: var(--padding-big);
+}
+
+section.work3 .book .content .wrapper {
+    padding-left: var(--padding-big);
+}
+
+section.work3 .book .content .wrapper::before {
+    left: 0;
+}
+
+section.work3 .book .content .wrapper .btn-n {
+    margin-left: calc(var(--margin-big) * -1 - var(--margin-medium));
+    background-color: var(--primary-color);
+}
+
+section.work3 .book .img::before {
+    background-image: url(../images/book1.png)
+}
