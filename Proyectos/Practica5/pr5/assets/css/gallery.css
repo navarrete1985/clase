@@ -207,3 +207,38 @@ section.gallery .col .img:hover, section.gallery .col .img:focus {
     transform: scale(1.08);
     z-index: 4;
 }
+
+@media screen and (max-width: 1141px) {
+    section.gallery .col3 {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    section.gallery .col3 > div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    section.gallery .col3 > div {
+        width: 100%;
+    }
+
+    section.gallery .col3 :last-child::before {
+        padding-bottom: 100%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    section.bg:before {
+        top: 78%;
+    }
+
+    section.gallery .col .img::before {
+        padding-bottom: 60%;
+    }
+
+    section.bg {
+        padding-top: 100px;
+    }
+}

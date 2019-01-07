@@ -329,9 +329,9 @@ section.expo .wrapper .item .wrapper-btn {
 }
 
 @media screen and (max-width: 690px) {
-    .txt-bt {
+    /* .txt-bt {
         font-size: 4em;
-    }
+    } */
 
     section.expo {
         margin-top: unset;
