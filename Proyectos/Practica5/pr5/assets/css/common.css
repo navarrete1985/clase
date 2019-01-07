@@ -1063,4 +1063,12 @@ footer .footer .terms .links a:nth-child(2)::after {
     footer .footer .links .items {
         text-align: center;
     }
+
+    .txt-t {
+        font-size: 1.9em;
+    }
+
+    .txt-tb {
+        font-size: 1.7em;
+    }
 }
