@@ -587,3 +587,169 @@ section.awards .item .content span {
     margin-bottom: 8px;
     color: var(--secondary-color);
 }
+
+@media screen and (max-width: 1235px) {
+    section.work .summary .wrapper {
+        flex-flow: column nowrap;
+    }
+
+    section.work .summary .wrapper .front {
+        flex: unset;
+        order: 1;
+    }
+
+    section.work .summary .wrapper .back {
+        order: 2;
+        margin-top: -90px;
+        width: 80%;
+        padding: 64px 32px;
+        flex: unset;
+    }
+
+    section.work .summary .wrapper .front {
+        width: 70%;
+    }
+
+    section.work1 .summary .wrapper .front,
+    section.work3 .summary .wrapper .front {
+        align-self: flex-end;
+    }
+
+    section.work2 .summary .wrapper .front {
+        align-self: flex-start;
+        margin-left: -32px;
+    }
+
+    section.work2 .summary .wrapper .back {
+        align-self: flex-end;
+    }
+
+    section.work .summary .wrapper .gallery > div::before {
+        padding-bottom: 70%;
+    }
+
+    section.work1 .summary .wrapper .back .title, 
+    section.work3 .summary .wrapper .back .title {
+        align-self: flex-start;
+    }
+
+    section.work2 .summary .wrapper .back .title {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    section.work .intro .img::before {
+        margin: unset;
+        padding-bottom: 60%;
+    }
+
+    section.work .intro .wrapper {
+        margin-top: 64px;
+        padding: unset;
+    }
+
+    section.work2 .intro .img {
+        order: 1;
+    }
+
+    section.work2 .intro .wrapper {
+        order: 2;
+    }
+
+    section.work .intro .wrapper::before,
+    section.work .intro .wrapper::after {
+        content: unset;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    section.work .summary .wrapper .back {
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    section.work .summary .wrapper .front {
+        width: 90%;
+    }
+
+    section .intro, section .summary, section .book {
+        padding: 10% 5%;
+    }
+
+    section.work2 .summary .wrapper .front {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    section.bg {
+        padding-top: 100px;
+    }
+
+    section.bg:before {
+        top: 79%;
+    }
+
+    section.work .intro .wrapper .title {
+        margin-top: 32px;
+    }
+
+    section.work .book .content {
+        margin-top: 32px;
+        padding: unset; 
+    }
+
+    section.title {
+        margin-top: -30px;
+    }
+
+    section.awards::before {
+        left: 5%;
+    }
+
+    section.awards .content {
+        width: 100%;
+    }
+
+    section.awards .wrapper > div .content::before {
+        left: -8px;
+    }
+
+    section.awards {
+        margin: unset;
+        padding: 10% 5%;
+    }
+
+    section.awards .wrapper > div:nth-child(odd) .content span {
+        text-align: left;
+    }
+
+    section.work .summary {
+        padding: 0;
+    }
+
+    section.work .summary .wrapper .back {
+        margin-bottom: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 130px;
+    }
+
+    section .intro {
+        margin-bottom: 64px;
+    }
+
+    section.work2 .summary {
+        background-color: white;
+    }
+
+    section.work .book .content .title {
+        text-align: center;
+    }
+
+    section.intro {
+        padding-top: 64px;
+    }
+
+}
