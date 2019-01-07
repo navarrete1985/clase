@@ -1035,6 +1035,12 @@ footer .footer .terms .links a:nth-child(2)::after {
     }
 }
 
+@media screen and (max-width: 690px) {
+    .txt-bt {
+        font-size: 4em;
+    }
+}
+
 @media screen and (max-width: 530px) {
     footer .footer .terms {
         flex-flow: column nowrap;

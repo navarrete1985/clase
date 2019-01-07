@@ -52,7 +52,7 @@ section.about article.about > div {
 }
 
 section.about article.about .img, section.about article.about .content {
-    flex: 1 1 400px;
+    flex: 1 1 500px;
     box-sizing: border-box;
     position: relative;
 }
@@ -289,4 +289,98 @@ section.expo .wrapper .item .wrapper-btn {
     justify-content: center;
     margin-top: var(--margin-big);
     margin-bottom: var(--margin-big);
+}
+
+@media screen and (max-width: 1266px) {
+    section.about .action {
+        margin-left: -32px;
+        justify-content: flex-start;
+    }
+
+    section.about article.about .title {
+        margin-top: 16px;
+    }
+
+    section.about article.about .description {
+        columns: 2;
+        column-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    section.about article.intro .content,
+    section.about article.about .content .description,
+    section.biography .wrapper .content {
+        columns: 1;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    section.expo .wrapper {
+        justify-content: center;
+    }
+
+    section.expo .wrapper .item {
+        flex: 1 1 500px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .txt-bt {
+        font-size: 4em;
+    }
+
+    section.expo {
+        margin-top: unset;
+    }
+
+    section.title.second::before {
+        bottom: -22px;
+    }
+
+    section.expo .wrapper {
+        margin-top: -36px;
+    }
+
+    section.about,
+    section.about article.about .img {
+        padding: 0;
+    }
+
+    section.about article.about .img {
+        margin-bottom: 32px;
+    }
+
+    section.about article.about .content {
+        margin-left: 32px;
+    }
+
+    section.about .action {
+        margin-left: 20px;
+        padding-bottom: 16px;
+    }
+
+    section.about article.about {
+        margin-bottom: unset;
+    }
+
+    section.biography .wrapper {
+        margin: unset;
+    }
+
+    section.biography .wrapper .content::before {
+        left: 16px;
+    }
+
+    section.biography .wrapper .content::after {
+        right: 16px;
+    }
+
+    section.about article.intro {
+        padding: 10% 5%;
+        box-sizing: border-box;
+    }
 }
