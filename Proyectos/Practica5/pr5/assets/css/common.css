@@ -873,6 +873,50 @@ footer .footer .terms .links a:nth-child(2)::after {
     right: -8px;
 }
 
+/* media img-social y footer */
+@media screen and (max-width: 1222px) {
+    .img-social .img6, 
+    .img-social .img7 {
+        display: none;
+    }
+
+    footer .pre .newsletter {
+        flex-flow: column nowrap;
+    }
+
+    footer .pre .newsletter .title{
+        flex: initial;
+    }
+
+    footer .pre .newsletter .title::before, 
+    footer .pre .newsletter .title::after {
+        height: 60px;
+        top: -10px;
+    }
+
+    footer .pre .newsletter .title::before {
+        left: -16px;
+    } 
+
+    footer .pre .newsletter .title::after {
+        right: -16px;
+    }
+
+    footer .pre .newsletter .description {
+        flex: initial;
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    footer .pre .newsletter form {
+        flex: initial;
+        margin: var(--margin-medium);
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
 /* nav media */
 @media screen and (max-width: 1100px) {
     /*---------------------------NAV----------------*/
@@ -936,5 +980,81 @@ footer .footer .terms .links a:nth-child(2)::after {
 
     nav .content ul li.show {
         margin-right: 0%;
+    }
+
+    header nav ul li::after {
+        content: unset;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    footer .footer .use {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    footer .footer .use img,
+    footer .footer .use .social,
+    footer .footer .use .links {
+        flex: unset;
+    }
+
+    footer .footer .use img {
+        order: 1;
+    }
+
+    footer .footer .use .social {
+        order: 2;
+        margin-top: 32px;
+    }
+
+    footer .footer .use .links {
+        order: 3;
+    }
+
+    footer .footer .use .links .title::after, footer .footer .use .social .title::after {
+        content: '';
+        position: absolute;
+        border-top: 1px solid black;
+    }
+
+    footer .footer .use .links .title::after {
+        width: calc(50% - 40px);
+        left: 0;
+        top: 30px;
+    } 
+
+    footer .footer .use .links .title::before {
+        top: 30px;
+    }
+    
+    footer .footer .use .social .title::after {
+        width: calc(50% - 80px);
+        right: 0;
+        top: 21px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    footer .footer .terms {
+        flex-flow: column nowrap;
+    }
+
+    footer .footer .terms .copy {
+        align-self: flex-start;
+    }
+
+    footer .footer .terms .links {
+        align-self: center;
+        margin-top: 16px;
+        margin-left: unset;
+    }
+
+    .txt-nav {
+        font-size: .9em;
+    }
+
+    footer .footer .links .items {
+        text-align: center;
     }
 }
